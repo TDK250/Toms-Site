@@ -1,0 +1,26 @@
+# Site settings
+title: Tom Kerr
+email: tdkerr@proton.me
+description: >-
+  Young professional working in government QA, interested in tech policy,
+  art, and travel. This is my personal space for projects and thoughts.
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Basic plugins that should be available
+plugins:
+  - jekyll-feed
+
+# Collections for projects
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
