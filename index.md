@@ -3,10 +3,6 @@ layout: default
 title: Home
 ---
 
-<div class="hero">
-  <h1>Hello, I'm Tom Kerr</h1>
-</div>
-
 <section class="content-section">
   <h2>About Me</h2>
   <p>I work at the intersection of quality assurance, government services, and organizational leadership. My current role involves ensuring quality processes for vulnerable populations, while my background spans board governance, event management, consulting, and digital marketing.</p>
