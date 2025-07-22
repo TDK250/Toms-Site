@@ -46,7 +46,7 @@ title: Professional
     <div class="timeline-date">Jan 2025 - Present</div>
     <div class="timeline-content">
       <h3>Quality Assurance Specialist <span class="remote-tag">Remote</span><span class="pilot-tag">Pilot Position</span></h3>
-      <p class="company">Public Guardian and Trustee of British Columbia â€“ Child and Youth Services</p>
+      <p class="company">Public Guardian and Trustee of British Columbia | Child and Youth Services</p>
       <ul>
         <li>Reviewing reports of trauma to identify opportunities for victim services or legal intervention</li>
         <li>Using Microsoft Excel to generate KPI reports and identify gaps in service</li>
@@ -59,7 +59,7 @@ title: Professional
     <div class="timeline-date">Apr 2024 - Jan 2025</div>
     <div class="timeline-content">
       <h3>Administrative Assistant <span class="hybrid-tag">Hybrid</span></h3>
-      <p class="company">Public Guardian and Trustee of British Columbia â€“ Services to Adults</p>
+      <p class="company">Public Guardian and Trustee of British Columbia | Services to Adults</p>
       <ul>
         <li>Multi-tasked in a fast-paced environment to receive clients and visitors and deliver information about the Public Guardian and Trustee</li>
         <li>Worked with Assessment and Investigative services to contact case participants</li>
