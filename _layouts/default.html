@@ -49,11 +49,6 @@
             <a href="{{ '/professional' | relative_url }}" class="nav-link">Professional</a>
             <a href="{{ '/blog' | relative_url }}" class="nav-link">Blog</a>
             <a href="{{ '/contact' | relative_url }}" class="nav-link">Contact</a>
-            
-            <!-- Theme Toggle -->
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-              <span class="theme-icon">🌓</span>
-            </button>
           </div>
         </nav>
       </div>
@@ -85,6 +80,11 @@
               <a href="https://twitter.com/{{ site.social.twitter }}" aria-label="Twitter">🐦</a>
             {% endif %}
             <a href="{{ '/feed.xml' | relative_url }}" aria-label="RSS Feed">📡</a>
+            
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+              <span class="theme-icon">🌓</span>
+            </button>
           </div>
         </div>
       </div>
