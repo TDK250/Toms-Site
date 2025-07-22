@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Over 16 Hours in the ER: A System That Fails When It’s Needed Most"
-date: 2025-07-21
+date: 2024-10-06
 categories: [healthcare, policy]
 tags: [healthcare, policy]
 excerpt: "Emergency rooms are supposed to be places where patients receive urgent care, but for my mother, the experience was anything but urgent or careful."
