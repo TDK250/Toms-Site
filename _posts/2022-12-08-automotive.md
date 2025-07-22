@@ -7,8 +7,6 @@ tags: [economics]
 excerpt: "This paper aims to explore the factors that influence United States investment into the Canadian automotive industry."
 ---
 
-Purpose – This paper aims to explore the factors that influence United States investment into the Canadian automotive industry.
-
 Design/methodology/approach – This paper complements previous studies by examining investment inflows into Canada through the lens of Dunning’s eclectic OLI framework.
 
 Findings – This paper finds that location advantage and institutional assets are the most important factors in the decision of American firms to invest in the Canadian automotive Industry, with the USMCA trade-agreement playing a particularly important role.
