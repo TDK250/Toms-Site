@@ -228,13 +228,13 @@ title: Home
       <div class="interest-card financial">
         <span class="interest-icon">💰</span>
         <div class="interest-title">Financial Management</div>
-        <div class="interest-desc">I believe competent financial management is essential from personal to organizational - financial literacy makes everything easier.</div>
+        <div class="interest-desc">From personal to organizational, I believe competent financial management makes everything else easier.</div>
       </div>
 
       <div class="interest-card wellness">
         <span class="interest-icon">🏔️</span>
         <div class="interest-title">Health and Wellness</div>
-        <div class="interest-desc">I believe good health is key to society's function. Whether rock climbing or getting enough sleep, staying healthy helps us help others.</div>
+        <div class="interest-desc">Whether rock climbing or getting enough sleep, staying healthy helps us help others.</div>
       </div>
 
     </div>
