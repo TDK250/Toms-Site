@@ -39,16 +39,7 @@ I'm always interested in connecting with anyone who shares similar interests.
 
 </div>
 
----
 
-## What I'm Interested In Discussing
-
-- **Government Technology:** Digital service delivery, accessibility, user experience in public sector
-- **Quality Assurance:** Testing strategies, automation, reliability engineering
-- **Tech Policy:** Intersection of technology, regulation, and public interest
-- **Career Development:** Government tech careers, transitioning between sectors
-- **Travel & Culture:** Experiences from different places, cultural perspectives on technology
-- **Creative Projects:** Art, photography, and creative uses of technology
 
 ---
 
@@ -59,21 +50,3 @@ I'm always happy to chat about shared interests, provide advice to people enteri
 **Response Time:** I typically respond to emails within 24-48 hours on weekdays.
 
 **Meeting Availability:** Open to coffee chats, video calls, or professional networking meetings. I'm based in Victoria, BC, but happy to meet virtually.
-
----
-
-## Professional Services
-
-I'm occasionally available for:
-- **Quality Assurance Consulting:** Help with testing strategies, process improvement, and QA program development
-- **Government Tech Advisory:** Guidance on digital service delivery, compliance, and user experience
-- **Speaking & Presentations:** Topics related to government technology, QA, or tech policy
-- **Mentoring:** Support for people entering government tech or QA roles
-
-Feel free to reach out to discuss specific needs or opportunities.
-
----
-
-<div class="text-center text-muted">
-  <p>Prefer a different way to connect? Let me know what works best for you!</p>
-</div>
