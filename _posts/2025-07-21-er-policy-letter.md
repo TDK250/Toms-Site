@@ -41,6 +41,8 @@ Telemedicine services can be expanded for non-critical cases. Many people end up
 The state of BC’s emergency rooms is unacceptable. No one should have to endure 16+ hours of waiting in pain and confusion without knowing when, or if, they will receive care. Patients like my mother are left feeling like they made the wrong decision to seek help—when in fact, they had no other option.
 The system isn’t just uncomfortable, it’s dangerous. It’s time for BC to make serious reforms, focusing on better resource allocation, transparency, and alternative care pathways. We need a healthcare system that ensures no one hesitates to seek emergency care when their life could be on the line.
 
+### Sources
+
 https://www.ubcmedicinepac.ca/past-campaigns/safety-in-bc-emergency-departments
 
 https://www.cma.ca/about-us/what-we-do/press-room/canadas-health-care-providers-urge-premiers-ensure-health-care-remains-priority
