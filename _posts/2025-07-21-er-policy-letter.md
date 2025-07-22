@@ -1,5 +1,14 @@
+---
+layout: post
+title: "Over 16 Hours in the ER: A System That Fails When It’s Needed Most"
+date: 2025-07-21
+categories: [healthcare, policy]
+tags: [healthcare, policy]
+excerpt: "Emergency rooms are supposed to be places where patients receive urgent care, but for my mother, the experience was anything but urgent or careful."
+---
+
 ### What Happened?
-Emergency rooms are supposed to be places where patients receive urgent care, but for my mother, the experience was anything but. On August 24, 2024, she checked into the Royal Jubilee Hospital’s emergency room, presenting with extreme fatigue, chills, aches and pains, and a sharp pain in her left side. Both her personal GP and the 811 nurse line recommended she seek emergency medical care immediately, fearing a serious underlying condition.
+Emergency rooms are supposed to be places where patients receive urgent care, but for my mother, the experience was anything but urgent or careful. On August 24, 2024, she checked into the Royal Jubilee Hospital’s emergency room, presenting with extreme fatigue, chills, aches and pains, and a sharp pain in her left side. Both her personal GP and the 811 nurse line recommended she seek emergency medical care immediately, fearing a serious underlying condition.
 When Kate arrived at the Royal Jubilee ER at 5 p.m., the wait time displayed on the electronic sign was 5 hours and 44 minutes. It seemed daunting, but given her symptoms, she trusted that emergency care would be worth the wait. After explaining her condition to a nurse, she was told to sit and wait until her name was called.
 Hours passed with little communication. By 1 a.m.—eight hours after she arrived—she was finally moved to an examination room where she waited for the next four hours. At 5 a.m., a doctor came in to conduct blood tests and a CT scan. Then, she was moved back to the waiting room with no indication of when her results would come.
 It was now over 12 hours since she’d arrived. My mother, fatigued and in pain, began to question whether she should have come to the ER at all. The uncertainty, discomfort, and lack of communication made her wonder if it was even worth it. She just wanted to be home.
