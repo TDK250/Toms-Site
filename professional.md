@@ -250,7 +250,7 @@ title: Professional
     <h3>Test Scores & Certifications</h3>
     <div class="lsat-highlight">
       <div class="lsat-score">LSAT: 165</div>
-      <div class="lsat-percentile">85th Percentile â€¢ April 2025</div>
+      <div class="lsat-percentile">85th Percentile | April 2025</div>
     </div>
     <div class="accomplishment-item">
       <div class="accomplishment-title">Basic First Aid Certification</div>
@@ -346,7 +346,7 @@ title: Professional
   border-radius: 1rem;
   padding: 2rem;
   margin-top: 2rem;
-  border-left: 4px solid var(--accent);
+  border: 1px solid var(--border);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -409,7 +409,7 @@ title: Professional
   padding: 1rem;
   background: var(--bg-primary);
   border-radius: 0.5rem;
-  border-left: 3px solid var(--accent);
+  border: 1px solid var(--border);
   transition: all 0.3s ease;
 }
 
@@ -471,11 +471,28 @@ title: Professional
   padding: 1.5rem;
   border: 1px solid var(--border);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transition: left 0.6s ease;
 }
 
 .timeline-content:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px var(--shadow-hover);
+}
+
+.timeline-content:hover::before {
+  left: 100%;
 }
 
 .timeline-content h3 {
@@ -544,7 +561,7 @@ title: Professional
 }
 
 .achievement-highlight {
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
   color: var(--text-primary);
   padding: 1rem;
   border-radius: 0.5rem;
@@ -555,13 +572,8 @@ title: Professional
 }
 
 .achievement-highlight:hover {
-  transform: scale(1.01);
-}
-
-.achievement-highlight.major {
-  background: var(--bg-secondary);
-  border: 1px solid var(--accent);
-  color: var(--text-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--shadow-hover);
 }
 
 .volunteer-section {
@@ -604,7 +616,7 @@ title: Professional
 }
 
 .highlight-volunteer {
-  border-left: 4px solid var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .accomplishments-grid {
@@ -620,11 +632,28 @@ title: Professional
   padding: 1.5rem;
   border: 1px solid var(--border);
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.accomplishment-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+  transition: left 0.6s ease;
 }
 
 .accomplishment-category:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px var(--shadow-hover);
+}
+
+.accomplishment-category:hover::before {
+  left: 100%;
 }
 
 .accomplishment-category h3 {
@@ -670,7 +699,7 @@ title: Professional
 }
 
 .lsat-highlight {
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
   color: var(--text-primary);
   padding: 1.2rem;
   border-radius: 0.5rem;
@@ -682,7 +711,8 @@ title: Professional
 }
 
 .lsat-highlight:hover {
-  transform: scale(1.01);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--shadow-hover);
 }
 
 .lsat-score {
@@ -710,11 +740,28 @@ title: Professional
   padding: 1.5rem;
   border: 1px solid var(--border);
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-category::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+  transition: left 0.6s ease;
 }
 
 .skill-category:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px var(--shadow-hover);
+}
+
+.skill-category:hover::before {
+  left: 100%;
 }
 
 .skill-category h3 {
