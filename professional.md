@@ -45,7 +45,7 @@ title: Professional
   <div class="timeline-item">
     <div class="timeline-date">Jan 2025 - Present</div>
     <div class="timeline-content">
-      <h3>Quality Assurance Specialist <span class="remote-tag">Remote</span><span class="pilot-tag">Pilot Position</span></h3>
+      <h3>Quality Assurance Specialist <span class="remote-tag">Remote</span><span class="temp-tag">Temporary Assignment</span></h3>
       <p class="company">Public Guardian and Trustee of British Columbia | Child and Youth Services</p>
       <ul>
         <li>Reviewing reports of trauma to identify opportunities for victim services or legal intervention</li>
@@ -95,7 +95,7 @@ title: Professional
   <div class="timeline-item">
     <div class="timeline-date">Feb 2023 - Apr 2023</div>
     <div class="timeline-content">
-      <h3>Board Governance Coordinator</h3>
+      <h3>Board Governance Coordinator <span class="remote-tag">Remote</span></h3>
       <p class="company">Victoria Brain Injury Society</p>
       <ul>
         <li>Wrote and designed a detailed strategic plan and tactical plan, which will guide the governance of the organization for the next four years</li>
@@ -108,7 +108,7 @@ title: Professional
   <div class="timeline-item">
     <div class="timeline-date">Nov 2020 - Feb 2022</div>
     <div class="timeline-content">
-      <h3>Photographer & Videographer <span class="freelance-tag">Contract</span></h3>
+      <h3>Photographer & Videographer <span class="event-based-tag">Event-Based</span></h3>
       <p class="company">Carr House</p>
       <ul>
         <li>Official photographer for Carr House's first annual pet parade featuring special guest <strong>The Honourable Janet Austin, Lieutenant Governor of British Columbia</strong></li>
@@ -160,36 +160,46 @@ title: Professional
     </div>
   </div>
 
-  <div class="timeline-item">
-    <div class="timeline-date">Mar 2020 - May 2020</div>
-    <div class="timeline-content">
-      <h3>Construction Worker</h3>
-      <p class="company">Marc Gauthier Homes</p>
-      <ul>
-        <li>Supported experienced workers in construction and repair work through reliable completion of labour intensive and time consuming tasks</li>
-      </ul>
-    </div>
-  </div>
+  <!-- Dropdown Section for Earlier Experience -->
+  <div class="experience-dropdown">
+    <button class="dropdown-toggle" onclick="toggleEarlyExperience()">
+      <span class="dropdown-text">Show Earlier Experience</span>
+      <span class="dropdown-arrow">▼</span>
+    </button>
+    
+    <div class="dropdown-content" id="earlyExperience">
+      <div class="timeline-item">
+        <div class="timeline-date">Mar 2020 - May 2020</div>
+        <div class="timeline-content">
+          <h3>Construction Worker</h3>
+          <p class="company">Marc Gauthier Homes</p>
+          <ul>
+            <li>Supported experienced workers in construction and repair work through reliable completion of labour intensive and time consuming tasks</li>
+          </ul>
+        </div>
+      </div>
 
-  <div class="timeline-item">
-    <div class="timeline-date">Nov 2016 - Sep 2019</div>
-    <div class="timeline-content">
-      <h3>Grocery Stock Clerk</h3>
-      <p class="company">Thrifty Foods</p>
-      <ul>
-        <li>Stocked inventory and provided friendly customer service in a fast-paced environment</li>
-      </ul>
-    </div>
-  </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Nov 2016 - Sep 2019</div>
+        <div class="timeline-content">
+          <h3>Grocery Stock Clerk</h3>
+          <p class="company">Thrifty Foods</p>
+          <ul>
+            <li>Stocked inventory and provided friendly customer service in a fast-paced environment</li>
+          </ul>
+        </div>
+      </div>
 
-  <div class="timeline-item">
-    <div class="timeline-date">Aug 2013 - Sep 2016</div>
-    <div class="timeline-content">
-      <h3>Newspaper Carrier</h3>
-      <p class="company">Black Press Media</p>
-      <ul>
-        <li>Delivered newspapers twice weekly for two routes</li>
-      </ul>
+      <div class="timeline-item">
+        <div class="timeline-date">Aug 2013 - Sep 2016</div>
+        <div class="timeline-content">
+          <h3>Newspaper Carrier</h3>
+          <p class="company">Black Press Media</p>
+          <ul>
+            <li>Delivered newspapers twice weekly for two routes</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -334,6 +344,32 @@ title: Professional
     <a href="/contact" class="btn btn-primary">Get In Touch</a>
   </div>
 </div>
+
+<script>
+function toggleEarlyExperience() {
+  const content = document.getElementById('earlyExperience');
+  const button = document.querySelector('.dropdown-toggle');
+  const text = button.querySelector('.dropdown-text');
+  const arrow = button.querySelector('.dropdown-arrow');
+  
+  if (content.style.display === 'none' || content.style.display === '') {
+    content.style.display = 'block';
+    text.textContent = 'Hide Earlier Experience';
+    arrow.textContent = '▲';
+    button.classList.add('active');
+  } else {
+    content.style.display = 'none';
+    text.textContent = 'Show Earlier Experience';
+    arrow.textContent = '▼';
+    button.classList.remove('active');
+  }
+}
+
+// Initialize dropdown as hidden
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('earlyExperience').style.display = 'none';
+});
+</script>
 
 <style>
 .professional-header {
@@ -512,7 +548,7 @@ title: Professional
   margin-bottom: 1rem;
 }
 
-.remote-tag, .hybrid-tag, .coop-tag, .temp-tag, .part-time-tag, .pilot-tag, .freelance-tag {
+.remote-tag, .hybrid-tag, .coop-tag, .temp-tag, .part-time-tag, .pilot-tag, .freelance-tag, .event-based-tag {
   font-size: 0.75rem;
   padding: 0.2rem 0.6rem;
   border-radius: 1rem;
@@ -521,7 +557,7 @@ title: Professional
   transition: transform 0.2s ease;
 }
 
-.remote-tag:hover, .hybrid-tag:hover, .coop-tag:hover, .temp-tag:hover, .part-time-tag:hover, .pilot-tag:hover, .freelance-tag:hover {
+.remote-tag:hover, .hybrid-tag:hover, .coop-tag:hover, .temp-tag:hover, .part-time-tag:hover, .pilot-tag:hover, .freelance-tag:hover, .event-based-tag:hover {
   transform: scale(1.05);
 }
 
@@ -560,6 +596,11 @@ title: Professional
   color: #880e4f;
 }
 
+.event-based-tag {
+  background: #f1f8e9;
+  color: #558b2f;
+}
+
 .achievement-highlight {
   background: var(--bg-primary);
   color: var(--text-primary);
@@ -574,6 +615,78 @@ title: Professional
 .achievement-highlight:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 12px var(--shadow-hover);
+}
+
+/* Dropdown Styles */
+.experience-dropdown {
+  margin: 2rem 0;
+  padding-left: 2rem;
+}
+
+.dropdown-toggle {
+  background: var(--bg-secondary);
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 2rem auto;
+}
+
+.dropdown-toggle:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-hover);
+}
+
+.dropdown-toggle.active {
+  background: var(--accent);
+  color: white;
+}
+
+.dropdown-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+  position: relative;
+  padding-left: 0;
+  margin-left: -2rem;
+}
+
+.dropdown-content .timeline-item {
+  opacity: 0;
+  animation: fadeInDown 0.5s ease forwards;
+}
+
+.dropdown-content .timeline-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.dropdown-content .timeline-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .volunteer-section {
@@ -858,6 +971,14 @@ title: Professional
   
   .timeline-item {
     padding-left: 1.5rem;
+  }
+  
+  .experience-dropdown {
+    padding-left: 1rem;
+  }
+  
+  .dropdown-content {
+    margin-left: -1rem;
   }
   
   .volunteer-header {
