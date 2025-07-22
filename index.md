@@ -63,15 +63,21 @@ title: Home
 }
 
 .interest-card {
-  min-width: 180px;
+  width: 200px;
+  height: 180px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 1.5rem;
+  padding: 1.25rem;
   border-radius: 12px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .interest-card:hover {
@@ -105,7 +111,7 @@ title: Home
 }
 
 .interest-icon {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 0.5rem;
   display: block;
 }
@@ -113,13 +119,16 @@ title: Home
 .interest-title {
   font-weight: bold;
   margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  line-height: 1.2;
 }
 
 .interest-desc {
-  font-size: 0.8rem;
-  opacity: 0.9;
+  font-size: 0.75rem;
+  opacity: 0.95;
   line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .scroll-hint {
@@ -141,7 +150,17 @@ title: Home
   }
   
   .interest-card {
-    min-width: 160px;
+    width: 180px;
+    height: 160px;
+    padding: 1rem;
+  }
+  
+  .interest-title {
+    font-size: 0.8rem;
+  }
+  
+  .interest-desc {
+    font-size: 0.7rem;
   }
 }
 
@@ -170,7 +189,7 @@ title: Home
       <h2>About Me</h2>
       <p>I'm a commerce grad who's found my calling working with organizations that support vulnerable people. Currently, I'm a Quality Assurance Specialist with the Public Guardian and Trustee, where I help ensure young people in difficult situations get the support they need.</p>
       
-      <p>My path here wasn't straight - I've been a board VP for a community centre, managed fundraising events that brought in $87k for brain injury survivors, coordinated digital marketing campaigns, and even spent time studying abroad in Seoul. What ties it all together is a belief that good systems, ethical leadership, and thoughtful processes can make a real difference in people's lives.</p>
+      <p>My path here wasn't direct - I've been a board VP for a community centre, managed fundraising events that brought in $87k for brain injury survivors, coordinated digital marketing campaigns, and even spent time studying abroad in Seoul. What ties it all together is a belief that good systems, ethical leadership, and thoughtful processes can make a real difference in people's lives.</p>
       
       <p>When I'm not working, I love tinkering with new technologies, rock climbing, traveling, and spending time with family and friends. I'm also drawn to creative pursuits - whether that's writing, art, or just exploring new ideas. I'm passionate about using technology responsibly, understanding different cultures, and building stronger communities.</p>
     </div>
