@@ -45,7 +45,7 @@ I'm always interested in connecting with anyone who shares similar interests.
 
 ## Current Availability
 
-I'm always happy to chat about shared interests, provide advice to people entering government tech or QA roles, or discuss potential collaboration opportunities.
+I'm always happy to chat about shared interests, provide advice, or discuss potential collaboration opportunities.
 
 **Response Time:** I typically respond to emails within 24-48 hours on weekdays.
 
