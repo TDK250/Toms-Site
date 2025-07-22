@@ -7,8 +7,6 @@ tags: [economics]
 excerpt: "This paper aims to explore the factors that influence United States investment into the Canadian automotive industry."
 ---
 
-An eclectic approach to understanding American foreign direct investment in the Canadian automotive industry
-
 ABSTRACT
 Purpose – This paper aims to explore the factors that influence United States investment into the Canadian automotive industry.
 
