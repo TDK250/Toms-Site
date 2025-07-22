@@ -2,8 +2,8 @@
 layout: post
 title: "A Sociological Analysis of the Intersection of Mental Health and Chronic Homelessness in Canada"
 date: 2021-04-31
-categories: [homelessness, MH&A, policy]
-tags: [homelessness, MH&A, policy]
+categories: [homelessness, mh&a, policy]
+tags: [homelessness, mh&a, policy]
 excerpt: "Is Canada’s rapidly expanding homeless population a direct result of poor mental health conditions rooted deeply in systemic and cultural issues? You may find the answer surprising."
 ---
 
