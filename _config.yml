@@ -13,12 +13,6 @@ highlighter: rouge
 plugins:
   - jekyll-feed
 
-# Collections for projects
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name/
-
 # Exclude files from processing
 exclude:
   - Gemfile
