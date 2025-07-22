@@ -5,7 +5,6 @@ title: Home
 
 <div class="hero">
   <h1>Hello, I'm Tom Kerr</h1>
-  <p>University of Victoria Commerce graduate with experience in leadership, board governance, and supporting vulnerable populations.</p>
 </div>
 
 <section class="content-section">
