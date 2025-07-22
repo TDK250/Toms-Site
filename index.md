@@ -64,7 +64,7 @@ title: Home
 
 .interest-card {
   width: 200px;
-  height: 220px;
+  height: 200px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 1.25rem;
@@ -151,7 +151,7 @@ title: Home
   
   .interest-card {
     width: 180px;
-    height: 200px;
+    height: 180px;
     padding: 1rem;
   }
   
@@ -216,7 +216,7 @@ title: Home
       <div class="interest-card technology">
         <span class="interest-icon">💻</span>
         <div class="interest-title">Technology for Good</div>
-        <div class="interest-desc">I believe bleeding edge solutions can respect the rights of the user. Open, secure, privacy respecting technology is the way forward.</div>
+        <div class="interest-desc">I believe bleeding edge solutions can respect user rights. Open, secure, privacy-respecting tech is the way forward.</div>
       </div>
 
       <div class="interest-card cultural">
@@ -228,13 +228,13 @@ title: Home
       <div class="interest-card financial">
         <span class="interest-icon">💰</span>
         <div class="interest-title">Financial Management</div>
-        <div class="interest-desc">I believe competent financial management is important to the functioning of every part of our society. From personal to organisational, financial literacy makes everything a little easier.</div>
+        <div class="interest-desc">I believe competent financial management is essential from personal to organizational - financial literacy makes everything easier.</div>
       </div>
 
       <div class="interest-card wellness">
         <span class="interest-icon">🏔️</span>
         <div class="interest-title">Health and Wellness</div>
-        <div class="interest-desc">I believe the good health of individuals is key to the functioning of our society. Whether it's outdoor rock climbing, or simply getting enough sleep every night, I believe in staying healthy and helping others reach a point where they can do the same.</div>
+        <div class="interest-desc">I believe good health is key to society's function. Whether rock climbing or getting enough sleep, staying healthy helps us help others.</div>
       </div>
 
     </div>
