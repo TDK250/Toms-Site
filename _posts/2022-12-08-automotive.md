@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "An eclectic approach to understanding American foreign direct investment in the Canadian automotive industry"
+title: "An Eclectic Approach to Understanding American Foreign Direct Investment in the Canadian Automotive Industry"
 date: 2022-12-18
 categories: [economics]
 tags: [economics]
