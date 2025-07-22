@@ -167,7 +167,7 @@ title: Home
          alt="Profile Picture" 
          class="profile-image">
     <div class="hero-text">
-      <h2>About Me</h2>
+      <h2>Hi, I'm Tom.</h2>
       <p>I work at the intersection of business functions and social purpose. My current role involves ensuring quality processes for vulnerable populations, while my background spans board governance, event management, consulting, and digital marketing.</p>
       
       <p>From serving as Vice President of a community centre board to managing student consultants, from coordinating major fundraising events to implementing QA processes in government - I've learned that effective leadership and quality processes are essential whether you're serving brain injury survivors, university students, or government clients.</p>
