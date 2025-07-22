@@ -210,10 +210,9 @@ title: Professional
 
 <div class="contact-cta">
   <h2>Let's Connect</h2>
-  <p>Interested in discussing opportunities in government technology, quality assurance, or public service innovation?</p>
+  <p>Interested in discussing professional opportunities?</p>
   <div class="cta-buttons">
     <a href="/contact" class="btn btn-primary">Get In Touch</a>
-    <a href="/" class="btn btn-secondary">View Full Portfolio</a>
   </div>
 </div>
 
