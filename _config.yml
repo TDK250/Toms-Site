@@ -5,6 +5,16 @@ description: >-
   Young professional working in government QA, interested in tech policy,
   art, and travel. This is my personal space for projects and thoughts.
 
+  # Author info
+author:
+  name: "Tom Kerr"
+
+# Social links
+social:
+  email: connect@tdkerr.ca
+  github: TDK250  # optional
+  linkedin: tdkerr  # optional
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
