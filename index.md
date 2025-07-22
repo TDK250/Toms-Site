@@ -64,7 +64,7 @@ title: Home
 
 .interest-card {
   width: 200px;
-  height: 180px;
+  height: 220px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 1.25rem;
@@ -151,7 +151,7 @@ title: Home
   
   .interest-card {
     width: 180px;
-    height: 160px;
+    height: 200px;
     padding: 1rem;
   }
   
