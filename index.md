@@ -79,27 +79,27 @@ title: Home
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-.interest-card.governance {
+.interest-card.vulnerable {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.interest-card.consulting {
+.interest-card.governance {
   background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
 
-.interest-card.digital {
+.interest-card.technology {
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
-.interest-card.qa {
+.interest-card.cultural {
   background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
 }
 
-.interest-card.community {
+.interest-card.financial {
   background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
 }
 
-.interest-card.events {
+.interest-card.wellness {
   background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
   color: #333;
 }
@@ -167,10 +167,12 @@ title: Home
          alt="Profile Picture" 
          class="profile-image">
     <div class="hero-text">
-      <h2>Hi, I'm Tom.</h2>
-      <p>I work at the intersection of business functions and social purpose. My current role involves ensuring quality processes for vulnerable populations, while my background spans board governance, event management, consulting, and digital marketing.</p>
+      <h2>About Me</h2>
+      <p>I'm a commerce grad who's found my calling working with organizations that support vulnerable people. Currently, I'm a Quality Assurance Specialist with the Public Guardian and Trustee, where I help ensure young people in difficult situations get the support they need.</p>
       
-      <p>From serving as Vice President of a community centre board to managing student consultants, from coordinating major fundraising events to implementing QA processes in government - I've learned that effective leadership and quality processes are essential whether you're serving brain injury survivors, university students, or government clients.</p>
+      <p>My path here wasn't straight - I've been a board VP for a community centre, managed fundraising events that brought in $87k for brain injury survivors, coordinated digital marketing campaigns, and even spent time studying abroad in Seoul. What ties it all together is a belief that good systems, ethical leadership, and thoughtful processes can make a real difference in people's lives.</p>
+      
+      <p>When I'm not working, I love tinkering with new technologies, rock climbing, traveling, and spending time with family and friends. I'm also drawn to creative pursuits - whether that's writing, art, or just exploring new ideas. I'm passionate about using technology responsibly, understanding different cultures, and building stronger communities.</p>
     </div>
   </div>
 </section>
@@ -180,47 +182,47 @@ title: Home
     <h3>What I'm Passionate About</h3>
     <div class="interests-scroll">
       
+      <div class="interest-card vulnerable">
+        <span class="interest-icon">🤝</span>
+        <div class="interest-title">Supporting Vulnerable Populations</div>
+        <div class="interest-desc">I've dedicated my career to supporting vulnerable individuals through difficult times.</div>
+      </div>
+
       <div class="interest-card governance">
         <span class="interest-icon">⚖️</span>
-        <div class="interest-title">Board Governance</div>
-        <div class="interest-desc">Ensuring effective oversight and strategic direction for community organizations</div>
+        <div class="interest-title">Effective Governance</div>
+        <div class="interest-desc">I believe good leadership and governance are key to the success of any organisation.</div>
       </div>
 
-      <div class="interest-card consulting">
-        <span class="interest-icon">💡</span>
-        <div class="interest-title">Strategic Consulting</div>
-        <div class="interest-desc">Helping organizations solve complex problems through data-driven insights</div>
+      <div class="interest-card technology">
+        <span class="interest-icon">💻</span>
+        <div class="interest-title">Technology for Good</div>
+        <div class="interest-desc">I believe bleeding edge solutions can respect the rights of the user. Open, secure, privacy respecting technology is the way forward.</div>
       </div>
 
-      <div class="interest-card digital">
-        <span class="interest-icon">📱</span>
-        <div class="interest-title">Digital Marketing</div>
-        <div class="interest-desc">Building meaningful connections between brands and their communities</div>
+      <div class="interest-card cultural">
+        <span class="interest-icon">🌍</span>
+        <div class="interest-title">Cultural Literacy</div>
+        <div class="interest-desc">I believe exploring different cultures is important to gain perspective, connections, and new ideas.</div>
       </div>
 
-      <div class="interest-card qa">
-        <span class="interest-icon">🔍</span>
-        <div class="interest-title">Quality Assurance</div>
-        <div class="interest-desc">Creating systems that protect and serve vulnerable populations effectively</div>
+      <div class="interest-card financial">
+        <span class="interest-icon">💰</span>
+        <div class="interest-title">Financial Management</div>
+        <div class="interest-desc">I believe competent financial management is important to the functioning of every part of our society. From personal to organisational, financial literacy makes everything a little easier.</div>
       </div>
 
-      <div class="interest-card community">
-        <span class="interest-icon">🤝</span>
-        <div class="interest-title">Community Impact</div>
-        <div class="interest-desc">Supporting brain injury survivors and building stronger communities</div>
-      </div>
-
-      <div class="interest-card events">
-        <span class="interest-icon">🎯</span>
-        <div class="interest-title">Event Management</div>
-        <div class="interest-desc">Orchestrating memorable experiences that bring people together for a cause</div>
+      <div class="interest-card wellness">
+        <span class="interest-icon">🏔️</span>
+        <div class="interest-title">Health and Wellness</div>
+        <div class="interest-desc">I believe the good health of individuals is key to the functioning of our society. Whether it's outdoor rock climbing, or simply getting enough sleep every night, I believe in staying healthy and helping others reach a point where they can do the same.</div>
       </div>
 
     </div>
     <div class="scroll-hint">← Scroll to explore my interests →</div>
   </div>
 
-  <p>This site documents insights from these diverse experiences, projects that showcase different skills, and thoughts on how we can build better systems and processes that serve people in need.</p>
+  <p>This site is where I share thoughts on building better systems, lessons learned from diverse experiences, and projects that showcase how we can use our skills to support people who need it most.</p>
 </section>
 
 <section class="content-section">
