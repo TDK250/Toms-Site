@@ -260,7 +260,7 @@ title: Professional
     <h3>Test Scores & Certifications</h3>
     <div class="lsat-highlight">
       <div class="lsat-score">LSAT: 165</div>
-      <div class="lsat-percentile">85th Percentile | April 2025</div>
+      <div class="lsat-percentile">88th Percentile | April 2025</div>
     </div>
     <div class="accomplishment-item">
       <div class="accomplishment-title">Basic First Aid Certification</div>
