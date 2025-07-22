@@ -216,7 +216,7 @@ title: Home
       <div class="interest-card technology">
         <span class="interest-icon">💻</span>
         <div class="interest-title">Technology for Good</div>
-        <div class="interest-desc">I believe bleeding edge solutions can respect user rights. Open, secure, privacy-respecting tech is the way forward.</div>
+        <div class="interest-desc">I believe bleeding edge technology can respect user rights. Open, secure, privacy-respecting tech is the way forward.</div>
       </div>
 
       <div class="interest-card cultural">
