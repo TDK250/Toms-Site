@@ -9,7 +9,7 @@ title: Home
   
   <p>From serving as Vice President of a community centre board to managing student consultants, from coordinating major fundraising events to implementing QA processes in government - I've learned that effective leadership and quality processes are essential whether you're serving brain injury survivors, university students, or government clients.</p>
   
-  <p>This site documents insights from these diverse experiences, projects that showcase different skills, and thoughts on how we can build better systems and processes that truly serve people.</p>
+  <p>This site documents insights from these diverse experiences, projects that showcase different skills, and thoughts on how we can build better systems and processes that serve people in need.</p>
 </section>
 
 <section class="content-section">
