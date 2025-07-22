@@ -7,10 +7,9 @@ tags: [economics]
 excerpt: "This paper aims to explore the factors that influence United States investment into the Canadian automotive industry."
 ---
 
-ABSTRACT
 Purpose – This paper aims to explore the factors that influence United States investment into the Canadian automotive industry.
 
-Design/methodology/approach – This paper complements previous studies by looking investment inflows into Canada through the lens Dunning’s eclectic OLI framework.
+Design/methodology/approach – This paper complements previous studies by examining investment inflows into Canada through the lens of Dunning’s eclectic OLI framework.
 
 Findings – This paper finds that location advantage and institutional assets are the most important factors in the decision of American firms to invest in the Canadian automotive Industry, with the USMCA trade-agreement playing a particularly important role.
 
@@ -32,135 +31,6 @@ LITERATURE REVIEW
 Over the course of my research for this paper, I have come across many studies that analyze the Canadian and American automotive industries separately (White, 1983) (Perry, 1982) (Dykes, 1970). Often, they will have a section or two that goes into the relationship briefly as well, but rarely is it the primary focus of the paper. Furthermore, in the studies that do analyse the relationship, it will often be in the context of a specific trade agreement (many of which are now outdated as of the transformation from NAFTA to the USMCA) (Wilton, 1976) (Beigie, 1970) (Kumar, 1993) (Johnson, 1993) (Anderson, 1983) (Doh, 1998) (Holmes, 2004) (Fuss, 1986). Finally, some go over the relationship generally but, in a scope, much larger than just the automotive industry (Rugman, 1990) (Ford, 1981) (Crookell, 1983) (Cowan, 1972). I have found that these reports are the best and the closest to answering my research question but since the generalized nation-to-nation factors are not the same as the industry-specific factors, it is nonetheless important to look at the automotive industry separately.
 
 The paper which can be said to be the closest to my own is “Government, foreign direct investment and the Canadian automotive industry” by Greig Mordue (Mordue G. , 2007). At over 350 pages in length, this paper is by far the most comprehensive look at the topic to date. Although an extremely thorough analysis of the FDI in the Canadian automotive market in general, it can be said to fall into the category of those papers which neglect the specific relationship with the United States. As with those previously mentioned papers, Mordue refers to the US throughout his report, but he doesn’t focus on it. Instead, in the sections where it mentions the US, Mordue chooses to use the United States as a point of comparison for Canada, contrasting both its production capacities as well as its market. Of course, this is still useful information, but it means that it cannot adequately answer my research question. Secondly, although Mordue does provide some degree of factor analysis, his paper looks more at the Canadian automotive market, rather than from the perspective of any country in particular (in this case, ideally the United States). Additionally, although referencing several, Mordue does not appear to consistently apply any established FDI framework to structure this analysis which makes some of his analysis somewhat confusing coming from a traditional FDI perspective. Mordue also has a subsequent paper about FDI in the Canadian automotive market (Mordue G. , 2010) but since it is largely a historical analysis of a specific time period and I therefor feel that his previous work is more relevant to this paper.
-
-The following is a table summary of previous studies that have been conducted in the field. Check marks indicate the areas that the paper covers, to be understood in conjunction with the above paragraphs.
-
-
-Canada & US
-
-General analysis
-
-Industry analysis
-
-(White, 1983)
-
-
-✓
-
-✓
-
-(Perry, 1982)
-
-
-✓
-
-✓
-
-(Dykes, 1970)
-
-
-✓
-
-✓
-
-(Mordue G. , 2007)
-
-
-✓
-
-✓
-
-(Mordue G. , 2010)
-
-
-✓
-
-✓
-
-(Wilton, 1976)
-
-✓
-
-
-✓
-
-(Beigie, 1970)
-
-✓
-
-
-✓
-
-(Kumar, 1993)
-
-✓
-
-
-✓
-
-(Johnson, 1993)
-
-✓
-
-
-✓
-
-(Anderson, 1983)
-
-✓
-
-
-✓
-
-(Doh, 1998)
-
-✓
-
-
-✓
-
-(Holmes, 2004)
-
-✓
-
-
-✓
-
-(Fuss, 1986)
-
-✓
-
-
-✓
-
-(Rugman, 1990)
-
-✓
-
-✓
-
-
-(Ford, 1981)
-
-✓
-
-✓
-
-
-(Crookell, 1983)
-
-✓
-
-✓
-
-
-(Cowan, 1972)
-
-✓
-
-✓
-
-
 
 It is not the intention of this paper to compare the Canadian industry to other countries from the perspective of US firms, but rather to understand the specifics factors of the Canadian auto industry independently. This is primarily done due to the variety of other macro factors that are difficult to control for when comparing one entire nation to another on an industry scale. Since the literature review has shown that this a relatively unexplored area of study, it might be best to start out with a smaller scale study will leave room for further academics to build off. As a result, this paper will focus exclusively on the Canadian automotive industry and American foreign investors as the two macro actors of this analysis.
 
