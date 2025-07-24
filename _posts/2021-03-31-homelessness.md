@@ -27,7 +27,7 @@ This leads us to today. According to more recent data courtesy of the homeless h
 
 DISCUSSION
 
-        With the discussion section, I will establish several facts about the relationship between mental health and homelessness. The following section will attempt to define several sociological factors that are present in this relationship. It is my hope that with a better understanding of the mechanisms through which these concepts are interconnected, it will be possible to make more informed decisions to address the issue in the future.
+In this section, I will establish several facts about the relationship between mental health and homelessness. The following section will attempt to define several sociological factors that are present in this relationship. It is my hope that with a better understanding of the mechanisms through which these concepts are interconnected, it will be possible to make more informed decisions to address the issue in the future.
 
         There are three points I will be focusing on. First, I will go over the meritocratic argument which seeks to justify the correlation economically. Second, I will discuss the socialization factor, which represents an understanding of the two-way nature of the relationship. Finally, I will shine light on the cultural element. In this section, I will outline concrete solutions to the issue as well as aspects of Canadian culture that contribute to the perpetuation of these issues.
 
