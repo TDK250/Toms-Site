@@ -7,6 +7,8 @@ tags: [homelessness, mh&a, policy]
 excerpt: "Is Canada’s rapidly expanding homeless population a direct result of poor mental health conditions rooted deeply in systemic and cultural issues? You may find the answer surprising."
 ---
 
+### Introduction
+
 In this paper I want to examine how mental illness is a factor in chronic homelessness in Canada. This paper will draw on academic sources, both sociological and otherwise, in order to synthesize an understanding of the relationship between the concepts of mental health and homelessness. I will begin with an explanation of the history of the issue, followed by an in depth analysis which seeks to explain the correlation from a sociological perspective.
 
 For the purpose of this paper, I define chronic homelessness in accordance with the government of Canada’s use of the term where chronic homelessness refers to “individuals who are currently experiencing homelessness AND who meet at least 1 of the following criteria: they have a total of at least 6 months (180 days) of homelessness over the past year [or] they have recurrent experiences of homelessness over the past 3 years, with a cumulative duration of at least 18 months (546 days)” (Government of Canada, n.d.). This is in contrast to episodic and transitional homelessness which refer to periodic and isolated periods of homelessness respectively. I will define “mental illness” in accordance with the American Psychiatric Association (not to be confused with the American Psychological Association) as “health conditions involving changes in emotion, thinking or behaviour (or a combination of these) [which are] associated with distress and/or problems functioning in social, work or family activities.” (American Psychiatric Association, n.d.). Note that addiction is included in this definition by nature of its symptoms.
@@ -15,7 +17,7 @@ It is also important to mention that mental illness is not the only correlative 
 
 As a final note, one of the issues with homelessness is that it’s not always visible. Although chronic homelessness is easier to count than transitional homelessness, the scale of the issue makes tracking it a monumental task nonetheless. Roger Nooe (2010) explains that tracking rates of mental illness among chronic homeless populations is even more challenging as small adjustments in methodology tend to lead to wild varions in results. As such, it is often difficult to find data which is as up to date as is ideal for tracking an issue which is as quickly changing as this one. This is a widely acknowledged fact among homelessness advocacy and research groups. As a result, the norm in the field seems to be to construct general trends from the data that is available. This is a task which I will refrain from partaking in myself as I am not equipped to handle such data responsibly. In lieu, I will rely on organizations which are known for their efforts on the issue. I have discovered that even scholarly papers are forced to rely on non academic sources for their figures regarding these issues (Piat et al., 2015).
 
-HISTORY
+### HISTORY
 
 There have been two significant historical events which have led to widespread homelessness in Canada today. These are the abolition of the housing policy in the 1980s and 1990s and the deinstitutionalization of individuals with mental illness around the same time.
 
@@ -25,7 +27,7 @@ For reasons which will be further discussed later, individuals with mental illne
 
 This leads us to today. According to more recent data courtesy of the homeless hub, as of 2013, there have been roughly eight thousand people experiencing chronic homelessness in Canada at a given time (Gaetz et al., 2016). With this, the correlation to mental health is ever present (Calsyn et al., 1991), (Calvo, 2020). It could be argued that this correlation is due to the remnants of the deinstitutionalization mentioned earlier. However, this correlation seems to be present even in countries with different histories of mental health treatments. For example, a Spanish study determined that mental illness is the number one risk factor that differentiates episodic and transitional homelessness from chronic homelessness, where chronically homeless individuals were much more likely to suffer from a mental health condition. The most common issues were found to be addictions such as alcohol (Calvo, 2020). This proves that mental illness is a major factor in chronic homelessness outside of Canada too.
 
-DISCUSSION
+### DISCUSSION
 
 In this section, I will establish several facts about the relationship between mental health and homelessness. The following section will attempt to define several sociological factors that are present in this relationship. It is my hope that with a better understanding of the mechanisms through which these concepts are interconnected, it will be possible to make more informed decisions to address the issue in the future.
 
@@ -43,7 +45,7 @@ Another policy Finland has adopted is with regards to mental health services. In
 
 It has now been established that homelessness is likely solvable. Therefore, the question becomes what does the fact that Canada allows chronic homelessness to persist say about Canadian culture? I posit that Canada remains a deeply classist and ableist society. Given the intersection between low class and disability, to ignore one would necessarily be to ignore the other. Although Canada claims to care about the mentally ill, it consistently ignores the homeless.
 
-SUMMARY
+### SUMMARY
 
 Through this exploration into mental health’s relationship to chronic homelessness in Canada, we have discovered several important facts about the topics’ intersection. In the beginning, I seeked to establish an understanding of the mechanisms behind their relationship. Now, I’ve pinpointed three distinct revelations I’ve had regarding these subjects. First, the intersection of mental illness and homelessness is a deeply cyclical and self-referential structure. Mental illness leads to homelessness but homelessness also leads to mental illness through socialization and internalization. Second, the side-effects of a meritocratic system are damaging to those suffering from mental illness and often pushes them toward homelessness. In order to solve homelessness, a certain degree of meritocratic idealism must be abandoned lest it continue to widen the intersection of homeless and mentally ill individuals. Finally, effective methods of tackling homelessness are out there but there seems to be a general unwill to adopt them within Canadian society. This could be due to the meritocratic ideals mentioned earlier, or a deeper classist and ableist force hidden within the society as a whole.
 
@@ -59,7 +61,7 @@ Even before making this discovery, while researching this topic I reflected on m
 
 
 
-Works cited
+### Works cited
 
 American Psychiatric Association. (n.d.) What Is Mental Illness? American Psychiatric Association. https://www.psychiatry.org/patients-families/what-is-mental-illness
 
