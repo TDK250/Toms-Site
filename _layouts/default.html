@@ -30,44 +30,39 @@
   <!-- Enhanced Theme Script -->
   <script>
     (function() {
-      // Function to apply theme
-      function applyTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-        if (theme !== 'auto') {
-          localStorage.setItem('theme', theme);
-        }
-      }
-      
       // Function to get system preference
       function getSystemTheme() {
         return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       }
       
-      // Get saved theme preference or default to 'auto'
+      // Function to apply theme to document
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+      
+      // Get saved theme preference
       const savedTheme = localStorage.getItem('theme');
       
-      if (savedTheme && savedTheme !== 'auto') {
+      if (savedTheme) {
+        // Use saved preference
         applyTheme(savedTheme);
       } else {
-        // Use system preference
+        // No saved preference, use system preference
         applyTheme(getSystemTheme());
         
-        // Listen for system preference changes
+        // Listen for system preference changes when no manual preference is set
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        const handleChange = (e) => {
-          // Only auto-switch if user hasn't manually set a preference
-          const currentSaved = localStorage.getItem('theme');
-          if (!currentSaved || currentSaved === 'auto') {
+        const handleSystemChange = (e) => {
+          // Only auto-switch if user hasn't set a manual preference
+          if (!localStorage.getItem('theme')) {
             applyTheme(e.matches ? 'dark' : 'light');
           }
         };
         
-        // Modern browsers
         if (mediaQuery.addEventListener) {
-          mediaQuery.addEventListener('change', handleChange);
+          mediaQuery.addEventListener('change', handleSystemChange);
         } else {
-          // Fallback for older browsers
-          mediaQuery.addListener(handleChange);
+          mediaQuery.addListener(handleSystemChange);
         }
       }
     })();
@@ -210,39 +205,20 @@
       // Update icon on page load
       updateThemeIcon();
 
-      // Theme toggle click handler
+      // Simple theme toggle click handler
       themeToggle.addEventListener('click', function() {
         const currentTheme = html.getAttribute('data-theme');
-        const savedTheme = localStorage.getItem('theme');
-        
-        let newTheme;
-        
-        // Cycle through: auto -> light -> dark -> auto
-        if (!savedTheme || savedTheme === 'auto') {
-          // Currently on auto (system), switch to opposite of current system
-          newTheme = getSystemTheme() === 'dark' ? 'light' : 'dark';
-        } else if (savedTheme === 'light') {
-          newTheme = 'dark';
-        } else {
-          // savedTheme === 'dark', go back to auto
-          newTheme = 'auto';
-          localStorage.removeItem('theme');
-          newTheme = getSystemTheme(); // Apply current system theme
-        }
-        
-        if (newTheme !== 'auto') {
-          localStorage.setItem('theme', newTheme);
-        }
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         
         html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
         updateThemeIcon();
       });
 
-      // Listen for system preference changes when in auto mode
+      // Listen for system preference changes (only when no manual preference is set)
       const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
       const handleSystemChange = (e) => {
-        const savedTheme = localStorage.getItem('theme');
-        if (!savedTheme || savedTheme === 'auto') {
+        if (!localStorage.getItem('theme')) {
           html.setAttribute('data-theme', e.matches ? 'dark' : 'light');
           updateThemeIcon();
         }
@@ -260,4 +236,4 @@
   </script>
 </body>
 
-</html>
+  </html>
