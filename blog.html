@@ -5,7 +5,8 @@ title: Blog
 
 <div class="hero">
   <h1>Blog & Writing</h1>
-  </div>
+  <p>Thoughts on technology, governance, and building better systems.</p>
+</div>
 
 <section class="content-section">
   
@@ -41,7 +42,7 @@ title: Blog
             </div>
           {% endif %}
           
-          <p><a href="{{ post.url | relative_url }}">Read more →</a></p>
+          <p><a href="{{ post.url | relative_url }}" class="read-more">Read more →</a></p>
         </li>
       {% endfor %}
     </ul>
@@ -71,35 +72,43 @@ title: Blog
 
   {% else %}
     
-    <div class="text-center">
+    <div class="coming-soon">
       <h2>Coming Soon</h2>
       <p>I'm working on some great content! Check back soon for posts about:</p>
       
-      <div class="section-grid mt-2">
-        <div class="card">
-          <h3>🏛️ Government Tech</h3>
+      <div class="preview-grid">
+        <div class="preview-card">
+          <div class="preview-icon">🏛️</div>
+          <h3>Government Tech</h3>
           <p>Insights from working in government QA, digital service delivery, and the unique challenges of public sector technology.</p>
         </div>
         
-        <div class="card">
-          <h3>📋 Quality Assurance</h3>
+        <div class="preview-card">
+          <div class="preview-icon">📋</div>
+          <h3>Quality Assurance</h3>
           <p>Testing strategies, automation techniques, and lessons learned from ensuring reliable software in high-stakes environments.</p>
         </div>
         
-        <div class="card">
-          <h3>🌍 Tech Policy</h3>
+        <div class="preview-card">
+          <div class="preview-icon">🌍</div>
+          <h3>Tech Policy</h3>
           <p>Thoughts on how technology intersects with policy, regulation, and the public interest.</p>
         </div>
         
-        <div class="card">
-          <h3>✈️ Travel & Culture</h3>
+        <div class="preview-card">
+          <div class="preview-icon">✈️</div>
+          <h3>Travel & Culture</h3>
           <p>Stories and reflections from travels, exploring how different places approach technology and governance.</p>
         </div>
       </div>
       
-      <p class="mt-2">
-        <a href="{{ '/feed.xml' | relative_url }}">Subscribe to RSS</a> to be notified when I publish new posts.
-      </p>
+      <div class="rss-subscribe">
+        <p>Want to be notified when I publish new posts?</p>
+        <a href="{{ '/feed.xml' | relative_url }}" class="rss-link">
+          <i data-feather="rss"></i>
+          Subscribe to RSS
+        </a>
+      </div>
     </div>
 
   {% endif %}
@@ -107,9 +116,54 @@ title: Blog
 </section>
 
 <style>
-.post-tags {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+/* Blog Page Styles */
+.hero {
+  text-align: center;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content-section {
+  margin-bottom: 3rem;
+}
+
+/* Post List Styles */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px var(--shadow-hover);
+}
+
+.post-meta {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
 .category {
@@ -117,20 +171,163 @@ title: Blog
   color: var(--accent);
 }
 
+.post-title {
+  margin-bottom: 1rem;
+}
+
+.post-title a {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.post-title a:hover {
+  color: var(--accent);
+}
+
+.post-excerpt {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.post-tags {
+  margin: 1rem 0;
+}
+
+.tag {
+  background: var(--accent);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  margin-bottom: 0.25rem;
+}
+
+.read-more {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.read-more:hover {
+  color: var(--accent-hover);
+}
+
+/* Coming Soon Styles */
+.coming-soon {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.coming-soon h2 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.coming-soon > p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.preview-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.preview-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px var(--shadow-hover);
+}
+
+.preview-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.preview-card h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.preview-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.rss-subscribe {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+}
+
+.rss-subscribe p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.rss-link {
+  display: inline-flex;
+  align-items: center;
+  background: var(--accent);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  gap: 0.5rem;
+}
+
+.rss-link:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  color: white;
+}
+
+.rss-link i {
+  width: 18px;
+  height: 18px;
+}
+
+/* Pagination Styles */
 .pagination {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 1rem;
+  flex-wrap: wrap;
 }
 
 .pagination a,
 .pagination .current {
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   border: 1px solid var(--border);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .pagination .current {
@@ -139,7 +336,66 @@ title: Blog
   border-color: var(--accent);
 }
 
+.pagination a {
+  color: var(--text-primary);
+}
+
 .pagination a:hover {
   background: var(--bg-secondary);
+  transform: translateY(-1px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .preview-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .preview-card {
+    padding: 1.5rem;
+  }
+  
+  .post-item {
+    padding: 1.5rem;
+  }
+  
+  .pagination {
+    gap: 0.5rem;
+  }
+  
+  .pagination a,
+  .pagination .current {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rss-subscribe {
+    padding: 1.5rem;
+  }
+  
+  .rss-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
 }
 </style>
+
+<script>
+// Initialize Feather icons when page loads
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof feather !== 'undefined') {
+    feather.replace();
+  }
+});
+</script>
