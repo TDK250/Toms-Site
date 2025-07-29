@@ -41,6 +41,7 @@ title: Professional
 ## Professional Experience
 
 <div class="experience-carousel-container">
+  <div class="timeline-line"></div>
   <div class="experience-carousel" id="experienceCarousel">
     
     <div class="experience-card">
@@ -51,10 +52,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/pgt-logo.png" alt="Public Guardian and Trustee of BC" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">Public Guardian and Trustee of British Columbia</div>
       </div>
       <div class="timeline-content">
         <h3>Quality Assurance Specialist <span class="remote-tag">Remote</span><span class="temp-tag">Temporary</span></h3>
-        <p class="company">Public Guardian and Trustee of British Columbia | Child and Youth Services</p>
         <ul>
           <li>Reviewing reports of trauma to identify opportunities for victim services or legal intervention</li>
           <li>Using Microsoft Excel to generate KPI reports and identify gaps in service</li>
@@ -71,10 +72,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/pgt-logo.png" alt="Public Guardian and Trustee of BC" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">Public Guardian and Trustee of British Columbia</div>
       </div>
       <div class="timeline-content">
         <h3>Administrative Assistant <span class="hybrid-tag">Hybrid</span></h3>
-        <p class="company">Public Guardian and Trustee of British Columbia | Services to Adults</p>
         <ul>
           <li>Multi-tasked in a fast-paced environment to receive clients and visitors and deliver information about the Public Guardian and Trustee</li>
           <li>Worked with Assessment and Investigative services to contact case participants</li>
@@ -92,10 +93,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/uvic-logo.png" alt="University of Victoria" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">University of Victoria</div>
       </div>
       <div class="timeline-content">
         <h3>Business Co-op and Career Social Media Coordinator <span class="part-time-tag">Part-Time</span></h3>
-        <p class="company">University of Victoria</p>
         <ul>
           <li><strong>Key Achievement:</strong> Increased followers by 86%, engagement by 186%</li>
         </ul>
@@ -110,10 +111,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/uvic-logo.png" alt="University of Victoria" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">University of Victoria</div>
       </div>
       <div class="timeline-content">
         <h3>Business Co-op and Career Social Media and Events Co-op Student <span class="coop-tag">Co-op</span></h3>
-        <p class="company">University of Victoria</p>
         <ul>
           <li>Designed a comprehensive content strategy for the UVic Business Co-op and Career LinkedIn page that resulted in an 86% increase in followership and 186% increase in engagement over the previous term</li>
           <li>Planned and emceed the 2023 "Next Stop Co-op" event, which was attended by over thirty Bachelor of Commerce students</li>
@@ -129,10 +130,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/vbis-logo.png" alt="Victoria Brain Injury Society" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">Victoria Brain Injury Society</div>
       </div>
       <div class="timeline-content">
         <h3>Board Governance Coordinator <span class="remote-tag">Remote</span></h3>
-        <p class="company">Victoria Brain Injury Society</p>
         <ul>
           <li>Wrote and designed a detailed strategic plan and tactical plan, which will guide the governance of the organization for the next four years</li>
           <li>Worked closely with the Executive Director and Board President to write and update job and committee descriptions for the board</li>
@@ -149,10 +150,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/carr-house-logo.png" alt="Carr House" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">Carr House</div>
       </div>
       <div class="timeline-content">
         <h3>Photographer & Videographer <span class="event-based-tag">Event-Based</span></h3>
-        <p class="company">Carr House</p>
         <ul>
           <li>Official photographer for Carr House's first annual pet parade featuring special guest <strong>The Honourable Janet Austin, Lieutenant Governor of British Columbia</strong></li>
           <li>Edited short film for Victoria's Poet Laureate, John Barton, on behalf of the City of Victoria and Carr House</li>
@@ -169,10 +170,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/uvic-consulting-logo.png" alt="UVIC Consulting Group" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">UVIC Consulting Group</div>
       </div>
       <div class="timeline-content">
         <h3>Consulting Director</h3>
-        <p class="company">UVIC Consulting Group</p>
         <ul>
           <li>Project managed three paid consultation projects for local businesses</li>
           <li>Mentored student consultants to build skills and ensure timely project completion</li>
@@ -189,10 +190,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/vbis-logo.png" alt="Victoria Brain Injury Society" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">Victoria Brain Injury Society</div>
       </div>
       <div class="timeline-content">
         <h3>Special Projects Coordinator <span class="coop-tag">Co-op</span></h3>
-        <p class="company">Victoria Brain Injury Society</p>
         <div class="achievement-highlight">
           <strong>Major Achievement:</strong> Managed the first annual Toss the Boss event, raising $87,000 for brain injury survivors through P2P fundraising with over 250 attendees from 29 participating companies and 9 sponsors
         </div>
@@ -210,10 +211,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/carr-house-logo.png" alt="Carr House" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">Carr House</div>
       </div>
       <div class="timeline-content">
         <h3>Assistant Site Manager</h3>
-        <p class="company">Carr House</p>
         <ul>
           <li>Provided full-time interpretation of the historic site, leading guests on private tours and introducing them to the life and work of Emily Carr, the significance of the house, and the indigenous context</li>
           <li>Assessed, documented, and packed object collections</li>
@@ -233,10 +234,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/gauthier-homes-logo.png" alt="Marc Gauthier Homes" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">Marc Gauthier Homes</div>
       </div>
       <div class="timeline-content">
         <h3>Construction Worker</h3>
-        <p class="company">Marc Gauthier Homes</p>
         <ul>
           <li>Supported experienced workers in construction and repair work through reliable completion of labour intensive and time consuming tasks</li>
         </ul>
@@ -251,10 +252,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/thrifty-foods-logo.png" alt="Thrifty Foods" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">Thrifty Foods</div>
       </div>
       <div class="timeline-content">
         <h3>Grocery Stock Clerk</h3>
-        <p class="company">Thrifty Foods</p>
         <ul>
           <li>Stocked inventory and provided friendly customer service in a fast-paced environment</li>
         </ul>
@@ -269,10 +270,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/black-press-logo.png" alt="Black Press Media" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">Black Press Media</div>
       </div>
       <div class="timeline-content">
         <h3>Newspaper Carrier</h3>
-        <p class="company">Black Press Media</p>
         <ul>
           <li>Delivered newspapers twice weekly for two routes</li>
         </ul>
@@ -291,6 +292,7 @@ title: Professional
 ## Leadership & Volunteer Experience
 
 <div class="experience-carousel-container">
+  <div class="timeline-line volunteer-timeline"></div>
   <div class="experience-carousel" id="volunteerCarousel">
     
     <div class="experience-card">
@@ -301,10 +303,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/uvic-logo.png" alt="University of Victoria" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">University of Victoria</div>
       </div>
       <div class="timeline-content">
         <h3>Senator (Elected Commerce Student Representative)</h3>
-        <p class="company">University of Victoria</p>
         <p>Commerce student representative in the UVic Senate. Serving on UVic Senate Committee on Appeals.</p>
       </div>
     </div>
@@ -317,10 +319,10 @@ title: Professional
             <img src="{{ site.baseurl }}/assets/images/jbcc-logo.png" alt="James Bay Community Centre" class="company-logo" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
+        <div class="timeline-company">James Bay Community Centre</div>
       </div>
       <div class="timeline-content">
         <h3>Vice President of the Board</h3>
-        <p class="company">James Bay Community Centre</p>
         <ul>
           <li>Worked with board and community stakeholders to directly supervise executive director, oversee major projects and changes, make decisions on human resources, finances, programs, and strategic planning in general, committee and executive meetings</li>
           <li>Filled in for the board president when necessary</li>
@@ -407,7 +409,7 @@ title: Professional
 <script>
 function scrollCarousel(direction) {
   const carousel = document.getElementById('experienceCarousel');
-  const cardWidth = carousel.querySelector('.experience-card').offsetWidth + 48; // card width + gap
+  const cardWidth = carousel.querySelector('.experience-card').offsetWidth + 48; // card width + 3rem gap
   carousel.scrollBy({
     left: direction * cardWidth,
     behavior: 'smooth'
@@ -416,14 +418,14 @@ function scrollCarousel(direction) {
 
 function scrollVolunteerCarousel(direction) {
   const carousel = document.getElementById('volunteerCarousel');
-  const cardWidth = carousel.querySelector('.experience-card').offsetWidth + 48; // card width + gap
+  const cardWidth = carousel.querySelector('.experience-card').offsetWidth + 48; // card width + 3rem gap
   carousel.scrollBy({
     left: direction * cardWidth,
     behavior: 'smooth'
   });
 }
 
-// Check if carousels need scroll hints
+// Check if carousels need scroll hints and adjust timeline lines
 function checkScrollNeeded() {
   const volunteerCarousel = document.getElementById('volunteerCarousel');
   const volunteerScrollHint = document.getElementById('volunteerScrollHint');
@@ -433,6 +435,20 @@ function checkScrollNeeded() {
       volunteerScrollHint.style.display = 'inline';
     } else {
       volunteerScrollHint.style.display = 'none';
+    }
+  }
+  
+  // Adjust volunteer timeline line width based on content
+  const volunteerTimeline = document.querySelector('.volunteer-timeline');
+  if (volunteerCarousel && volunteerTimeline) {
+    const cardCount = volunteerCarousel.children.length;
+    if (cardCount <= 2) {
+      // For 2 or fewer cards, show smaller timeline
+      const containerWidth = volunteerCarousel.parentElement.offsetWidth;
+      const neededWidth = Math.min(containerWidth - 320, cardCount * 190);
+      volunteerTimeline.style.left = '190px';
+      volunteerTimeline.style.right = 'auto';
+      volunteerTimeline.style.width = neededWidth + 'px';
     }
   }
 }
@@ -568,6 +584,22 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
   position: relative;
 }
 
+/* Fixed Timeline Line - doesn't scroll */
+.timeline-line {
+  position: absolute;
+  top: 6rem;
+  left: 160px;
+  right: 160px;
+  height: 3px;
+  background: var(--accent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.volunteer-timeline {
+  /* Dynamic sizing handled by JavaScript */
+}
+
 .experience-carousel {
   display: flex;
   gap: 3rem;
@@ -592,21 +624,9 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
   border-radius: 4px;
 }
 
-/* Horizontal Timeline Line */
-.experience-carousel::before {
-  content: '';
-  position: absolute;
-  top: 6rem;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--accent);
-  z-index: 1;
-}
-
 .experience-card {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 380px;
+  max-width: 380px;
   background: var(--bg-secondary);
   border-radius: 0.75rem;
   border: 1px solid var(--border);
@@ -621,12 +641,12 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
   transform: translateY(-4px);
 }
 
-/* Timeline Header with Logo and Date */
+/* Timeline Header with Logo, Date, and Company */
 .timeline-header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1.5rem;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
   background: var(--bg-primary);
   border-bottom: 1px solid var(--border);
   position: relative;
@@ -651,7 +671,6 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
   display: flex;
   align-items: center;
   gap: 1rem;
-  flex: 1;
 }
 
 .experience-date {
@@ -682,24 +701,24 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
   border-radius: 4px;
 }
 
+.timeline-company {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
 /* Card Content */
 .timeline-content {
   padding: 1.5rem;
 }
 
 .experience-card h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: var(--text-primary);
   line-height: 1.3;
   font-size: 1.1rem;
-}
-
-.company {
-  color: var(--text-secondary);
-  font-weight: 500;
-  margin-bottom: 1rem;
-  font-style: italic;
-  font-size: 0.95rem;
 }
 
 .experience-card ul {
