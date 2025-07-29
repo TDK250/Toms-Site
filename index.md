@@ -63,8 +63,6 @@ title: Home
     </div>
     <div class="scroll-hint">← Scroll to explore my interests →</div>
   </div>
-
-  <p class="site-description">This site is where I share thoughts on building better systems, lessons learned from diverse experiences, and projects that showcase how we can use our skills to support people who need it most.</p>
 </section>
 
 <section class="highlights-section">
