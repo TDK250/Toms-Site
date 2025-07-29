@@ -616,7 +616,7 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
   display: flex;
   gap: 3rem; /* 48px */
   overflow-x: auto;
-  padding: 3rem 0 2rem 0;
+  padding: 4rem 0 2rem 0; /* Increased top padding for date and logo */
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   position: relative;
@@ -645,8 +645,8 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
   transition: transform 0.3s ease;
   flex-shrink: 0;
   position: relative;
-  margin-top: 1.5rem;
-  overflow: hidden;
+  margin-top: 2.5rem; /* More space for floating elements */
+  overflow: visible; /* Allow elements to show outside card */
 }
 
 .experience-card:hover {
@@ -656,7 +656,7 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
 /* Date floating above card */
 .card-date {
   position: absolute;
-  top: -1.5rem;
+  top: -2.5rem; /* Moved further up */
   left: 50%;
   transform: translateX(-50%);
   font-weight: 600;
@@ -674,7 +674,7 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
 /* Logo circle intersecting with card */
 .logo-circle {
   position: absolute;
-  top: -25px;
+  top: -35px; /* Moved up to avoid overlap with date */
   left: 50%;
   transform: translateX(-50%);
   width: 50px;
