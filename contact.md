@@ -3,7 +3,7 @@ layout: default
 title: Contact
 ---
 
-<div class="hero" style="margin-bottom: 3rem;">
+<div class="hero">
   <h1>Get In Touch</h1>
   <p>I'm always interested in connecting with anyone who shares similar interests, whether it's for professional opportunities, collaboration, or just a friendly conversation.</p>
 </div>
@@ -88,7 +88,25 @@ title: Contact
 </div>
 
 <style>
-/* Contact Page Specific Styles */
+/* Contact Page Styles */
+.hero {
+  text-align: center;
+  padding: 3rem 0;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -99,40 +117,21 @@ title: Contact
 .contact-card {
   background: var(--bg-secondary);
   border: 1px solid var(--border);
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   padding: 2rem;
   text-align: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px var(--shadow);
-  position: relative;
-  overflow: hidden;
-}
-
-.contact-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-hover));
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.contact-card:hover::before {
-  transform: scaleX(1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px var(--shadow-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px var(--shadow-hover);
 }
 
 .contact-icon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+  background: var(--accent);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -142,7 +141,7 @@ title: Contact
 }
 
 .contact-card:hover .contact-icon {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1);
 }
 
 .contact-icon i {
@@ -189,6 +188,11 @@ title: Contact
   padding: 2rem;
   margin: 3rem 0;
   border: 1px solid var(--border);
+  transition: transform 0.3s ease;
+}
+
+.availability-section:hover {
+  transform: translateY(-2px);
 }
 
 .availability-content h2 {
@@ -212,6 +216,12 @@ title: Contact
   background: var(--bg-primary);
   border-radius: 0.5rem;
   border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.detail-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--shadow-hover);
 }
 
 .detail-icon {
@@ -234,7 +244,7 @@ title: Contact
   font-size: 0.9rem;
 }
 
-/* Responsive adjustments */
+/* Mobile responsive */
 @media (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr;
@@ -243,6 +253,14 @@ title: Contact
   
   .contact-card {
     padding: 1.5rem;
+  }
+  
+  .hero {
+    padding: 2rem 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
   }
   
   .availability-section {
