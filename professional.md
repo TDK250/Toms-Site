@@ -616,7 +616,7 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
   display: flex;
   gap: 3rem; /* 48px */
   overflow-x: auto;
-  padding: 4rem 0 2rem 0; /* Increased top padding for date and logo */
+  padding: 3rem 0 4rem 0; /* More bottom padding for dates */
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   position: relative;
@@ -645,7 +645,8 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
   transition: transform 0.3s ease;
   flex-shrink: 0;
   position: relative;
-  margin-top: 2.5rem; /* More space for floating elements */
+  margin-top: 2rem; /* Space for logo */
+  margin-bottom: 2.5rem; /* Space for date at bottom */
   overflow: visible; /* Allow elements to show outside card */
 }
 
@@ -653,10 +654,10 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
   transform: translateY(-4px);
 }
 
-/* Date floating above card */
+/* Date floating below card */
 .card-date {
   position: absolute;
-  top: -2.5rem; /* Moved further up */
+  bottom: -2.5rem; /* Position below card */
   left: 50%;
   transform: translateX(-50%);
   font-weight: 600;
@@ -671,14 +672,14 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Logo circle intersecting with card */
+/* Larger logo circle intersecting with card */
 .logo-circle {
   position: absolute;
-  top: -35px; /* Moved up to avoid overlap with date */
+  top: -40px; /* Position to intersect with card top */
   left: 50%;
   transform: translateX(-50%);
-  width: 50px;
-  height: 50px;
+  width: 70px; /* Increased from 50px */
+  height: 70px; /* Increased from 50px */
   background: white;
   border-radius: 50%;
   border: 3px solid var(--accent);
@@ -695,8 +696,8 @@ document.getElementById('volunteerCarousel').addEventListener('touchend', () => 
 }
 
 .company-logo {
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 75%; /* Slightly larger logo within circle */
+  max-height: 75%;
   object-fit: contain;
   border-radius: 4px;
 }
