@@ -38,200 +38,305 @@ title: Professional
   </div>
 </div>
 
-## Professional Timeline
+## Professional Experience
 
-<div class="timeline">
-  
-  <div class="timeline-item">
-    <div class="timeline-date">Jan 2025 - Present</div>
-    <div class="timeline-content">
-      <h3>Quality Assurance Specialist <span class="remote-tag">Remote</span><span class="temp-tag">Temporary Assignment</span></h3>
-      <p class="company">Public Guardian and Trustee of British Columbia | Child and Youth Services</p>
-      <ul>
-        <li>Reviewing reports of trauma to identify opportunities for victim services or legal intervention</li>
-        <li>Using Microsoft Excel to generate KPI reports and identify gaps in service</li>
-        <li>Collaborating with fiduciaries to ensure quality of service for clients under the age of 19</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">Apr 2024 - Jan 2025</div>
-    <div class="timeline-content">
-      <h3>Administrative Assistant <span class="hybrid-tag">Hybrid</span></h3>
-      <p class="company">Public Guardian and Trustee of British Columbia | Services to Adults</p>
-      <ul>
-        <li>Multi-tasked in a fast-paced environment to receive clients and visitors and deliver information about the Public Guardian and Trustee</li>
-        <li>Worked with Assessment and Investigative services to contact case participants</li>
-        <li>Received and categorized mail and office correspondence</li>
-        <li>Collaborated with Case Managers to perform ad hoc administrative duties</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">Jun 2023 - Mar 2024</div>
-    <div class="timeline-content">
-      <h3>Business Co-op and Career Social Media Coordinator <span class="part-time-tag">Part-Time</span></h3>
-      <p class="company">University of Victoria</p>
-      <ul>
-        <li><strong>Key Achievement:</strong> Increased followers by 86%, engagement by 186%</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">Feb 2023 - Apr 2023</div>
-    <div class="timeline-content">
-      <h3>Business Co-op and Career Social Media and Events Co-op Student <span class="coop-tag">Co-op</span></h3>
-      <p class="company">University of Victoria</p>
-      <ul>
-        <li>Designed a comprehensive content strategy for the UVic Business Co-op and Career LinkedIn page that resulted in an 86% increase in followership and 186% increase in engagement over the previous term</li>
-        <li>Planned and emceed the 2023 "Next Stop Co-op" event, which was attended by over thirty Bachelor of Commerce students</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">Feb 2023 - Apr 2023</div>
-    <div class="timeline-content">
-      <h3>Board Governance Coordinator <span class="remote-tag">Remote</span></h3>
-      <p class="company">Victoria Brain Injury Society</p>
-      <ul>
-        <li>Wrote and designed a detailed strategic plan and tactical plan, which will guide the governance of the organization for the next four years</li>
-        <li>Worked closely with the Executive Director and Board President to write and update job and committee descriptions for the board</li>
-        <li>Designed and implemented a new information management system through SharePoint</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">Nov 2020 - Feb 2022</div>
-    <div class="timeline-content">
-      <h3>Photographer & Videographer <span class="event-based-tag">Event-Based</span></h3>
-      <p class="company">Carr House</p>
-      <ul>
-        <li>Official photographer for Carr House's first annual pet parade featuring special guest <strong>The Honourable Janet Austin, Lieutenant Governor of British Columbia</strong></li>
-        <li>Edited short film for Victoria's Poet Laureate, John Barton, on behalf of the City of Victoria and Carr House</li>
-        <li>Video published on City of Victoria website</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">Jun 2021 - Jun 2022</div>
-    <div class="timeline-content">
-      <h3>Consulting Director</h3>
-      <p class="company">UVIC Consulting Group</p>
-      <ul>
-        <li>Project managed three paid consultation projects for local businesses</li>
-        <li>Mentored student consultants to build skills and ensure timely project completion</li>
-        <li><strong>Deliverables:</strong> Market research and analysis, ads, branding, strategy and partnership packages</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">May 2021 - Oct 2021</div>
-    <div class="timeline-content">
-      <h3>Special Projects Coordinator <span class="coop-tag">Co-op</span></h3>
-      <p class="company">Victoria Brain Injury Society</p>
-      <div class="achievement-highlight major">
-        <strong>Major Achievement:</strong> Managed the first annual Toss the Boss event, raising $87,000 for brain injury survivors through P2P fundraising with over 250 attendees from 29 participating companies and 9 sponsors
-      </div>
-      <ul>
-        <li>Responsible for budgeting, frequent status reports, equipment procurement, sponsorship solicitation, committee management, contracts, branding, customer support, volunteer coordination, content creation, and marketing</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">Apr 2020 - Feb 2021</div>
-    <div class="timeline-content">
-      <h3>Assistant Site Manager</h3>
-      <p class="company">Carr House</p>
-      <ul>
-        <li>Provided full-time interpretation of the historic site, leading guests on private tours and introducing them to the life and work of Emily Carr, the significance of the house, and the indigenous context</li>
-        <li>Assessed, documented, and packed object collections</li>
-        <li>Re-established online presence and marketing strategy, including website, social media, and local search services</li>
-        <li>Designed and built online shop and booking system and redesigned physical gift shop including installing a new POS system</li>
-        <li>Conducted regular security and facility checks</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Dropdown Section for Earlier Experience -->
-  <div class="experience-dropdown">
-    <button class="dropdown-toggle" onclick="toggleEarlyExperience()">
-      <span class="dropdown-text">Show Earlier Experience</span>
-      <span class="dropdown-arrow">▼</span>
-    </button>
+<div class="experience-carousel-container">
+  <div class="experience-carousel" id="experienceCarousel">
     
-    <div class="dropdown-content" id="earlyExperience">
-      <div class="timeline-item">
-        <div class="timeline-date">Mar 2020 - May 2020</div>
-        <div class="timeline-content">
-          <h3>Construction Worker</h3>
-          <p class="company">Marc Gauthier Homes</p>
-          <ul>
-            <li>Supported experienced workers in construction and repair work through reliable completion of labour intensive and time consuming tasks</li>
-          </ul>
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">Jan 2025 - Present</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/pgt-logo.png" alt="Public Guardian and Trustee of BC" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
         </div>
       </div>
-
-      <div class="timeline-item">
-        <div class="timeline-date">Nov 2016 - Sep 2019</div>
-        <div class="timeline-content">
-          <h3>Grocery Stock Clerk</h3>
-          <p class="company">Thrifty Foods</p>
-          <ul>
-            <li>Stocked inventory and provided friendly customer service in a fast-paced environment</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-date">Aug 2013 - Sep 2016</div>
-        <div class="timeline-content">
-          <h3>Newspaper Carrier</h3>
-          <p class="company">Black Press Media</p>
-          <ul>
-            <li>Delivered newspapers twice weekly for two routes</li>
-          </ul>
-        </div>
+      <div class="timeline-content">
+        <h3>Quality Assurance Specialist <span class="remote-tag">Remote</span><span class="temp-tag">Temporary</span></h3>
+        <p class="company">Public Guardian and Trustee of British Columbia | Child and Youth Services</p>
+        <ul>
+          <li>Reviewing reports of trauma to identify opportunities for victim services or legal intervention</li>
+          <li>Using Microsoft Excel to generate KPI reports and identify gaps in service</li>
+          <li>Collaborating with fiduciaries to ensure quality of service for clients under the age of 19</li>
+        </ul>
       </div>
     </div>
-  </div>
 
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">Apr 2024 - Jan 2025</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/pgt-logo.png" alt="Public Guardian and Trustee of BC" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h3>Administrative Assistant <span class="hybrid-tag">Hybrid</span></h3>
+        <p class="company">Public Guardian and Trustee of British Columbia | Services to Adults</p>
+        <ul>
+          <li>Multi-tasked in a fast-paced environment to receive clients and visitors and deliver information about the Public Guardian and Trustee</li>
+          <li>Worked with Assessment and Investigative services to contact case participants</li>
+          <li>Received and categorized mail and office correspondence</li>
+          <li>Collaborated with Case Managers to perform ad hoc administrative duties</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">Jun 2023 - Mar 2024</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/uvic-logo.png" alt="University of Victoria" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h3>Business Co-op and Career Social Media Coordinator <span class="part-time-tag">Part-Time</span></h3>
+        <p class="company">University of Victoria</p>
+        <ul>
+          <li><strong>Key Achievement:</strong> Increased followers by 86%, engagement by 186%</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">Feb 2023 - Apr 2023</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/uvic-logo.png" alt="University of Victoria" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h3>Business Co-op and Career Social Media and Events Co-op Student <span class="coop-tag">Co-op</span></h3>
+        <p class="company">University of Victoria</p>
+        <ul>
+          <li>Designed a comprehensive content strategy for the UVic Business Co-op and Career LinkedIn page that resulted in an 86% increase in followership and 186% increase in engagement over the previous term</li>
+          <li>Planned and emceed the 2023 "Next Stop Co-op" event, which was attended by over thirty Bachelor of Commerce students</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">Feb 2023 - Apr 2023</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/vbis-logo.png" alt="Victoria Brain Injury Society" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h3>Board Governance Coordinator <span class="remote-tag">Remote</span></h3>
+        <p class="company">Victoria Brain Injury Society</p>
+        <ul>
+          <li>Wrote and designed a detailed strategic plan and tactical plan, which will guide the governance of the organization for the next four years</li>
+          <li>Worked closely with the Executive Director and Board President to write and update job and committee descriptions for the board</li>
+          <li>Designed and implemented a new information management system through SharePoint</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">Nov 2020 - Feb 2022</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/carr-house-logo.png" alt="Carr House" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h3>Photographer & Videographer <span class="event-based-tag">Event-Based</span></h3>
+        <p class="company">Carr House</p>
+        <ul>
+          <li>Official photographer for Carr House's first annual pet parade featuring special guest <strong>The Honourable Janet Austin, Lieutenant Governor of British Columbia</strong></li>
+          <li>Edited short film for Victoria's Poet Laureate, John Barton, on behalf of the City of Victoria and Carr House</li>
+          <li>Video published on City of Victoria website</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">Jun 2021 - Jun 2022</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/uvic-consulting-logo.png" alt="UVIC Consulting Group" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h3>Consulting Director</h3>
+        <p class="company">UVIC Consulting Group</p>
+        <ul>
+          <li>Project managed three paid consultation projects for local businesses</li>
+          <li>Mentored student consultants to build skills and ensure timely project completion</li>
+          <li><strong>Deliverables:</strong> Market research and analysis, ads, branding, strategy and partnership packages</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">May 2021 - Oct 2021</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/vbis-logo.png" alt="Victoria Brain Injury Society" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h3>Special Projects Coordinator <span class="coop-tag">Co-op</span></h3>
+        <p class="company">Victoria Brain Injury Society</p>
+        <div class="achievement-highlight">
+          <strong>Major Achievement:</strong> Managed the first annual Toss the Boss event, raising $87,000 for brain injury survivors through P2P fundraising with over 250 attendees from 29 participating companies and 9 sponsors
+        </div>
+        <ul>
+          <li>Responsible for budgeting, frequent status reports, equipment procurement, sponsorship solicitation, committee management, contracts, branding, customer support, volunteer coordination, content creation, and marketing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">Apr 2020 - Feb 2021</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/carr-house-logo.png" alt="Carr House" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h3>Assistant Site Manager</h3>
+        <p class="company">Carr House</p>
+        <ul>
+          <li>Provided full-time interpretation of the historic site, leading guests on private tours and introducing them to the life and work of Emily Carr, the significance of the house, and the indigenous context</li>
+          <li>Assessed, documented, and packed object collections</li>
+          <li>Re-established online presence and marketing strategy, including website, social media, and local search services</li>
+          <li>Designed and built online shop and booking system and redesigned physical gift shop including installing a new POS system</li>
+          <li>Conducted regular security and facility checks</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Earlier Experience -->
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">Mar 2020 - May 2020</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/gauthier-homes-logo.png" alt="Marc Gauthier Homes" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h3>Construction Worker</h3>
+        <p class="company">Marc Gauthier Homes</p>
+        <ul>
+          <li>Supported experienced workers in construction and repair work through reliable completion of labour intensive and time consuming tasks</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">Nov 2016 - Sep 2019</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/thrifty-foods-logo.png" alt="Thrifty Foods" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h3>Grocery Stock Clerk</h3>
+        <p class="company">Thrifty Foods</p>
+        <ul>
+          <li>Stocked inventory and provided friendly customer service in a fast-paced environment</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">Aug 2013 - Sep 2016</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/black-press-logo.png" alt="Black Press Media" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h3>Newspaper Carrier</h3>
+        <p class="company">Black Press Media</p>
+        <ul>
+          <li>Delivered newspapers twice weekly for two routes</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="carousel-nav">
+    <button class="nav-btn prev-btn" onclick="scrollCarousel(-1)">←</button>
+    <span class="scroll-hint">Scroll to explore all experience →</span>
+    <button class="nav-btn next-btn" onclick="scrollCarousel(1)">→</button>
+  </div>
 </div>
 
 ## Leadership & Volunteer Experience
 
-<div class="volunteer-section">
+<div class="experience-carousel-container">
+  <div class="experience-carousel" id="volunteerCarousel">
+    
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">Jul 2022 - Jul 2023</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/uvic-logo.png" alt="University of Victoria" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h3>Senator (Elected Commerce Student Representative)</h3>
+        <p class="company">University of Victoria</p>
+        <p>Commerce student representative in the UVic Senate. Serving on UVic Senate Committee on Appeals.</p>
+      </div>
+    </div>
+
+    <div class="experience-card">
+      <div class="timeline-header">
+        <div class="timeline-date-logo">
+          <div class="experience-date">Nov 2020 - Nov 2023</div>
+          <div class="company-logo-container">
+            <img src="{{ site.baseurl }}/assets/images/jbcc-logo.png" alt="James Bay Community Centre" class="company-logo" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>
+      <div class="timeline-content">
+        <h3>Vice President of the Board</h3>
+        <p class="company">James Bay Community Centre</p>
+        <ul>
+          <li>Worked with board and community stakeholders to directly supervise executive director, oversee major projects and changes, make decisions on human resources, finances, programs, and strategic planning in general, committee and executive meetings</li>
+          <li>Filled in for the board president when necessary</li>
+          <li>Participated in the creation of a four-year strategic plan</li>
+          <li>Member on the committee for wage grid adjustment</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
   
-  <div class="volunteer-item highlight-volunteer">
-    <div class="volunteer-header">
-      <h3>Senator (Elected Commerce Student Representative)</h3>
-      <span class="volunteer-date">Jul 2022 - Jul 2023</span>
-    </div>
-    <p class="organization">University of Victoria</p>
-    <p>Commerce student representative in the UVic Senate. Serving on UVic Senate Committee on Appeals.</p>
+  <div class="carousel-nav">
+    <button class="nav-btn prev-btn" onclick="scrollVolunteerCarousel(-1)">←</button>
+    <span class="scroll-hint" id="volunteerScrollHint" style="display: none;">Scroll to explore leadership experience →</span>
+    <button class="nav-btn next-btn" onclick="scrollVolunteerCarousel(1)">→</button>
   </div>
-
-  <div class="volunteer-item highlight-volunteer">
-    <div class="volunteer-header">
-      <h3>Vice President of the Board</h3>
-      <span class="volunteer-date">Nov 2020 - Nov 2023</span>
-    </div>
-    <p class="organization">James Bay Community Centre</p>
-    <ul>
-      <li>Worked with board and community stakeholders to directly supervise executive director, oversee major projects and changes, make decisions on human resources, finances, programs, and strategic planning in general, committee and executive meetings</li>
-      <li>Filled in for the board president when necessary</li>
-      <li>Participated in the creation of a four-year strategic plan</li>
-      <li>Member on the committee for wage grid adjustment</li>
-    </ul>
-  </div>
-
 </div>
 
 ## Accomplishments & Recognition
@@ -289,52 +394,6 @@ title: Professional
   </div>
 </div>
 
-## Core Competencies
-
-<div class="skills-grid">
-  <div class="skill-category">
-    <h3>Government & Public Service</h3>
-    <ul>
-      <li>Quality assurance in government settings</li>
-      <li>Stakeholder engagement</li>
-      <li>Compliance and regulatory knowledge</li>
-      <li>Vulnerable population services</li>
-    </ul>
-  </div>
-
-  <div class="skill-category">
-    <h3>Project Management</h3>
-    <ul>
-      <li>Change management processes</li>
-      <li>Event planning and execution</li>
-      <li>Budget and financial management</li>
-      <li>Cross-functional team leadership</li>
-    </ul>
-  </div>
-
-  <div class="skill-category">
-    <h3>Business & Strategy</h3>
-    <ul>
-      <li>Strategic planning and implementation</li>
-      <li>Board governance and development</li>
-      <li>Digital marketing and content strategy</li>
-      <li>Entrepreneurship and innovation</li>
-      <li>Consulting and new business development</li>
-    </ul>
-  </div>
-
-  <div class="skill-category">
-    <h3>Leadership & Communication</h3>
-    <ul>
-      <li>Team supervision and mentoring</li>
-      <li>Stakeholder relationship management</li>
-      <li>Public speaking and interpretation</li>
-      <li>Community engagement</li>
-      <li>Photography and videography</li>
-    </ul>
-  </div>
-</div>
-
 ---
 
 <div class="contact-cta">
@@ -346,33 +405,85 @@ title: Professional
 </div>
 
 <script>
-function toggleEarlyExperience() {
-  const content = document.getElementById('earlyExperience');
-  const button = document.querySelector('.dropdown-toggle');
-  const text = button.querySelector('.dropdown-text');
-  const arrow = button.querySelector('.dropdown-arrow');
+function scrollCarousel(direction) {
+  const carousel = document.getElementById('experienceCarousel');
+  const cardWidth = carousel.querySelector('.experience-card').offsetWidth + 48; // card width + gap
+  carousel.scrollBy({
+    left: direction * cardWidth,
+    behavior: 'smooth'
+  });
+}
+
+function scrollVolunteerCarousel(direction) {
+  const carousel = document.getElementById('volunteerCarousel');
+  const cardWidth = carousel.querySelector('.experience-card').offsetWidth + 48; // card width + gap
+  carousel.scrollBy({
+    left: direction * cardWidth,
+    behavior: 'smooth'
+  });
+}
+
+// Check if carousels need scroll hints
+function checkScrollNeeded() {
+  const volunteerCarousel = document.getElementById('volunteerCarousel');
+  const volunteerScrollHint = document.getElementById('volunteerScrollHint');
   
-  if (content.style.display === 'none' || content.style.display === '') {
-    content.style.display = 'block';
-    text.textContent = 'Hide Earlier Experience';
-    arrow.textContent = '▲';
-    button.classList.add('active');
-  } else {
-    content.style.display = 'none';
-    text.textContent = 'Show Earlier Experience';
-    arrow.textContent = '▼';
-    button.classList.remove('active');
+  if (volunteerCarousel && volunteerScrollHint) {
+    if (volunteerCarousel.scrollWidth > volunteerCarousel.clientWidth) {
+      volunteerScrollHint.style.display = 'inline';
+    } else {
+      volunteerScrollHint.style.display = 'none';
+    }
   }
 }
 
-// Initialize dropdown as hidden
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('earlyExperience').style.display = 'none';
+// Check on load and resize
+window.addEventListener('load', checkScrollNeeded);
+window.addEventListener('resize', checkScrollNeeded);
+
+// Touch/swipe support for mobile
+let startX = 0;
+let scrollLeft = 0;
+
+// Experience carousel touch support
+document.getElementById('experienceCarousel').addEventListener('touchstart', (e) => {
+  startX = e.touches[0].pageX;
+  scrollLeft = e.currentTarget.scrollLeft;
+});
+
+document.getElementById('experienceCarousel').addEventListener('touchmove', (e) => {
+  if (!startX) return;
+  
+  const x = e.touches[0].pageX;
+  const walk = (startX - x) * 2;
+  e.currentTarget.scrollLeft = scrollLeft + walk;
+});
+
+document.getElementById('experienceCarousel').addEventListener('touchend', () => {
+  startX = 0;
+});
+
+// Volunteer carousel touch support
+document.getElementById('volunteerCarousel').addEventListener('touchstart', (e) => {
+  startX = e.touches[0].pageX;
+  scrollLeft = e.currentTarget.scrollLeft;
+});
+
+document.getElementById('volunteerCarousel').addEventListener('touchmove', (e) => {
+  if (!startX) return;
+  
+  const x = e.touches[0].pageX;
+  const walk = (startX - x) * 2;
+  e.currentTarget.scrollLeft = scrollLeft + walk;
+});
+
+document.getElementById('volunteerCarousel').addEventListener('touchend', () => {
+  startX = 0;
 });
 </script>
 
 <style>
-/* Enhanced Professional Page Styles */
+/* Simple, Clean Styles */
 .professional-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -384,18 +495,16 @@ document.addEventListener('DOMContentLoaded', function() {
   padding: 2rem;
   margin-top: 2rem;
   border: 1px solid var(--border);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .career-profile:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px var(--shadow-hover);
 }
 
 .career-profile h2 {
   color: var(--accent);
   margin-bottom: 1rem;
-  font-weight: 600;
 }
 
 .education-section {
@@ -407,12 +516,11 @@ document.addEventListener('DOMContentLoaded', function() {
   border-radius: 0.75rem;
   padding: 2rem;
   border: 1px solid var(--border);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 .degree-info:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px var(--shadow-hover);
 }
 
 .institution {
@@ -447,82 +555,143 @@ document.addEventListener('DOMContentLoaded', function() {
   background: var(--bg-primary);
   border-radius: 0.5rem;
   border: 1px solid var(--border);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .highlight-item:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px var(--shadow-hover);
 }
 
-.timeline {
-  position: relative;
-  padding-left: 2rem;
+/* Horizontal Timeline for Experience */
+.experience-carousel-container {
   margin: 2rem 0;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: linear-gradient(to bottom, var(--accent), var(--accent-hover), var(--accent));
-  border-radius: 1.5px;
-}
-
-.timeline-item {
   position: relative;
-  margin-bottom: 2.5rem;
-  padding-left: 2.5rem;
 }
 
-.timeline-item::before {
+.experience-carousel {
+  display: flex;
+  gap: 3rem;
+  overflow-x: auto;
+  padding: 3rem 0 2rem 0;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+.experience-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.experience-carousel::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+  border-radius: 4px;
+}
+
+.experience-carousel::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+/* Horizontal Timeline Line */
+.experience-carousel::before {
   content: '';
   position: absolute;
-  left: -0.75rem;
-  top: 0.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+  top: 6rem;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent);
+  z-index: 1;
+}
+
+.experience-card {
+  min-width: 320px;
+  max-width: 320px;
+  background: var(--bg-secondary);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Timeline Header with Logo and Date */
+.timeline-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+/* Timeline Dot */
+.timeline-header::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: var(--accent);
   border-radius: 50%;
-  border: 4px solid var(--bg-primary);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+  border: 3px solid var(--bg-primary);
+  z-index: 2;
 }
 
-.timeline-item:hover::before {
-  transform: scale(1.3);
-  box-shadow: 0 0 0 8px rgba(52, 152, 219, 0.15);
+.timeline-date-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
 }
 
-.timeline-date {
+.experience-date {
   font-weight: 600;
   color: var(--accent);
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  margin: 0;
 }
 
+/* Company Logo Styling */
+.company-logo-container {
+  width: 45px;
+  height: 45px;
+  background: white;
+  border-radius: 8px;
+  padding: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.company-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Card Content */
 .timeline-content {
-  background: var(--bg-secondary);
-  border-radius: 0.75rem;
   padding: 1.5rem;
-  border: 1px solid var(--border);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.timeline-content:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px var(--shadow-hover);
-}
-
-.timeline-content h3 {
-  margin-bottom: 0.75rem;
+.experience-card h3 {
+  margin-bottom: 0.5rem;
   color: var(--text-primary);
-  font-weight: 600;
+  line-height: 1.3;
+  font-size: 1.1rem;
 }
 
 .company {
@@ -530,23 +699,35 @@ document.addEventListener('DOMContentLoaded', function() {
   font-weight: 500;
   margin-bottom: 1rem;
   font-style: italic;
+  font-size: 0.95rem;
 }
 
-/* Simple Tag Styles with Distinct Colors */
-.remote-tag, .hybrid-tag, .coop-tag, .temp-tag, .part-time-tag, .pilot-tag, .freelance-tag, .event-based-tag {
-  font-size: 0.75rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: 1rem;
+.experience-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.experience-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.experience-card p {
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+/* Simple Tag Styles */
+.remote-tag, .hybrid-tag, .coop-tag, .temp-tag, .part-time-tag, .event-based-tag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.75rem;
   font-weight: 500;
   margin-left: 0.5rem;
-  transition: all 0.2s ease;
 }
 
-.remote-tag:hover, .hybrid-tag:hover, .coop-tag:hover, .temp-tag:hover, .part-time-tag:hover, .pilot-tag:hover, .freelance-tag:hover, .event-based-tag:hover {
-  transform: translateY(-1px);
-}
-
-/* Simple Distinct Colors for Each Tag */
 .remote-tag {
   background: #e1f5fe;
   color: #01579b;
@@ -572,16 +753,6 @@ document.addEventListener('DOMContentLoaded', function() {
   color: #880e4f;
 }
 
-.pilot-tag {
-  background: #e8eaf6;
-  color: #3f51b5;
-}
-
-.freelance-tag {
-  background: #f1f8e9;
-  color: #33691e;
-}
-
 .event-based-tag {
   background: #fff8e1;
   color: #f57f17;
@@ -592,168 +763,54 @@ document.addEventListener('DOMContentLoaded', function() {
   color: var(--text-primary);
   padding: 1rem;
   border-radius: 0.5rem;
-  margin-top: 1rem;
-  font-weight: 500;
+  margin: 1rem 0;
   border: 1px solid var(--accent);
-  transition: transform 0.3s ease;
+  font-weight: 500;
 }
 
-.achievement-highlight:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px var(--shadow-hover);
-}
-
-/* Enhanced Dropdown Styles */
-.experience-dropdown {
-  margin: 3rem 0;
-  padding-left: 2rem;
-}
-
-.dropdown-toggle {
-  background: linear-gradient(135deg, var(--bg-secondary), rgba(52, 152, 219, 0.05));
-  border: 2px solid var(--accent);
-  color: var(--accent);
-  padding: 1.2rem 2rem;
-  border-radius: 1rem;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 1rem;
+.carousel-nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto 2rem auto;
-  position: relative;
-  overflow: hidden;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.dropdown-toggle::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: left 0.6s ease;
-}
-
-.dropdown-toggle:hover::before {
-  left: 100%;
-}
-
-.dropdown-toggle:hover {
-  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+.nav-btn {
+  background: var(--accent);
   color: white;
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
-}
-
-.dropdown-toggle.active {
-  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
-  color: white;
-  transform: translateY(-1px);
-}
-
-.dropdown-arrow {
-  font-size: 0.9rem;
-  transition: transform 0.4s ease;
-}
-
-.dropdown-toggle.active .dropdown-arrow {
-  transform: rotate(180deg);
-}
-
-.dropdown-content {
-  position: relative;
-  padding-left: 0;
-  margin-left: -2rem;
-}
-
-.dropdown-content .timeline-item {
-  opacity: 0;
-  animation: fadeInSlideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
-.dropdown-content .timeline-item:nth-child(2) {
-  animation-delay: 0.1s;
-}
-
-.dropdown-content .timeline-item:nth-child(3) {
-  animation-delay: 0.2s;
-}
-
-.dropdown-content .timeline-item:nth-child(4) {
-  animation-delay: 0.3s;
-}
-
-@keyframes fadeInSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.volunteer-section {
-  margin: 3rem 0;
-}
-
-.volunteer-item {
-  background: var(--bg-secondary);
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid var(--border);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
 }
 
-.volunteer-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px var(--shadow-hover);
+.nav-btn:hover {
+  background: var(--accent-hover);
+  transform: scale(1.05);
 }
 
-.volunteer-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.75rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.volunteer-date {
-  color: var(--accent);
-  font-weight: 600;
-  font-size: 0.9rem;
-  background: rgba(52, 152, 219, 0.1);
-  padding: 0.25rem 0.75rem;
-  border-radius: 1rem;
-}
-
-.organization {
+.scroll-hint {
   color: var(--text-secondary);
-  font-weight: 500;
-  margin-bottom: 1rem;
-  font-style: italic;
+  font-size: 0.9rem;
 }
 
-.highlight-volunteer {
-  border: 2px solid var(--accent);
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(52, 152, 219, 0.05) 100%);
+/* Volunteer Section - Same styling as experience cards */
+.volunteer-section {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
+/* Accomplishments */
 .accomplishments-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .accomplishment-category {
@@ -761,35 +818,29 @@ document.addEventListener('DOMContentLoaded', function() {
   border-radius: 0.75rem;
   padding: 1.5rem;
   border: 1px solid var(--border);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .accomplishment-category:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px var(--shadow-hover);
 }
 
 .accomplishment-category h3 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: var(--text-primary);
-  font-size: 1.2rem;
-  font-weight: 600;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 0.5rem;
 }
 
 .accomplishment-item {
   padding: 1rem;
   background: var(--bg-primary);
   border-radius: 0.5rem;
-  margin-bottom: 1rem;  
+  margin-bottom: 1rem;
   border: 1px solid var(--border);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .accomplishment-item:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px var(--shadow-hover);
 }
 
 .accomplishment-item:last-child {
@@ -799,15 +850,13 @@ document.addEventListener('DOMContentLoaded', function() {
 .accomplishment-title {
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 .accomplishment-org {
   color: var(--text-secondary);
   font-size: 0.9rem;
   margin-bottom: 0.25rem;
-  font-style: italic;
 }
 
 .accomplishment-date {
@@ -824,13 +873,11 @@ document.addEventListener('DOMContentLoaded', function() {
   text-align: center;
   margin: 1rem 0;
   border: 1px solid var(--accent);
-  transition: all 0.3s ease;
-  cursor: default;
+  transition: transform 0.3s ease;
 }
 
 .lsat-highlight:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px var(--shadow-hover);
 }
 
 .lsat-score {
@@ -845,85 +892,22 @@ document.addEventListener('DOMContentLoaded', function() {
   color: var(--text-secondary);
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  margin: 3rem 0;
-}
-
-@media (min-width: 1024px) {
-  .skills-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.skill-category {
-  background: var(--bg-secondary);
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  border: 1px solid var(--border);
-  transition: all 0.3s ease;
-}
-
-.skill-category:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px var(--shadow-hover);
-}
-
-.skill-category h3 {
-  margin-bottom: 1.5rem;
-  color: var(--text-primary);
-  font-weight: 600;
-  font-size: 1.2rem;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 0.5rem;
-}
-
-.skill-category ul {
-  list-style: none;
-  padding: 0;
-}
-
-.skill-category li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid var(--border);
-  transition: all 0.2s ease;
-}
-
-.skill-category li:hover {
-  color: var(--accent);
-  transform: translateX(4px);
-}
-
-.skill-category li:last-child {
-  border-bottom: none;
-}
-
 .contact-cta {
   text-align: center;
   background: var(--bg-secondary);
   border-radius: 1rem;
   padding: 3rem 2rem;
   margin-top: 3rem;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .contact-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px var(--shadow-hover);
 }
 
 .contact-cta h2 {
   color: var(--accent);
   margin-bottom: 1rem;
-  font-weight: 600;
 }
 
 .cta-buttons {
@@ -931,7 +915,6 @@ document.addEventListener('DOMContentLoaded', function() {
   gap: 1rem;
   justify-content: center;
   margin-top: 2rem;
-  flex-wrap: wrap;
 }
 
 .btn {
@@ -939,7 +922,7 @@ document.addEventListener('DOMContentLoaded', function() {
   border-radius: 0.5rem;
   text-decoration: none;
   font-weight: 600;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   border: none;
   cursor: pointer;
   display: inline-block;
@@ -956,43 +939,24 @@ document.addEventListener('DOMContentLoaded', function() {
   transform: translateY(-2px);
 }
 
-.btn-secondary {
-  background: transparent;
-  color: var(--accent);
-  border: 2px solid var(--accent);
-}
-
-.btn-secondary:hover {
-  background: var(--accent);
-  color: white;
-  transform: translateY(-2px);
-}
-
-/* Responsive Design */
+/* Mobile Responsive */
 @media (max-width: 768px) {
-  .timeline {
-    padding-left: 1rem;
+  .experience-card {
+    min-width: 280px;
+    max-width: 280px;
   }
   
-  .timeline-item {
-    padding-left: 1.5rem;
-  }
-  
-  .experience-dropdown {
-    padding-left: 1rem;
-  }
-  
-  .dropdown-content {
-    margin-left: -1rem;
-  }
-  
-  .volunteer-header {
+  .carousel-nav {
     flex-direction: column;
-    align-items: flex-start;
+    gap: 0.5rem;
   }
   
   .accomplishments-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .volunteer-section {
+    gap: 1rem;
   }
   
   .cta-buttons {
@@ -1002,30 +966,18 @@ document.addEventListener('DOMContentLoaded', function() {
   
   .btn {
     width: 100%;
-    max-width: 280px;
-  }
-  
-  .career-profile, .degree-info {
-    padding: 1.5rem;
-  }
-  
-  .timeline-content {
-    padding: 1.5rem;
+    max-width: 250px;
   }
 }
 
 @media (max-width: 480px) {
-  .accomplishments-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .experience-card {
+    min-width: 250px;
+    max-width: 250px;
   }
   
-  .accomplishment-category {
+  .career-profile, .degree-info {
     padding: 1.5rem;
-  }
-  
-  .contact-cta {
-    padding: 2rem 1.5rem;
   }
 }
 </style>
