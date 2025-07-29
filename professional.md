@@ -321,7 +321,7 @@ title: Professional
   
   <div class="carousel-nav">
     <button class="nav-btn prev-btn" onclick="scrollCarousel(-1)">←</button>
-    <span class="scroll-hint">Scroll to explore all experience →</span>
+    <span class="scroll-hint desktop-only">Scroll to explore all experience →</span>
     <button class="nav-btn next-btn" onclick="scrollCarousel(1)">→</button>
   </div>
 </div>
@@ -378,7 +378,7 @@ title: Professional
   
   <div class="carousel-nav">
     <button class="nav-btn prev-btn" onclick="scrollVolunteerCarousel(-1)">←</button>
-    <span class="scroll-hint" id="volunteerScrollHint" style="display: none;">Scroll to explore leadership experience →</span>
+    <span class="scroll-hint desktop-only" id="volunteerScrollHint" style="display: none;">Scroll to explore leadership experience →</span>
     <button class="nav-btn next-btn" onclick="scrollVolunteerCarousel(1)">→</button>
   </div>
 </div>
@@ -472,10 +472,18 @@ function checkScrollNeeded() {
   const volunteerCarousel = document.getElementById('volunteerCarousel');
   const volunteerScrollHint = document.getElementById('volunteerScrollHint');
   
-  if (volunteerCarousel && volunteerScrollHint) {
-    if (volunteerCarousel.scrollWidth > volunteerCarousel.clientWidth) {
-      volunteerScrollHint.style.display = 'inline';
-    } else {
+  // Only show scroll hints on desktop/tablet
+  if (window.innerWidth > 768) {
+    if (volunteerCarousel && volunteerScrollHint) {
+      if (volunteerCarousel.scrollWidth > volunteerCarousel.clientWidth) {
+        volunteerScrollHint.style.display = 'inline';
+      } else {
+        volunteerScrollHint.style.display = 'none';
+      }
+    }
+  } else {
+    // Hide scroll hints on mobile
+    if (volunteerScrollHint) {
       volunteerScrollHint.style.display = 'none';
     }
   }
@@ -485,45 +493,39 @@ function checkScrollNeeded() {
 window.addEventListener('load', checkScrollNeeded);
 window.addEventListener('resize', checkScrollNeeded);
 
-// Touch/swipe support for mobile
-let startX = 0;
-let scrollLeft = 0;
-
-// Experience carousel touch support
-document.getElementById('experienceCarousel').addEventListener('touchstart', (e) => {
-  startX = e.touches[0].pageX;
-  scrollLeft = e.currentTarget.scrollLeft;
-});
-
-document.getElementById('experienceCarousel').addEventListener('touchmove', (e) => {
-  if (!startX) return;
+// Touch/swipe support for desktop only
+function addTouchSupport(carouselId) {
+  const carousel = document.getElementById(carouselId);
+  if (!carousel) return;
   
-  const x = e.touches[0].pageX;
-  const walk = (startX - x) * 2;
-  e.currentTarget.scrollLeft = scrollLeft + walk;
-});
-
-document.getElementById('experienceCarousel').addEventListener('touchend', () => {
-  startX = 0;
-});
-
-// Volunteer carousel touch support
-document.getElementById('volunteerCarousel').addEventListener('touchstart', (e) => {
-  startX = e.touches[0].pageX;
-  scrollLeft = e.currentTarget.scrollLeft;
-});
-
-document.getElementById('volunteerCarousel').addEventListener('touchmove', (e) => {
-  if (!startX) return;
+  let startX = 0;
+  let scrollLeft = 0;
   
-  const x = e.touches[0].pageX;
-  const walk = (startX - x) * 2;
-  e.currentTarget.scrollLeft = scrollLeft + walk;
-});
+  // Only enable touch scrolling on desktop/tablet
+  carousel.addEventListener('touchstart', (e) => {
+    if (window.innerWidth <= 768) return; // Skip on mobile
+    
+    startX = e.touches[0].pageX;
+    scrollLeft = e.currentTarget.scrollLeft;
+  });
 
-document.getElementById('volunteerCarousel').addEventListener('touchend', () => {
-  startX = 0;
-});
+  carousel.addEventListener('touchmove', (e) => {
+    if (window.innerWidth <= 768) return; // Skip on mobile
+    if (!startX) return;
+    
+    const x = e.touches[0].pageX;
+    const walk = (startX - x) * 2;
+    e.currentTarget.scrollLeft = scrollLeft + walk;
+  });
+
+  carousel.addEventListener('touchend', () => {
+    startX = 0;
+  });
+}
+
+// Add touch support to both carousels
+addTouchSupport('experienceCarousel');
+addTouchSupport('volunteerCarousel');
 </script>
 
 <style>
