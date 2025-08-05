@@ -451,20 +451,26 @@ title: Professional
 <script>
 function scrollCarousel(direction) {
   const carousel = document.getElementById('experienceCarousel');
-  const cardWidth = carousel.querySelector('.experience-card').offsetWidth + 48; // 420px card + 3rem gap
-  carousel.scrollBy({
-    left: direction * cardWidth,
-    behavior: 'smooth'
-  });
+  const card = carousel.querySelector('.experience-card');
+  if (card) {
+    const cardWidth = card.offsetWidth + 48; // card width + 3rem gap
+    carousel.scrollBy({
+      left: direction * cardWidth,
+      behavior: 'smooth'
+    });
+  }
 }
 
 function scrollVolunteerCarousel(direction) {
   const carousel = document.getElementById('volunteerCarousel');
-  const cardWidth = carousel.querySelector('.experience-card').offsetWidth + 48; // 420px card + 3rem gap
-  carousel.scrollBy({
-    left: direction * cardWidth,
-    behavior: 'smooth'
-  });
+  const card = carousel.querySelector('.experience-card');
+  if (card) {
+    const cardWidth = card.offsetWidth + 48; // card width + 3rem gap
+    carousel.scrollBy({
+      left: direction * cardWidth,
+      behavior: 'smooth'
+    });
+  }
 }
 
 // Check if carousels need scroll hints
@@ -608,7 +614,7 @@ addTouchSupport('volunteerCarousel');
   transform: translateY(-1px);
 }
 
-/* Experience Cards - New Layout */
+/* Experience Cards - Dynamic width based on content */
 .experience-carousel-container {
   margin: 2rem 0;
   position: relative;
@@ -622,6 +628,7 @@ addTouchSupport('volunteerCarousel');
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   position: relative;
+  align-items: flex-start; /* Allow different heights */
 }
 
 .experience-carousel::-webkit-scrollbar {
@@ -639,8 +646,7 @@ addTouchSupport('volunteerCarousel');
 }
 
 .experience-card {
-  min-width: 420px;
-  max-width: 420px;
+  width: 420px; /* Fixed width for consistency */
   background: var(--bg-secondary);
   border-radius: 0.75rem;
   border: 1px solid var(--border);
@@ -650,6 +656,8 @@ addTouchSupport('volunteerCarousel');
   margin-top: 2rem; /* Space for logo */
   margin-bottom: 2.5rem; /* Space for date at bottom */
   overflow: visible; /* Allow elements to show outside card */
+  height: fit-content; /* Dynamic height based on content */
+  min-height: 200px; /* Minimum height for consistency */
 }
 
 .experience-card:hover {
@@ -823,13 +831,6 @@ addTouchSupport('volunteerCarousel');
   font-size: 0.9rem;
 }
 
-/* Volunteer Section - Same styling as experience cards */
-.volunteer-section {
-  display: grid;
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
 /* Accomplishments */
 .accomplishments-grid {
   display: grid;
@@ -967,8 +968,7 @@ addTouchSupport('volunteerCarousel');
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .experience-card {
-    min-width: 280px;
-    max-width: 280px;
+    width: 280px; /* Smaller fixed width on mobile */
   }
   
   .carousel-nav {
@@ -978,10 +978,6 @@ addTouchSupport('volunteerCarousel');
   
   .accomplishments-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .volunteer-section {
-    gap: 1rem;
   }
   
   .cta-buttons {
@@ -997,12 +993,18 @@ addTouchSupport('volunteerCarousel');
 
 @media (max-width: 480px) {
   .experience-card {
-    min-width: 250px;
-    max-width: 250px;
+    width: 250px; /* Even smaller fixed width on small mobile */
   }
   
   .career-profile, .degree-info {
     padding: 1.5rem;
+  }
+}
+
+/* Hide scroll hint on smaller screens */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
   }
 }
 </style>
