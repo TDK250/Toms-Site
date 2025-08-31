@@ -70,9 +70,17 @@ layout: default
     {% endif %}
   </nav>
 
-  <!-- Back to blog link -->
+<!-- Back to blog link -->
   <div class="post-footer">
     <p><a href="{{ '/blog' | relative_url }}">← Back to all posts</a></p>
+  </div>
+
+  <!-- Webmentions Section -->
+  <div class="webmentions-section">
+    <h3>Webmentions</h3>
+    <div id="webmentions-container">
+      <p class="loading-webmentions">Loading interactions...</p>
+    </div>
   </div>
 
 </article>
