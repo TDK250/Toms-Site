@@ -16,7 +16,7 @@ title: Travels
       <div class="stat-label">Places</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number">4</div>
+      <div class="stat-number">3</div>
       <div class="stat-label">Continents</div>
     </div>
   </div>
