@@ -4,6 +4,8 @@ email: connect@tdkerr.ca
 description: >-
   Young professional working in government QA, interested in tech policy,
   art, and travel. This is my personal space for projects and thoughts.
+url: "https://tdkerr.ca" # Your site URL
+domain: "tdkerr.ca" # Your domain for webmentions
 
   # Author info
 author:
