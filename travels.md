@@ -5,7 +5,6 @@ title: Travels
 
 <div class="hero">
   <h1>My Travel Adventures</h1>
-  <p>Exploring 22 countries across 4 continents, with a special love for Canada's diverse landscapes.</p>
   
   <div class="travel-stats">
     <div class="stat-item">
