@@ -23,6 +23,15 @@ title: Contact
 
   <div class="contact-card">
     <div class="contact-icon">
+      <i data-feather="message-circle"></i>
+    </div>
+    <h3>Signal</h3>
+    <p>For quick and private conversations.</p>
+    <div class="contact-link signal-handle">@tdk.25</div>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-icon">
       <i data-feather="linkedin"></i>
     </div>
     <h3>LinkedIn</h3>
