@@ -184,7 +184,7 @@ title: Professional
     <div class="experience-card">
       <div class="card-date">Jun 2021 - Jun 2022</div>
       <div class="logo-circle">
-        <img src="{{ site.baseurl }}/assets/images/uvic-consulting-logo.png" alt="UVIC Consulting Group" class="company-logo" onerror="this.parentElement.style.display='none'">
+        <img src="{{ site.baseurl }}/assets/images/uvic-consulting-logo.jpg" alt="UVIC Consulting Group" class="company-logo" onerror="this.parentElement.style.display='none'">
       </div>
       <div class="card-header">
         <div class="org-info">
