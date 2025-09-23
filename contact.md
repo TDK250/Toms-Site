@@ -48,14 +48,7 @@ title: Contact
     <a href="https://github.com/TDK250" target="_blank" rel="noopener" class="contact-link">View Projects</a>
   </div>
 
-  <div class="contact-card">
-    <div class="contact-icon">
-      <i data-feather="rss"></i>
-    </div>
-    <h3>RSS Feed</h3>
-    <p>Stay updated with my latest blog posts and thoughts.</p>
-    <a href="{{ '/feed.xml' | relative_url }}" class="contact-link">Subscribe</a>
-  </div>
+
 
 </div>
 
@@ -118,10 +111,10 @@ title: Contact
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   margin: 2rem 0;
-  max-width: 800px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
