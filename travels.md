@@ -37,24 +37,24 @@ title: Travels
 
   <!-- Navigation Tabs -->
   <div class="tab-navigation">
-    <button class="tab-button active" onclick="showTab('trips')">
-      <i data-feather="calendar" class="icon"></i>
-      By Trips
-    </button>
-    <button class="tab-button" onclick="showTab('countries')">
+    <button class="tab-button active" onclick="showTab('countries')">
       <i data-feather="globe" class="icon"></i>
       By Countries
+    </button>
+    <button class="tab-button" onclick="showTab('trips')">
+      <i data-feather="calendar" class="icon"></i>
+      By Trips
     </button>
   </div>
 
   <!-- Travel by Trips -->
-  <div class="travels-container" id="trips-tab">
+  <div class="travels-container" id="trips-tab" style="display: none;">
     <h2>Travels by Trips</h2>
     <div id="trips-container"></div>
   </div>
 
   <!-- Travel by Countries -->
-  <div class="travels-container" id="countries-tab" style="display: none;">
+  <div class="travels-container" id="countries-tab">
     <h2>Travels by Countries</h2>
     <div id="continents-container"></div>
   </div>
@@ -747,7 +747,7 @@ const coordinates = [
 let map;
 let markersLayer;
 const expandedCountries = new Set();
-let currentTab = 'trips';
+let currentTab = 'countries';
 
 // Country colors for map visualization
 const countryColors = {
@@ -969,7 +969,10 @@ document.addEventListener('DOMContentLoaded', function() {
   renderTrips();
   renderTravelTracker();
   setTimeout(initializeMap, 100);
-  
+
+  // Set default tab to countries
+  showTab('countries');
+
   // Initialize Feather icons
   if (typeof feather !== 'undefined') {
     feather.replace();
