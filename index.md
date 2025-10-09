@@ -10,11 +10,11 @@ title: Home
          class="profile-image">
     <div class="hero-text">
       <h2>About Me</h2>
-      <p>I'm a commerce grad who's found my calling working with organizations that support vulnerable people. Currently, I'm a Quality Assurance Specialist with the Public Guardian and Trustee, where I help ensure young people in difficult situations get the support they need.</p>
+      <p>I'm a business professional working in organizations supporting vulnerable people. Currently, I help ensure children in government care receive quality legal and trust services as the Quality Assurance Specialist with the Public Guardian and Trustee.</p>
       
-      <p>My path here wasn't direct - I've been a board VP for a community centre, managed fundraising events that brought in $87k for brain injury survivors, coordinated digital marketing campaigns, and even spent time studying abroad in Seoul. What ties it all together is a belief that good systems, ethical leadership, and thoughtful processes can make a real difference in people's lives.</p>
+      <p>Previously, I've been a board VP for a community centre, managed fundraising events that brought in $87k for brain injury survivors, helped transform an iconic historic site, and served on my university's Senate.</p>
       
-      <p>When I'm not working, I love tinkering with new technologies, rock climbing, traveling, and spending time with family and friends. I'm also drawn to creative pursuits - whether that's writing, art, or just exploring new ideas. I'm passionate about using technology responsibly, understanding different cultures, and building stronger communities.</p>
+      <p>When I'm not working, I love rock climbing, writing, and messing with new technology. Check out my blog to learn more about what interest me!</p>
     </div>
   </div>
 </section>
