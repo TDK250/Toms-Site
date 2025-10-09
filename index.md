@@ -115,10 +115,8 @@ title: Home
 }
 
 .profile-image:hover {
-  transform: scale(1.05);
   box-shadow: 0 8px 25px var(--shadow-hover);
 }
-
 .hero-text {
   flex: 1;
   min-width: 300px;
@@ -136,6 +134,9 @@ title: Home
 }
 
 /* Interests Section */
+  <div id="vibe-banner" style="background: #222; color: #fff; text-align: center; padding: 1em; cursor: pointer; font-size: 1.2em; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+    this website was vibe-coded
+  </div>
 .interests-section {
   margin: 3rem 0;
 }
@@ -184,6 +185,16 @@ title: Home
   padding: 1.25rem;
   border-radius: 12px;
   text-align: center;
+  // Banner click handler
+  document.addEventListener('DOMContentLoaded', function() {
+    var banner = document.getElementById('vibe-banner');
+    if (banner) {
+      banner.onclick = function() {
+        alert("I don't want to pretend my programming skills are better than they are. Pay someone to make a website for you if you can afford it. Jekyll and Github pages is a great option for anyone looking to create a personal website for free. LLMs make this approach much easier, more economical and more customizable than using traditional website building platforms.");
+      };
+    }
+  });
+  </script>
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   flex-shrink: 0;
