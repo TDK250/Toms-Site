@@ -58,7 +58,7 @@ title: Professional
           <span class="remote-tag">Remote</span><span class="temp-tag">Temporary</span>
         </div>
       </div>
-      <div class="card-content">
+      <div class="card-content collapsible-content">
         <ul>
           <li>Reviewing reports of trauma to identify opportunities for victim services or legal intervention</li>
           <li>Using Microsoft Excel to generate KPI reports and identify gaps in service</li>
@@ -172,9 +172,9 @@ title: Professional
           <span class="event-based-tag">Event-Based</span>
         </div>
       </div>
-      <div class="card-content">
-        <ul>
-          <li>Official photographer for Carr House's first annual pet parade featuring special guest <strong>The Honourable Janet Austin, Lieutenant Governor of British Columbia</strong></li>
+      <div class="card-content collapsible-content">
+        <p>Commerce student representative in the UVic Senate. Serving on UVic Senate Committee on Appeals.</p>
+      </div>
           <li>Edited short film for Victoria's Poet Laureate, John Barton, on behalf of the City of Victoria and Carr House</li>
           <li>Video published on City of Victoria website</li>
         </ul>
@@ -545,8 +545,43 @@ addTouchSupport('volunteerCarousel');
   background: var(--bg-secondary);
   border-radius: 1rem;
   padding: 2rem;
-  margin-top: 2rem;
-  border: 1px solid var(--border);
+      // Collapsible card logic
+      document.addEventListener('DOMContentLoaded', function() {
+        function closeAllCards(carousel) {
+          carousel.querySelectorAll('.experience-card').forEach(card => {
+            card.classList.remove('expanded');
+          });
+        }
+
+        function setupCollapsibleCards(carouselId) {
+          const carousel = document.getElementById(carouselId);
+          if (!carousel) return;
+          carousel.querySelectorAll('.experience-card').forEach(card => {
+            const content = card.querySelector('.collapsible-content');
+            card.addEventListener('mouseenter', function() {
+              if (!card.classList.contains('expanded')) {
+                card.classList.add('hovered');
+              }
+            });
+            card.addEventListener('mouseleave', function() {
+              card.classList.remove('hovered');
+            });
+            card.addEventListener('click', function(e) {
+              // Only expand/collapse if not clicking a link or button inside
+              if (e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
+                if (card.classList.contains('expanded')) {
+                  card.classList.remove('expanded');
+                } else {
+                  closeAllCards(carousel);
+                  card.classList.add('expanded');
+                }
+              }
+            });
+          });
+        }
+        setupCollapsibleCards('experienceCarousel');
+        setupCollapsibleCards('volunteerCarousel');
+      });
   transition: transform 0.3s ease;
 }
 
@@ -570,6 +605,20 @@ addTouchSupport('volunteerCarousel');
   border: 1px solid var(--border);
   transition: transform 0.3s ease;
 }
+    .collapsible-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s;
+      padding: 0 1.5rem;
+      opacity: 0.7;
+    }
+
+    .experience-card.expanded .collapsible-content,
+    .experience-card.hovered .collapsible-content {
+      max-height: 500px;
+      padding: 1.5rem;
+      opacity: 1;
+    }
 
 .degree-info:hover {
   transform: translateY(-2px);
