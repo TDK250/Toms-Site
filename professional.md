@@ -545,43 +545,6 @@ addTouchSupport('volunteerCarousel');
   background: var(--bg-secondary);
   border-radius: 1rem;
   padding: 2rem;
-      // Collapsible card logic
-      document.addEventListener('DOMContentLoaded', function() {
-        function closeAllCards(carousel) {
-          carousel.querySelectorAll('.experience-card').forEach(card => {
-            card.classList.remove('expanded');
-          });
-        }
-
-        function setupCollapsibleCards(carouselId) {
-          const carousel = document.getElementById(carouselId);
-          if (!carousel) return;
-          carousel.querySelectorAll('.experience-card').forEach(card => {
-            const content = card.querySelector('.collapsible-content');
-            card.addEventListener('mouseenter', function() {
-              if (!card.classList.contains('expanded')) {
-                card.classList.add('hovered');
-              }
-            });
-            card.addEventListener('mouseleave', function() {
-              card.classList.remove('hovered');
-            });
-            card.addEventListener('click', function(e) {
-              // Only expand/collapse if not clicking a link or button inside
-              if (e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
-                if (card.classList.contains('expanded')) {
-                  card.classList.remove('expanded');
-                } else {
-                  closeAllCards(carousel);
-                  card.classList.add('expanded');
-                }
-              }
-            });
-          });
-        }
-        setupCollapsibleCards('experienceCarousel');
-        setupCollapsibleCards('volunteerCarousel');
-      });
   transition: transform 0.3s ease;
 }
 
@@ -1057,3 +1020,42 @@ addTouchSupport('volunteerCarousel');
   }
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  function closeAllCards(carousel) {
+    carousel.querySelectorAll('.experience-card').forEach(card => {
+      card.classList.remove('expanded');
+    });
+  }
+
+  function setupCollapsibleCards(carouselId) {
+    const carousel = document.getElementById(carouselId);
+    if (!carousel) return;
+    carousel.querySelectorAll('.experience-card').forEach(card => {
+      const content = card.querySelector('.collapsible-content');
+      card.addEventListener('mouseenter', function() {
+        if (!card.classList.contains('expanded')) {
+          card.classList.add('hovered');
+        }
+      });
+      card.addEventListener('mouseleave', function() {
+        card.classList.remove('hovered');
+      });
+      card.addEventListener('click', function(e) {
+        // Only expand/collapse if not clicking a link or button inside
+        if (e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
+          if (card.classList.contains('expanded')) {
+            card.classList.remove('expanded');
+          } else {
+            closeAllCards(carousel);
+            card.classList.add('expanded');
+          }
+        }
+      });
+    });
+  }
+  setupCollapsibleCards('experienceCarousel');
+  setupCollapsibleCards('volunteerCarousel');
+});
+</script>
