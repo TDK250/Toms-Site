@@ -16,7 +16,7 @@ title: Professional
 <div class="education-section">
   <div class="degree-info">
     <h3>Bachelor of Commerce, Entrepreneurship & Cooperative Education</h3>
-    <p class="institution">University of Victoria | <span class="date">Graduated August 2023</span> <span class="gpa-highlight">3.0 GPA</span></p>
+    <p class="institution">University of Victoria | <span class="date">Graduated August 2023</span> <span class="gpa-highlight">3.3 GPA</span></p>
     
     <div class="highlights">
       <div class="highlight-item">
