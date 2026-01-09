@@ -45,7 +45,7 @@ title: Professional
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-8-2h4v2h-4V4zM4 8h16v11H4V8z"/></svg>
         </div>
         <div class="highlight-content">
-          <strong>Consulting Director (Jun 2021 - Jun 2022):</strong> Project managed three paid consultation projects for local businesses. Mentored student consultants and delivered strategy packages.
+          <strong>Club: UVIC Consulting Group - Consulting Director (Jun 2021 - Jun 2022):</strong> Project managed three paid consultation projects for local businesses. Mentored student consultants and delivered strategy packages.
         </div>
       </div>
       
