@@ -412,12 +412,12 @@ title: Professional
       <div class="accomplishment-org">88th Percentile | April 2025</div>
     </div>
     <div class="accomplishment-item">
-      <div class="accomplishment-title">Thriving Non-Profits Certification | 2021</div>
-      <div class="accomplishment-org">Scale Collaborative</div>
+      <div class="accomplishment-title">Thriving Non-Profits Certification</div>
+      <div class="accomplishment-org">Scale Collaborative | 2021</div>
     </div>
     <div class="accomplishment-item">
-      <div class="accomplishment-title">Basic First Aid Certification| 2023-2027</div>
-      <div class="accomplishment-org">WorkSafeBC</div>
+      <div class="accomplishment-title">Basic First Aid Certification</div>
+      <div class="accomplishment-org">WorkSafeBC | 2023-2027</div>
     </div>
     <div class="accomplishment-item">
       <div class="accomplishment-title">Class 5 Driver's License</div>
