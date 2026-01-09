@@ -326,11 +326,45 @@ title: Professional
   </div>
 </div>
 
-## Leadership & Volunteer Experience
+
+## Projects & Volunteer Experience
 
 <div class="experience-carousel-container">
-  <div class="experience-carousel" id="volunteerCarousel">
+  <div class="experience-carousel" id="combinedCarousel">
     
+    <div class="experience-card">
+      <div class="card-date">Jan 2026 - Present</div>
+      <div class="logo-circle">
+        <img src="{{ site.baseurl }}/assets/images/track-a-mole-logo.png" alt="Track-A-Mole" class="company-logo" onerror="this.parentElement.style.display='none'">
+      </div>
+      <div class="card-header">
+        <div class="org-info">
+          <h3>Co-founder</h3>
+          <p class="organization">Track-A-Mole</p>
+        </div>
+        <div class="card-tags">
+          <span class="remote-tag">App</span>
+        </div>
+      </div>
+      <div class="card-content">
+        <ul>
+          <li>Building a cross-platform skin health monitoring application with a focus on secure and intuitive user experience</li>
+        </ul>
+        <strong>Features:</strong>
+        <ul>
+          <li>Interactive 3D human model for visual tracking of changes over time</li>
+          <li>Local-first data storage with encrypted backups</li>
+          <li>Photo logs to monitor individual moles</li>
+          <li>Smart reminders for regular skin checks</li>
+        </ul>
+        <p style="margin-top: 0.5rem;"><strong>Technologies:</strong> Next.js, Three.js, Dexie.js, Capacitor</p>
+        
+        <div style="margin-top: 1.5rem; text-align: center;">
+          <a href="https://tdk250.github.io/track-a-mole/" target="_blank" class="btn btn-primary" style="width: 100%;">Visit Live Site</a>
+        </div>
+      </div>
+    </div>
+
     <div class="experience-card">
       <div class="card-date">Jul 2022 - Jul 2023</div>
       <div class="logo-circle">
@@ -377,9 +411,9 @@ title: Professional
   </div>
   
   <div class="carousel-nav">
-    <button class="nav-btn prev-btn" onclick="scrollVolunteerCarousel(-1)">←</button>
-    <span class="scroll-hint desktop-only" id="volunteerScrollHint" style="display: none;">Scroll to explore leadership experience →</span>
-    <button class="nav-btn next-btn" onclick="scrollVolunteerCarousel(1)">→</button>
+    <button class="nav-btn prev-btn" onclick="scrollCombinedCarousel(-1)">←</button>
+    <span class="scroll-hint desktop-only" id="combinedScrollHint" style="display: none;">Scroll to explore projects & leadership →</span>
+    <button class="nav-btn next-btn" onclick="scrollCombinedCarousel(1)">→</button>
   </div>
 </div>
 
@@ -461,8 +495,8 @@ function scrollCarousel(direction) {
   }
 }
 
-function scrollVolunteerCarousel(direction) {
-  const carousel = document.getElementById('volunteerCarousel');
+function scrollCombinedCarousel(direction) {
+  const carousel = document.getElementById('combinedCarousel');
   const card = carousel.querySelector('.experience-card');
   if (card) {
     const cardWidth = card.offsetWidth + 48; // card width + 3rem gap
@@ -475,22 +509,20 @@ function scrollVolunteerCarousel(direction) {
 
 // Check if carousels need scroll hints
 function checkScrollNeeded() {
-  const volunteerCarousel = document.getElementById('volunteerCarousel');
-  const volunteerScrollHint = document.getElementById('volunteerScrollHint');
+  const combinedCarousel = document.getElementById('combinedCarousel');
+  const combinedScrollHint = document.getElementById('combinedScrollHint');
   
-  // Only show scroll hints on desktop/tablet
   if (window.innerWidth > 768) {
-    if (volunteerCarousel && volunteerScrollHint) {
-      if (volunteerCarousel.scrollWidth > volunteerCarousel.clientWidth) {
-        volunteerScrollHint.style.display = 'inline';
+    if (combinedCarousel && combinedScrollHint) {
+      if (combinedCarousel.scrollWidth > combinedCarousel.clientWidth) {
+        combinedScrollHint.style.display = 'inline';
       } else {
-        volunteerScrollHint.style.display = 'none';
+        combinedScrollHint.style.display = 'none';
       }
     }
   } else {
-    // Hide scroll hints on mobile
-    if (volunteerScrollHint) {
-      volunteerScrollHint.style.display = 'none';
+    if (combinedScrollHint) {
+      combinedScrollHint.style.display = 'none';
     }
   }
 }
@@ -531,7 +563,7 @@ function addTouchSupport(carouselId) {
 
 // Add touch support to both carousels
 addTouchSupport('experienceCarousel');
-addTouchSupport('volunteerCarousel');
+addTouchSupport('combinedCarousel');
 </script>
 
 <style>
