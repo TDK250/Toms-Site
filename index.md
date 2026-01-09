@@ -91,7 +91,6 @@ title: Home
     <div class="highlight-card">
       <h3>Recent Project</h3>
       <h4><a href="https://tdk250.github.io/track-a-mole/" target="_blank">Track-A-Mole</a></h4>
-      <p class="highlight-date">Co-founder</p>
       <p>Building a secure, local-first skin health monitoring app with interactive 3D mapping for a trustworthy user experience.</p>
     </div>
 
