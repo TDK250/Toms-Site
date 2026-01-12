@@ -157,7 +157,7 @@ title: Professional
     </div>
 
     <div class="experience-card">
-      <div class="card-date">Jul 2022 - Mar 2024</div>
+      <div class="card-date">Feb 2023 - Mar 2024</div>
       <div class="logo-circle">
         <img src="{{ site.baseurl }}/assets/images/uvic-logo.png" alt="University of Victoria" class="company-logo" onerror="this.parentElement.style.display='none'">
       </div>
