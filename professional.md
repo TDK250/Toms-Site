@@ -26,7 +26,7 @@ title: Professional
         </div>
         <div class="highlight-content">
           <strong>International Experience:</strong> Studied abroad in Seoul, South Korea (Seoul National University). <br>
-          <span>Courses: Foreign Direct Investment, Digital Economics, Investments, Governance and Markets.</span>
+          <strong>Courses:</strong> Foreign Direct Investment, Digital Economics, Investments, Governance and Markets.
         </div>
       </div>
 
