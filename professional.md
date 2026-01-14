@@ -25,7 +25,8 @@ title: Professional
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
         </div>
         <div class="highlight-content">
-          <strong>International Experience:</strong> Studied abroad in Seoul, South Korea (Seoul National University) - Business Administration exchange program (Fall 2022)
+          <strong>International Experience:</strong> Studied abroad in Seoul, South Korea (Seoul National University). <br>
+          <span style="font-size: 0.9em; opacity: 0.9;">Courses: Foreign Direct Investment, Digital Economics, Investments, Governance and Markets.</span>
         </div>
       </div>
 
@@ -39,7 +40,6 @@ title: Professional
           <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0; list-style-type: disc;">
             <li><strong>Student Senator:</strong> Elected Commerce representative; served on Senate Committee on Appeals</li>
             <li><strong>Consulting Director:</strong> Project managed three paid consultation projects</li>
-            <li><strong>Entrepreneurship Pilot:</strong> Selected for "fast track" specialization program</li>
           </ul>
         </div>
       </div>
@@ -52,6 +52,7 @@ title: Professional
         <div class="highlight-content">
             <strong>Awards & Honours:</strong>
             <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0; list-style-type: disc;">
+              <li><strong>Entrepreneurship Pilot:</strong> Selected for "fast track" specialization</li>
               <li><strong>Moon Patrol Audet Award:</strong> Excellence in business studies</li>
               <li><strong>Saber Blitz Case Comp:</strong> 2nd Place</li>
               <li><strong>Entrance Scholarship:</strong> Academic excellence</li>
@@ -65,7 +66,7 @@ title: Professional
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
         </div>
         <div class="highlight-content">
-          <strong>Relevant Coursework:</strong> Managerial Accounting, Financial Accounting, Macroeconomics, Microeconomics, Investments, Finance, Government and Markets, Digital Economics, People and Organizations
+          <strong>Relevant Coursework:</strong> Managerial Accounting, Financial Accounting, Macroeconomics, Microeconomics, Finance, People and Organizations
         </div>
       </div>
     </div>
