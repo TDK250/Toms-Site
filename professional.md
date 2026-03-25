@@ -321,7 +321,7 @@ title: Professional
       </div>
       <div class="card-content">
         <ul>
-          <li>Building a cross-platform skin health monitoring application with a focus on creating a secure and intuitive user experience</li>
+          <li>Engaging in AI assisted development to create a cross-platform skin health monitoring application with a focus on creating a secure and intuitive user experience</li>
         </ul>
         <strong>Features:</strong>
         <ul>
