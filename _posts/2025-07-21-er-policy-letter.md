@@ -22,7 +22,7 @@ None of these individuals would have been in the ER if they weren’t already fa
 For one, my mother was left unsupervised in an examination room for over four hours. If her condition had worsened during that time, it could have gone unnoticed for hours.
 In interviews with the CBC, doctors describe patients dying in the hallways of hospitals as they wait to receive care. This is further highlighted by the recent, tragic death of Luanora Irtenkauf in a BC hospital after she waited over 12 hours for emergency treatment.
 This is a systemic problem that can lead to devastating consequences. Even in cases where the patients don't die waiting, patients may leave without being diagnosed, or avoid seeking emergency care in the future altogether. This could result in life-threatening conditions being ignored because the cost of waiting seems too high.
-The Bigger Picture: A Failing System
+### The Bigger Picture: A Failing System
 What happened to my mother isn’t unique. Across British Columbia, emergency room wait times have been climbing steadily, leaving patients like my mother in limbo. The current system is failing to provide care to those who need it most and thereby creating a healthcare environment where people may avoid seeking help altogether.
 According to the latest data, the average ER wait time in BC is now over 5 hours - up significantly from previous years. This healthcare crisis is worsened by frequent closures of ERs in the interior, leaving some completely without options for emergency care. To reiterate, this system isn't just uncomfortable - it’s unsafe.
 ### What Can Be Done: Policy Recommendations
