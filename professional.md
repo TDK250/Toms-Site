@@ -109,7 +109,7 @@ title: Professional
           <p class="department">Child and Youth Services</p>
         </div>
         <div class="card-tags">
-          <span class="remote-tag">Remote</span><span class="temp-tag">Temporary</span>
+          <span class="remote-tag">Remote</span><span class="pilot-tag">Pilot Position</span>
         </div>
       </div>
       <div class="card-content">
@@ -117,6 +117,7 @@ title: Professional
           <li>Reviewed reports of trauma to identify opportunities for victim services and legal intervention</li>
           <li>Designed novel quality assurance processes using Power Query scripting and authored the role's position manual</li>
           <li>Conducted qualitative reviews of client files to identify error patterns and improve compliance</li>
+          <li>Developed successor training materials including Excel challenges and writing assignments</li>
         </ul>
       </div>
     </div>
@@ -310,12 +311,6 @@ title: Professional
     </div>
 
   </div>
-  
-  <div class="carousel-nav">
-    <button class="nav-btn prev-btn" onclick="scrollCarousel(-1)">←</button>
-    <span class="scroll-hint desktop-only">Scroll to explore all experience →</span>
-    <button class="nav-btn next-btn" onclick="scrollCarousel(1)">→</button>
-  </div>
 </div>
 
 
@@ -384,12 +379,6 @@ title: Professional
     </div>
 
   </div>
-  
-  <div class="carousel-nav">
-    <button class="nav-btn prev-btn" onclick="scrollCombinedCarousel(-1)">←</button>
-    <span class="scroll-hint desktop-only" id="combinedScrollHint" style="display: none;">Scroll to explore projects & leadership →</span>
-    <button class="nav-btn next-btn" onclick="scrollCombinedCarousel(1)">→</button>
-  </div>
 </div>
 
 ## Accomplishments & Recognition
@@ -440,54 +429,6 @@ title: Professional
   </div>
 </div>
 
-<script>
-function scrollCarousel(direction) {
-  const carousel = document.getElementById('experienceCarousel');
-  const card = carousel.querySelector('.experience-card');
-  if (card) {
-    const cardWidth = card.offsetWidth + 48; // card width + 3rem gap
-    carousel.scrollBy({
-      left: direction * cardWidth,
-      behavior: 'smooth'
-    });
-  }
-}
-
-function scrollCombinedCarousel(direction) {
-  const carousel = document.getElementById('combinedCarousel');
-  const card = carousel.querySelector('.experience-card');
-  if (card) {
-    const cardWidth = card.offsetWidth + 48; // card width + 3rem gap
-    carousel.scrollBy({
-      left: direction * cardWidth,
-      behavior: 'smooth'
-    });
-  }
-}
-
-// Check if carousels need scroll hints
-function checkScrollNeeded() {
-  const combinedCarousel = document.getElementById('combinedCarousel');
-  const combinedScrollHint = document.getElementById('combinedScrollHint');
-  
-  if (window.innerWidth > 768) {
-    if (combinedCarousel && combinedScrollHint) {
-      if (combinedCarousel.scrollWidth > combinedCarousel.clientWidth) {
-        combinedScrollHint.style.display = 'inline';
-      } else {
-        combinedScrollHint.style.display = 'none';
-      }
-    }
-  } else {
-    if (combinedScrollHint) {
-      combinedScrollHint.style.display = 'none';
-    }
-  }
-}
-
-// Check on load and resize
-window.addEventListener('load', checkScrollNeeded);
-window.addEventListener('resize', checkScrollNeeded);
 
 // Touch/swipe support for desktop only
 function addTouchSupport(carouselId) {
@@ -835,7 +776,7 @@ addTouchSupport('combinedCarousel');
 }
 
 /* Tags - Styled for colored background */
-.remote-tag, .hybrid-tag, .coop-tag, .temp-tag, .part-time-tag, .event-based-tag {
+.remote-tag, .hybrid-tag, .coop-tag, .pilot-tag, .part-time-tag, .event-based-tag {
   font-size: 0.7rem;
   padding: 0.3rem 0.75rem;
   border-radius: 1rem;
@@ -847,7 +788,7 @@ addTouchSupport('combinedCarousel');
   border: 1px solid rgba(255,255,255,0.3);
 }
 
-.remote-tag:hover, .hybrid-tag:hover, .coop-tag:hover, .temp-tag:hover, .part-time-tag:hover, .event-based-tag:hover {
+.remote-tag:hover, .hybrid-tag:hover, .coop-tag:hover, .pilot-tag:hover, .part-time-tag:hover, .event-based-tag:hover {
   background: rgba(255,255,255,0.3);
 }
 
@@ -861,35 +802,6 @@ addTouchSupport('combinedCarousel');
   font-weight: 500;
 }
 
-.carousel-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.nav-btn {
-  background: var(--accent);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-}
-
-.nav-btn:hover {
-  background: var(--accent-hover);
-  transform: scale(1.05);
-}
-
-.scroll-hint {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-}
 
 /* Accomplishments */
 .accomplishments-grid {
