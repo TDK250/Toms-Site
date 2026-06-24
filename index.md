@@ -574,31 +574,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // Grab-scroll for interests carousel
   const interestsScroll = document.querySelector('.interests-scroll');
   if (interestsScroll) {
-    let isDown = false;
-    let startX = 0;
-    let scrollLeft = 0;
-    let isDragging = false;
+     let isDown = false;
+     let startX = 0;
+     let scrollLeft = 0;
+     let isDragging = false;
 
-    // touch/swipe for desktop only (mobile uses native scroll)
-    let touchStartX = 0;
-    let touchScrollLeft = 0;
-    interestsScroll.addEventListener('touchstart', (e) => {
-      if (window.innerWidth <= 768) return;
-      touchStartX = e.touches[0].pageX;
-      touchScrollLeft = interestsScroll.scrollLeft;
-    });
-    interestsScroll.addEventListener('touchmove', (e) => {
-      if (window.innerWidth <= 768) return;
-      if (!touchStartX) return;
-      const x = e.touches[0].pageX;
-      const walk = (touchStartX - x) * 1.5;
-      interestsScroll.scrollLeft = touchScrollLeft + walk;
-    });
-    interestsScroll.addEventListener('touchend', () => {
-      touchStartX = 0;
-    });
-
-    let scrollRafId = null;
+     let scrollRafId = null;
 
     interestsScroll.addEventListener('mousedown', (e) => {
       if (e.button !== 0 || e.target.closest('a, button, input, select, textarea')) return;

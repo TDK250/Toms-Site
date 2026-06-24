@@ -495,28 +495,6 @@ function addDragAndSwipeSupport(carouselId) {
   let scrollLeft = 0;
   let isDragging = false;
   
-  // Touch support for desktop/tablet (mobile uses native scroll)
-  let touchStartX = 0;
-  let touchScrollLeft = 0;
-  
-  carousel.addEventListener('touchstart', (e) => {
-    if (window.innerWidth <= 768) return;
-    touchStartX = e.touches[0].pageX;
-    touchScrollLeft = carousel.scrollLeft;
-  });
-
-  carousel.addEventListener('touchmove', (e) => {
-    if (window.innerWidth <= 768) return;
-    if (!touchStartX) return;
-    const x = e.touches[0].pageX;
-    const walk = (touchStartX - x) * 1.5;
-    carousel.scrollLeft = touchScrollLeft + walk;
-  });
-
-  carousel.addEventListener('touchend', () => {
-    touchStartX = 0;
-  });
-
   // Mouse Drag Support
   let scrollRafId = null;
 
