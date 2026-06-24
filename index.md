@@ -5,7 +5,7 @@ title: Home
 
 <section class="hero-section">
   <div class="hero-content">
-    <img src="{{ site.baseurl }}/assets/images/PXL_20241224_214716982.NIGHT.jpg" 
+    <img src="{{ site.baseurl }}/assets/images/DSCF0225.JPG" 
          alt="Profile Picture" 
          class="profile-image">
     <div class="hero-text">
