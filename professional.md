@@ -7,7 +7,7 @@ title: Professional
   <h1>Professional Experience</h1>
   <div class="career-profile">
     <h2>Career Profile</h2>
-    <p>Award-winning University of Victoria Commerce and Entrepreneurship graduate with experience working in a financial and leadership capacity in organizations supporting vulnerable clients. Demonstrated expertise in project management, board governance, and digital strategy.</p>
+    <p>Dalhousie University law student (JD Class of 2029) and award-winning University of Victoria Commerce and Entrepreneurship graduate. Experienced in working in a financial and leadership capacity for organizations supporting vulnerable clients, with demonstrated expertise in project management, board governance, and digital strategy.</p>
   </div>
 </div>
 
@@ -15,8 +15,27 @@ title: Professional
 
 <div class="education-section">
   <div class="degree-info">
-    <h3>Bachelor of Commerce, Entrepreneurship & Cooperative Education</h3>
-    <p class="institution">University of Victoria | <span class="date">Graduated August 2023</span> <span class="gpa-highlight">81.4% average</span></p>
+    <div class="degree-header">
+      <div class="degree-logo">
+        <img src="{{ site.baseurl }}/assets/images/Dal2.png" alt="Dalhousie University" class="edu-logo" onerror="this.parentElement.style.display='none'">
+      </div>
+      <div class="degree-details">
+        <h3>Juris Doctor (JD)</h3>
+        <p class="institution">Dalhousie University | <span class="date">Class of 2029</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="degree-info">
+    <div class="degree-header">
+      <div class="degree-logo">
+        <img src="{{ site.baseurl }}/assets/images/uvic-logo.png" alt="University of Victoria" class="edu-logo" onerror="this.parentElement.style.display='none'">
+      </div>
+      <div class="degree-details">
+        <h3>Bachelor of Commerce, Entrepreneurship & Cooperative Education</h3>
+        <p class="institution">University of Victoria | <span class="date">Class of 2023</span> <span class="gpa-highlight">81.4% average</span></p>
+      </div>
+    </div>
     
     <div class="highlights">
       <!-- 1. International -->
@@ -79,7 +98,7 @@ title: Professional
   <div class="experience-carousel" id="experienceCarousel">
     
     <div class="experience-card">
-      <div class="card-date">Jan 2025 - Present</div>
+      <div class="card-date">Jan 2025 - Jul 2026</div>
       <div class="logo-circle">
         <img src="{{ site.baseurl }}/assets/images/pgt-logo.png" alt="Public Guardian and Trustee of BC" class="company-logo" onerror="this.parentElement.style.display='none'">
       </div>
@@ -95,9 +114,9 @@ title: Professional
       </div>
       <div class="card-content">
         <ul>
-          <li>Reviewing reports of trauma to identify opportunities for victim services or legal intervention</li>
-          <li>Using Microsoft Excel to generate KPI reports and identify gaps in service</li>
-          <li>Collaborating with fiduciaries to ensure quality of service for clients under the age of 19</li>
+          <li>Reviewed reports of trauma to identify opportunities for victim services and legal intervention</li>
+          <li>Designed novel quality assurance processes using Power Query scripting and authored the role's position manual</li>
+          <li>Conducted qualitative reviews of client files to identify error patterns and improve compliance</li>
         </ul>
       </div>
     </div>
@@ -378,37 +397,35 @@ title: Professional
 <div class="accomplishments-grid">
   <div class="accomplishment-category">
     <h3>Certifications & Skills</h3>
-    <div class="accomplishment-item">
-      <div class="accomplishment-title">LSAT Score: 165</div>
-      <div class="accomplishment-org">88th Percentile | April 2025</div>
-    </div>
-    <div class="accomplishment-item">
-      <div class="accomplishment-title">Thriving Non-Profits Certification | 2021</div>
-      <div class="accomplishment-org">Scale Collaborative</div>
-    </div>
-    <div class="accomplishment-item">
-      <div class="accomplishment-title">Basic First Aid Certification | 2023-2027</div>
-      <div class="accomplishment-org">WorkSafeBC</div>
-    </div>
-    <div class="accomplishment-item">
-      <div class="accomplishment-title">Class 5 Driver's License</div>
-      <div class="accomplishment-org">ICBC (Insurance Corporation of British Columbia)</div>
+    <div class="skills-grid">
+      <div class="accomplishment-item">
+        <div class="accomplishment-title">LSAT Score: 165</div>
+        <div class="accomplishment-org">88th Percentile | April 2025</div>
+      </div>
+      <div class="accomplishment-item">
+        <div class="accomplishment-title">Thriving Non-Profits Certification | 2021</div>
+        <div class="accomplishment-org">Scale Collaborative</div>
+      </div>
+      <div class="accomplishment-item">
+        <div class="accomplishment-title">Basic First Aid Certification | 2023-2027</div>
+        <div class="accomplishment-org">WorkSafeBC</div>
+      </div>
+      <div class="accomplishment-item">
+        <div class="accomplishment-title">Class 5 Driver's License</div>
+        <div class="accomplishment-org">ICBC (Insurance Corporation of British Columbia)</div>
+      </div>
     </div>
   </div>
 
   <div class="accomplishment-category">
     <h3>Languages</h3>
     <div class="accomplishment-item">
-      <div class="accomplishment-title">English</div>
+      <div class="accomplishment-title">English (C2)</div>
       <div class="accomplishment-org">Native/Bilingual Proficiency</div>
     </div>
     <div class="accomplishment-item">
-      <div class="accomplishment-title">French</div>
+      <div class="accomplishment-title">French (Approx. B1-B2)</div>
       <div class="accomplishment-org">Conversational</div>
-    </div>
-    <div class="accomplishment-item">
-      <div class="accomplishment-title">Spanish</div>
-      <div class="accomplishment-org">Basic</div>
     </div>
   </div>
 </div>
@@ -534,6 +551,9 @@ addTouchSupport('combinedCarousel');
 
 .education-section {
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .degree-info {
@@ -546,6 +566,46 @@ addTouchSupport('combinedCarousel');
 
 .degree-info:hover {
   transform: translateY(-2px);
+}
+
+.degree-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.degree-logo {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  padding: 0.25rem;
+}
+
+.edu-logo {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.degree-details {
+  flex: 1;
+}
+
+.degree-details h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.3rem;
+}
+
+.degree-details .institution {
+  margin: 0;
+  font-size: 1.05rem;
 }
 
 .institution {
@@ -834,9 +894,15 @@ addTouchSupport('combinedCarousel');
 /* Accomplishments */
 .accomplishments-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
   margin: 2rem 0;
+}
+
+@media (min-width: 992px) {
+  .accomplishments-grid {
+    grid-template-columns: 2fr 1fr;
+  }
 }
 
 .accomplishment-category {
@@ -854,6 +920,22 @@ addTouchSupport('combinedCarousel');
 .accomplishment-category h3 {
   margin-bottom: 1rem;
   color: var(--text-primary);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skills-grid .accomplishment-item {
+  margin-bottom: 0;
 }
 
 .accomplishment-item {

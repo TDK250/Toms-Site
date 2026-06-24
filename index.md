@@ -5,16 +5,16 @@ title: Home
 
 <section class="hero-section">
   <div class="hero-content">
-    <img src="{{ site.baseurl }}/assets/images/DSCF0225.JPG" 
+    <img src="{{ site.baseurl }}/assets/images/Profpic.jpg" 
          alt="Profile Picture" 
          class="profile-image">
     <div class="hero-text">
       <h2>About Me</h2>
-      <p>I'm a business professional working in organizations supporting vulnerable people. Currently, I help ensure children in government care receive quality legal and trust services as the Quality Assurance Specialist with the Public Guardian and Trustee.</p>
+      <p>I'm a law student at Dalhousie University (JD Class of 2029) with a background in business operations, board governance, and public sector quality assurance. Most recently, I worked with the Public Guardian and Trustee of BC to ensure vulnerable youth in government care receive high-quality legal and trust services.</p>
       
-      <p>Previously, I've been a board VP for a community centre, managed fundraising events that brought in $87k for brain injury survivors, helped transform an iconic historic site, and served on my university's Senate.</p>
+      <p>Prior to law school, I served as a Board Vice President for a community centre, directed consulting projects, managed fundraising campaigns that raised $87k for brain injury survivors, and represented my peers on the University of Victoria Senate.</p>
       
-      <p>When I'm not working, I love rock climbing, writing, and messing with new technology. Check out my blog to learn more about what interest me!</p>
+      <p>Outside of law school, I'm passionate about rock climbing, writing, and leveraging technology for social good. Check out my blog to explore my latest thoughts and projects!</p>
     </div>
   </div>
 </section>
@@ -82,10 +82,10 @@ title: Home
     </div>
 
     <div class="highlight-card">
-      <h3>Current Role</h3>
-      <h4>Quality Assurance Specialist</h4>
-      <p class="highlight-date">Public Guardian and Trustee of BC</p>
-      <p>Ensuring quality services for vulnerable youth and identifying opportunities for legal intervention and victim services.</p>
+      <h3>Current Focus</h3>
+      <h4>JD Candidate (Class of 2029)</h4>
+      <p class="highlight-date">Dalhousie University Schulich School of Law</p>
+      <p>Building on my background in quality assurance and board governance to study law and advocate for vulnerable populations.</p>
     </div>
 
     <div class="highlight-card">
@@ -118,11 +118,25 @@ title: Home
   border: 4px solid var(--border);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .profile-image:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 25px var(--shadow-hover);
+}
+
+@keyframes spin3D {
+  from {
+    transform: perspective(600px) rotateY(0deg) scale(1.05);
+  }
+  to {
+    transform: perspective(600px) rotateY(360deg) scale(1.05);
+  }
+}
+
+.profile-image.spin-animation {
+  animation: spin3D 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .hero-text {
@@ -158,6 +172,7 @@ title: Home
 
 .interests-scroll {
   display: flex;
+  align-items: stretch;
   overflow-x: auto;
   gap: 1rem;
   padding: 1rem 0;
@@ -185,7 +200,8 @@ title: Home
 
 .interest-card {
   width: 200px;
-  height: 200px;
+  min-height: 200px;
+  height: auto;
   color: white;
   padding: 1.25rem;
   border-radius: 12px;
@@ -247,8 +263,6 @@ title: Home
   font-size: 0.75rem;
   opacity: 0.95;
   line-height: 1.3;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .scroll-hint {
@@ -350,7 +364,8 @@ title: Home
   
   .interest-card {
     width: 180px;
-    height: 180px;
+    min-height: 180px;
+    height: auto;
     padding: 1rem;
   }
   
@@ -375,7 +390,8 @@ title: Home
 @media (max-width: 480px) {
   .interest-card {
     width: 160px;
-    height: 160px;
+    min-height: 180px;
+    height: auto;
     padding: 0.875rem;
   }
   
@@ -420,5 +436,16 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 150);
     });
   });
+
+  // Profile image spin animation easter egg
+  const profileImage = document.querySelector('.profile-image');
+  if (profileImage) {
+    profileImage.addEventListener('click', function() {
+      profileImage.classList.add('spin-animation');
+      setTimeout(() => {
+        profileImage.classList.remove('spin-animation');
+      }, 1000);
+    });
+  }
 });
 </script>
