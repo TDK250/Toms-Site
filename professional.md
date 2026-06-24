@@ -52,7 +52,7 @@ title: Professional
       <!-- 2. Leadership & Activities -->
       <div class="highlight-item">
         <div class="highlight-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-8-2h4v2h-4V4zM4 8h16v11H4V8z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
         </div>
         <div class="highlight-content">
           <strong>Leadership & Activities:</strong>
@@ -115,9 +115,9 @@ title: Professional
       <div class="card-content">
         <ul>
           <li>Reviewed reports of trauma to identify opportunities for victim services and legal intervention</li>
-          <li>Designed novel quality assurance processes using Power Query scripting and authored the role's position manual</li>
+          <li>Designed novel QA processes using Power Query scripting and authored the role's position manual</li>
           <li>Conducted qualitative reviews of client files to identify error patterns and improve compliance</li>
-          <li>Developed successor training materials including Excel challenges and writing assignments</li>
+          <li>Designed successor training materials including Excel challenges and writing assignments</li>
         </ul>
       </div>
     </div>
@@ -311,6 +311,10 @@ title: Professional
     </div>
 
   </div>
+  
+  <div class="carousel-scroll-hint">
+    <span>← Scroll to explore all experience →</span>
+  </div>
 </div>
 
 
@@ -379,6 +383,10 @@ title: Professional
     </div>
 
   </div>
+  
+  <div class="carousel-scroll-hint" id="combinedScrollHint" style="display: none;">
+    <span>← Scroll to explore projects & leadership →</span>
+  </div>
 </div>
 
 ## Accomplishments & Recognition
@@ -429,40 +437,141 @@ title: Professional
   </div>
 </div>
 
+<script>
+function scrollCarousel(direction) {
+  const carousel = document.getElementById('experienceCarousel');
+  const card = carousel.querySelector('.experience-card');
+  if (card) {
+    const cardWidth = card.offsetWidth + 48; // card width + 3rem gap
+    carousel.scrollBy({
+      left: direction * cardWidth,
+      behavior: 'smooth'
+    });
+  }
+}
 
-// Touch/swipe support for desktop only
-function addTouchSupport(carouselId) {
+function scrollCombinedCarousel(direction) {
+  const carousel = document.getElementById('combinedCarousel');
+  const card = carousel.querySelector('.experience-card');
+  if (card) {
+    const cardWidth = card.offsetWidth + 48; // card width + 3rem gap
+    carousel.scrollBy({
+      left: direction * cardWidth,
+      behavior: 'smooth'
+    });
+  }
+}
+
+// Check if carousels need scroll hints
+function checkScrollNeeded() {
+  const combinedCarousel = document.getElementById('combinedCarousel');
+  const combinedScrollHint = document.getElementById('combinedScrollHint');
+  
+  if (window.innerWidth > 768) {
+    if (combinedCarousel && combinedScrollHint) {
+      if (combinedCarousel.scrollWidth > combinedCarousel.clientWidth) {
+        combinedScrollHint.style.display = 'inline';
+      } else {
+        combinedScrollHint.style.display = 'none';
+      }
+    }
+  } else {
+    if (combinedScrollHint) {
+      combinedScrollHint.style.display = 'none';
+    }
+  }
+}
+
+// Check on load and resize
+window.addEventListener('load', checkScrollNeeded);
+window.addEventListener('resize', checkScrollNeeded);
+
+function addDragAndSwipeSupport(carouselId) {
   const carousel = document.getElementById(carouselId);
   if (!carousel) return;
   
+  let isDown = false;
   let startX = 0;
   let scrollLeft = 0;
+  let isDragging = false;
   
-  // Only enable touch scrolling on desktop/tablet
+  // Touch support for desktop/tablet (mobile uses native scroll)
+  let touchStartX = 0;
+  let touchScrollLeft = 0;
+  
   carousel.addEventListener('touchstart', (e) => {
-    if (window.innerWidth <= 768) return; // Skip on mobile
-    
-    startX = e.touches[0].pageX;
-    scrollLeft = e.currentTarget.scrollLeft;
+    if (window.innerWidth <= 768) return;
+    touchStartX = e.touches[0].pageX;
+    touchScrollLeft = carousel.scrollLeft;
   });
 
   carousel.addEventListener('touchmove', (e) => {
-    if (window.innerWidth <= 768) return; // Skip on mobile
-    if (!startX) return;
-    
+    if (window.innerWidth <= 768) return;
+    if (!touchStartX) return;
     const x = e.touches[0].pageX;
-    const walk = (startX - x) * 2;
-    e.currentTarget.scrollLeft = scrollLeft + walk;
+    const walk = (touchStartX - x) * 1.5;
+    carousel.scrollLeft = touchScrollLeft + walk;
   });
 
   carousel.addEventListener('touchend', () => {
-    startX = 0;
+    touchStartX = 0;
   });
+
+  // Mouse Drag Support
+  let scrollRafId = null;
+
+  carousel.addEventListener('mousedown', (e) => {
+    if (e.button !== 0 || e.target.closest('a, button, input, select, textarea')) return;
+    isDown = true;
+    isDragging = false;
+    startX = e.pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+    carousel.style.cursor = 'grabbing';
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    const x = e.pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 1.2;
+    if (Math.abs(walk) > 5) {
+      isDragging = true;
+      e.preventDefault(); // Stop browser text selection/scrolling
+      
+      if (!scrollRafId) {
+        scrollRafId = requestAnimationFrame(() => {
+          carousel.scrollLeft = scrollLeft - walk;
+          scrollRafId = null;
+        });
+      }
+      
+      carousel.style.cursor = 'grabbing';
+      window.getSelection().removeAllRanges();
+    }
+  });
+
+  document.addEventListener('mouseup', () => {
+    if (isDown) {
+      isDown = false;
+      carousel.style.cursor = '';
+      if (scrollRafId) {
+        cancelAnimationFrame(scrollRafId);
+        scrollRafId = null;
+      }
+    }
+  });
+
+  // Prevent link click when dragging
+  carousel.addEventListener('click', (e) => {
+    if (isDragging) {
+      e.preventDefault();
+      e.stopPropagation();
+      isDragging = false;
+    }
+  }, true);
 }
 
-// Add touch support to both carousels
-addTouchSupport('experienceCarousel');
-addTouchSupport('combinedCarousel');
+addDragAndSwipeSupport('experienceCarousel');
+addDragAndSwipeSupport('combinedCarousel');
 </script>
 
 <style>
@@ -626,6 +735,7 @@ addTouchSupport('combinedCarousel');
   -webkit-overflow-scrolling: touch;
   position: relative;
   align-items: stretch; /* Make all cards equal height */
+  cursor: grab;
 }
 
 .experience-carousel::-webkit-scrollbar {
@@ -776,7 +886,7 @@ addTouchSupport('combinedCarousel');
 }
 
 /* Tags - Styled for colored background */
-.remote-tag, .hybrid-tag, .coop-tag, .pilot-tag, .part-time-tag, .event-based-tag {
+.remote-tag, .hybrid-tag, .coop-tag, .temp-tag, .pilot-tag, .part-time-tag, .event-based-tag {
   font-size: 0.7rem;
   padding: 0.3rem 0.75rem;
   border-radius: 1rem;
@@ -788,7 +898,7 @@ addTouchSupport('combinedCarousel');
   border: 1px solid rgba(255,255,255,0.3);
 }
 
-.remote-tag:hover, .hybrid-tag:hover, .coop-tag:hover, .pilot-tag:hover, .part-time-tag:hover, .event-based-tag:hover {
+.remote-tag:hover, .hybrid-tag:hover, .coop-tag:hover, .temp-tag:hover, .pilot-tag:hover, .part-time-tag:hover, .event-based-tag:hover {
   background: rgba(255,255,255,0.3);
 }
 
@@ -802,6 +912,18 @@ addTouchSupport('combinedCarousel');
   font-weight: 500;
 }
 
+.carousel-scroll-hint {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-scroll-hint {
+    display: none;
+  }
+}
 
 /* Accomplishments */
 .accomplishments-grid {

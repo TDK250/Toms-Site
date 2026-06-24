@@ -5,9 +5,16 @@ title: Home
 
 <section class="hero-section">
   <div class="hero-content">
-    <img src="{{ site.baseurl }}/assets/images/Profpic.jpg" 
-         alt="Profile Picture" 
-         class="profile-image">
+    <div class="profile-coin-wrapper" id="profileCoinWrapper">
+      <div class="profile-coin" id="profileCoin">
+        <div class="profile-face profile-front">
+          <img src="{{ site.baseurl }}/assets/images/Profpic.jpg" alt="Profile Picture" decoding="async" fetchpriority="high">
+        </div>
+        <div class="profile-face profile-back">
+          <img src="{{ site.baseurl }}/assets/images/Profpic.jpg" alt="Profile Picture" decoding="async" fetchpriority="high">
+        </div>
+      </div>
+    </div>
     <div class="hero-text">
       <h2>About Me</h2>
       <p>I'm a law student at Dalhousie University (JD Class of 2029) with a background in business operations, board governance, and public sector quality assurance. Most recently, I worked with the Public Guardian and Trustee of BC to ensure vulnerable youth in government care receive high-quality legal and trust services.</p>
@@ -110,33 +117,63 @@ title: Home
   flex-wrap: wrap;
 }
 
-.profile-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid var(--border);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.profile-coin-wrapper {
+  perspective: 700px;
   flex-shrink: 0;
-  cursor: pointer;
+  width: 208px;
+  height: 208px;
+  cursor: grab;
+  user-select: none;
 }
 
-.profile-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 25px var(--shadow-hover);
+.profile-coin-wrapper:active {
+  cursor: grabbing;
 }
 
-@keyframes spin3D {
-  from {
-    transform: perspective(600px) rotateY(0deg) scale(1.05);
-  }
-  to {
-    transform: perspective(600px) rotateY(360deg) scale(1.05);
-  }
+.profile-coin {
+  width: 208px;
+  height: 208px;
+  position: relative;
+  transform-style: preserve-3d;
+  border-radius: 50%;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+  transition: box-shadow 0.2s ease;
+  will-change: transform;
 }
 
-.profile-image.spin-animation {
-  animation: spin3D 1s cubic-bezier(0.25, 1, 0.5, 1);
+.profile-coin:hover {
+  box-shadow: 0 10px 32px rgba(0,0,0,0.35);
+}
+
+.profile-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.profile-front {
+  transform: translateZ(1px);
+  overflow: hidden;
+}
+
+.profile-face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  pointer-events: none;
+}
+
+.profile-back {
+  transform: rotateY(180deg) translateZ(1px);
+  overflow: hidden;
+}
+
+.profile-back img {
+  transform: scaleX(-1);
 }
 
 .hero-text {
@@ -178,6 +215,7 @@ title: Home
   padding: 1rem 0;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  cursor: grab;
 }
 
 .interests-scroll::-webkit-scrollbar {
@@ -357,9 +395,10 @@ title: Home
     text-align: center;
   }
   
-  .profile-image {
-    width: 150px;
-    height: 150px;
+  .profile-coin-wrapper,
+  .profile-coin {
+    width: 160px;
+    height: 160px;
   }
   
   .interest-card {
@@ -424,28 +463,191 @@ title: Home
 </style>
 
 <script>
-// Add smooth scrolling behavior for the interests section
 document.addEventListener('DOMContentLoaded', function() {
+
+  // Interest card click bounce
   const interestCards = document.querySelectorAll('.interest-card');
-  
   interestCards.forEach(card => {
     card.addEventListener('click', function() {
       this.style.transform = 'scale(0.95) translateY(-5px)';
-      setTimeout(() => {
-        this.style.transform = '';
-      }, 150);
+      setTimeout(() => { this.style.transform = ''; }, 150);
     });
   });
 
-  // Profile image spin animation easter egg
-  const profileImage = document.querySelector('.profile-image');
-  if (profileImage) {
-    profileImage.addEventListener('click', function() {
-      profileImage.classList.add('spin-animation');
-      setTimeout(() => {
-        profileImage.classList.remove('spin-animation');
-      }, 1000);
-    });
+  // ── 3D coin drag easter egg ──────────────────────────────────────────
+  const wrapper = document.getElementById('profileCoinWrapper');
+  const coin    = document.getElementById('profileCoin');
+  if (!wrapper || !coin) return;
+
+  let rotY       = 0;
+  let isDragging = false;
+  let startX     = 0;
+  let startRotY  = 0;
+  let lastX      = 0;
+  let lastT      = 0;
+  let velocity   = 0;
+  let rafId      = null;
+  let dragDist   = 0;
+
+  function applyRotation(deg) {
+    rotY = deg;
+    coin.style.transform = `rotateY(${deg}deg)`;
   }
+
+  function startMomentum() {
+    cancelAnimationFrame(rafId);
+    (function loop() {
+      if (Math.abs(velocity) < 0.08) { velocity = 0; return; }
+      velocity *= 0.94;
+      applyRotation(rotY + velocity);
+      rafId = requestAnimationFrame(loop);
+    })();
+  }
+
+  function onDragStart(clientX) {
+    cancelAnimationFrame(rafId);
+    isDragging = true;
+    dragDist   = 0;
+    startX     = clientX;
+    startRotY  = rotY;
+    lastX      = clientX;
+    lastT      = Date.now();
+    velocity   = 0;
+  }
+
+  function onDragMove(clientX) {
+    if (!isDragging) return;
+    const now = Date.now();
+    const dx  = clientX - lastX;
+    const dt  = Math.max(now - lastT, 1);
+    velocity  = (dx / dt) * 14;   // scale to px-per-frame
+    dragDist += Math.abs(clientX - lastX);
+    lastX = clientX;
+    lastT = now;
+    applyRotation(startRotY + (clientX - startX) * 0.55);
+  }
+
+  function onDragEnd() {
+    if (!isDragging) return;
+    isDragging = false;
+    wrapper.style.cursor = 'grab';
+    // If barely moved, treat as click → random spin up to a reasonable limit
+    if (dragDist < 6) {
+      cancelAnimationFrame(rafId);
+      const extraSpins = (Math.floor(Math.random() * 3) + 1) * 360; // 1 to 3 random spins (360, 720, or 1080 deg)
+      const start = rotY;
+      const end   = Math.floor(rotY / 360) * 360 + extraSpins;
+      const totalSpin = end - start;
+      const dur   = 1000 + (totalSpin - 360) * 1.2; // scale duration based on total rotation
+      const t0    = performance.now();
+      (function spin() {
+        const p = Math.min((performance.now() - t0) / dur, 1);
+        // ease-out cubic
+        const ease = 1 - Math.pow(1 - p, 3);
+        applyRotation(start + (end - start) * ease);
+        if (p < 1) requestAnimationFrame(spin);
+        else rotY = end % 360;
+      })();
+    } else {
+      startMomentum();
+    }
+  }
+
+  // Mouse
+  wrapper.addEventListener('mousedown', e => {
+    onDragStart(e.clientX);
+    wrapper.style.cursor = 'grabbing';
+    e.preventDefault();
+  });
+  document.addEventListener('mousemove', e => { if (isDragging) onDragMove(e.clientX); });
+  document.addEventListener('mouseup',   ()  => onDragEnd());
+
+  // Touch
+  wrapper.addEventListener('touchstart', e => {
+    onDragStart(e.touches[0].clientX);
+  }, { passive: true });
+  wrapper.addEventListener('touchmove', e => {
+    onDragMove(e.touches[0].clientX);
+  }, { passive: true });
+  wrapper.addEventListener('touchend', () => onDragEnd());
+
+  // Grab-scroll for interests carousel
+  const interestsScroll = document.querySelector('.interests-scroll');
+  if (interestsScroll) {
+    let isDown = false;
+    let startX = 0;
+    let scrollLeft = 0;
+    let isDragging = false;
+
+    // touch/swipe for desktop only (mobile uses native scroll)
+    let touchStartX = 0;
+    let touchScrollLeft = 0;
+    interestsScroll.addEventListener('touchstart', (e) => {
+      if (window.innerWidth <= 768) return;
+      touchStartX = e.touches[0].pageX;
+      touchScrollLeft = interestsScroll.scrollLeft;
+    });
+    interestsScroll.addEventListener('touchmove', (e) => {
+      if (window.innerWidth <= 768) return;
+      if (!touchStartX) return;
+      const x = e.touches[0].pageX;
+      const walk = (touchStartX - x) * 1.5;
+      interestsScroll.scrollLeft = touchScrollLeft + walk;
+    });
+    interestsScroll.addEventListener('touchend', () => {
+      touchStartX = 0;
+    });
+
+    let scrollRafId = null;
+
+    interestsScroll.addEventListener('mousedown', (e) => {
+      if (e.button !== 0 || e.target.closest('a, button, input, select, textarea')) return;
+      isDown = true;
+      isDragging = false;
+      startX = e.pageX - interestsScroll.offsetLeft;
+      scrollLeft = interestsScroll.scrollLeft;
+      interestsScroll.style.cursor = 'grabbing';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      const x = e.pageX - interestsScroll.offsetLeft;
+      const walk = (x - startX) * 1.2;
+      if (Math.abs(walk) > 5) {
+        isDragging = true;
+        e.preventDefault(); // Stop browser text selection/scrolling
+        
+        if (!scrollRafId) {
+          scrollRafId = requestAnimationFrame(() => {
+            interestsScroll.scrollLeft = scrollLeft - walk;
+            scrollRafId = null;
+          });
+        }
+        
+        interestsScroll.style.cursor = 'grabbing';
+        window.getSelection().removeAllRanges();
+      }
+    });
+
+    document.addEventListener('mouseup', () => {
+      if (isDown) {
+        isDown = false;
+        interestsScroll.style.cursor = '';
+        if (scrollRafId) {
+          cancelAnimationFrame(scrollRafId);
+          scrollRafId = null;
+        }
+      }
+    });
+
+    interestsScroll.addEventListener('click', (e) => {
+      if (isDragging) {
+        e.preventDefault();
+        e.stopPropagation();
+        isDragging = false;
+      }
+    }, true);
+  }
+
 });
 </script>
