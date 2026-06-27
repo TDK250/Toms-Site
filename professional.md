@@ -39,13 +39,15 @@ title: Professional
     
     <div class="highlights">
       <!-- 1. International -->
-      <div class="highlight-item">
-        <div class="highlight-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-        </div>
-        <div class="highlight-content">
-          <strong>International Experience:</strong> Studied abroad in Seoul, South Korea (Seoul National University). <br>
-          <strong>Courses:</strong> Foreign Direct Investment, Digital Economics, Investments, Governance and Markets.
+      <div class="highlight-item international-item">
+        <div class="highlight-header-row">
+          <div class="degree-logo mini-logo">
+            <img src="{{ site.baseurl }}/assets/images/Seoul_national_university_emblem.svg.png" alt="Seoul National University" class="edu-logo">
+          </div>
+          <div class="highlight-content">
+            <strong>International Experience:</strong> Studied abroad in Seoul, South Korea (Seoul National University). <br>
+            <strong>Courses:</strong> Foreign Direct Investment, Digital Economics, Investments, Governance and Markets.
+          </div>
         </div>
       </div>
 
@@ -79,14 +81,39 @@ title: Professional
         </div>
       </div>
       
-      <!-- 4. Coursework -->
-      <div class="highlight-item">
-        <div class="highlight-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
-        </div>
-        <div class="highlight-content">
-          <strong>Selected Coursework:</strong> Accounting (Financial & Managerial), Finance, Economics (Micro & Macro), Operations Management, Marketing, International Business, Business Law, Business and Sustainability, People and Organizations, Information Systems, Computer Science, Finite Mathematics, Statistics for Business, Psychology, Sociology, Anthropology, Political Science (Canadian and International), Global Development, Epistemology, Language and Thought, English, Intensive Chinese, Public Speaking 
-        </div>
+      <!-- 4. Coursework (Collapsible and Sorted) -->
+      <div class="highlight-item coursework-item">
+        <details class="coursework-details">
+          <summary class="coursework-summary">
+            <div class="summary-left">
+              <div class="highlight-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
+              </div>
+              <strong>Selected Coursework</strong>
+            </div>
+            <span class="toggle-indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--text-secondary)" width="18" height="18"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg>
+            </span>
+          </summary>
+          <div class="coursework-dropdown-content">
+            <div class="course-category">
+              <h4>Business & Economics</h4>
+              <p>Accounting (Financial & Managerial), Business and Sustainability, Business Law, Finance, International Business, Marketing, Micro & Macro Economics, Operations Management, People and Organizations</p>
+            </div>
+            <div class="course-category">
+              <h4>Social Sciences</h4>
+              <p>Anthropology, Global Development, Political Science (Canadian and International), Psychology, Sociology</p>
+            </div>
+            <div class="course-category">
+              <h4>Humanities & Communication</h4>
+              <p>English, Epistemology, Intensive Chinese, Language and Thought, Public Speaking</p>
+            </div>
+            <div class="course-category">
+              <h4>STEM & Analytics</h4>
+              <p>Computer Science, Finite Mathematics, Information Systems, Statistics for Business</p>
+            </div>
+          </div>
+        </details>
       </div>
     </div>
   </div>
