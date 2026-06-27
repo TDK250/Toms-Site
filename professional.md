@@ -716,6 +716,13 @@ addDragAndSwipeSupport('combinedCarousel');
   height: 100%; /* Ensure equal height in grid */
 }
 
+  .highlight-header-row {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
 .highlight-icon {
   width: 28px;
   height: 28px;
