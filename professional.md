@@ -643,6 +643,12 @@ addDragAndSwipeSupport('combinedCarousel');
   padding: 0.25rem;
 }
 
+.mini-logo {
+  width: 32px;
+  height: 32px;
+  border-width: 1px;
+}  
+
 .edu-logo {
   max-width: 90%;
   max-height: 90%;
@@ -725,6 +731,68 @@ addDragAndSwipeSupport('combinedCarousel');
   transform: translateY(-1px);
 }
 
+/* Collapsible Coursework Styles */
+.coursework-item {
+  padding: 0;
+  overflow: hidden;
+}
+
+.coursework-details {
+  width: 100%;
+}
+
+.coursework-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.coursework-summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary-left {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.toggle-indicator {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.coursework-details[open] .toggle-indicator {
+  transform: rotate(180deg);
+}
+
+.coursework-dropdown-content {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-top: 1px dashed var(--border);
+  background: rgba(0, 0, 0, 0.01);
+}
+
+.course-category h4 {
+  margin: 0.5rem 0 0.25rem 0;
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+.course-category p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+  
 /* Experience Cards - Dynamic width based on content */
 .experience-carousel-container {
   margin: 2rem 0;
