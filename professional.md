@@ -85,7 +85,21 @@ title: Professional
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
         </div>
         <div class="highlight-content">
-          <strong>Selected Coursework:</strong> Accounting (Financial & Managerial), Finance, Economics (Micro & Macro), Operations Management, Marketing, International Business, Business Law, Business and Sustainability, People and Organizations, Information Systems, Computer Science, Finite Mathematics, Statistics for Business, Psychology, Sociology, Anthropology, Political Science (Canadian and International), Global Development, Epistemology, Language and Thought, English, Intensive Chinese, Public Speaking 
+                  <div class="course-category">
+          <h4>Business & Economics</h4>
+          <p>Accounting (Financial & Managerial), Business and Sustainability, Business Law, Finance, International Business, Marketing, Micro & Macro Economics, Operations Management, People and Organizations</p>
+        </div>
+        <div class="course-category">
+          <h4>Social Sciences</h4>
+          <p>Anthropology, Global Development, Political Science (Canadian and International), Psychology, Sociology</p>
+        </div>
+        <div class="course-category">
+          <h4>Humanities & Communication</h4>
+          <p>English, Epistemology, Intensive Chinese, Language and Thought, Public Speaking</p>
+        </div>
+        <div class="course-category">
+          <h4>STEM & Analytics</h4>
+          <p>Computer Science, Finite Mathematics, Information Systems, Statistics for Business</p>
         </div>
       </div>
     </div>
