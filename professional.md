@@ -26,7 +26,7 @@ title: Professional
     </div>
   </div>
 
-  <div class="degree-info">
+<div class="degree-info">
     <div class="degree-header">
       <div class="degree-logo">
         <img src="{{ site.baseurl }}/assets/images/uvic-logo.png" alt="University of Victoria" class="edu-logo" onerror="this.parentElement.style.display='none'">
@@ -37,16 +37,23 @@ title: Professional
       </div>
     </div>
     
-    <div class="highlights">
-      <!-- 1. International -->
+    <div class="highlights-vertical-stack">
+      <!-- 1. International Experience (Top) -->
       <div class="highlight-item international-item">
-        <div class="highlight-header-row">
+        <div class="highlight-header-row" style="width: 100%;">
           <div class="degree-logo mini-logo">
             <img src="{{ site.baseurl }}/assets/images/Seoul_national_university_emblem.svg.png" alt="Seoul National University" class="edu-logo">
           </div>
-          <div class="highlight-content">
-            <strong>International Experience:</strong> Studied abroad in Seoul, South Korea (Seoul National University). <br>
-            <strong>Courses:</strong> Foreign Direct Investment, Digital Economics, Investments, Governance and Markets.
+          <div class="highlight-content" style="width: 100%;">
+            <strong>International Experience:</strong> Studied abroad in Seoul, South Korea (Seoul National University).
+            <details class="coursework-details" style="margin-top: 0.5rem;">
+              <summary class="coursework-summary" style="padding: 0.5rem 0; font-size: 0.9rem; color: var(--accent);">
+                <span>View Exchange Courses</span>
+              </summary>
+              <div class="course-category" style="padding-top: 0.5rem;">
+                <p>Foreign Direct Investment, Digital Economics, Investments, Governance and Markets</p>
+              </div>
+            </details>
           </div>
         </div>
       </div>
@@ -65,23 +72,48 @@ title: Professional
         </div>
       </div>
       
-      <!-- 3. Awards & Honours -->
-      <div class="highlight-item">
-        <div class="highlight-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <!-- 3. Awards & Honours (Trophy Boxes) -->
+      <div class="awards-section-container">
+        <div class="awards-section-title">
+          <div class="highlight-icon" style="display: inline-block; vertical-align: middle; margin-right: 0.5rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+          <strong>Awards & Honours</strong>
         </div>
-        <div class="highlight-content">
-            <strong>Awards & Honours:</strong>
-            <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0; list-style-type: disc;">
-              <li><strong>Entrepreneurship Pilot:</strong> Selected for "fast track" specialization</li>
-              <li><strong>Moon Patrol Audet Award:</strong> Excellence in business studies</li>
-              <li><strong>Saber Blitz Case Comp:</strong> 2nd Place</li>
-              <li><strong>Entrance Scholarship:</strong> Academic excellence</li>
-            </ul>
+        
+        <div class="trophy-grid">
+          <div class="trophy-box">
+            <span class="trophy-icon">🏆</span>
+            <div class="trophy-text">
+              <strong>Entrepreneurship Pilot</strong>
+              <p>Fast-track specialization</p>
+            </div>
+          </div>
+          <div class="trophy-box">
+            <span class="trophy-icon">🥇</span>
+            <div class="trophy-text">
+              <strong>Moon Patrol Audet Award</strong>
+              <p>Excellence in business studies</p>
+            </div>
+          </div>
+          <div class="trophy-box">
+            <span class="trophy-icon">🥈</span>
+            <div class="trophy-text">
+              <strong>Saber Blitz Case Comp</strong>
+              <p>2nd Place Finish</p>
+            </div>
+          </div>
+          <div class="trophy-box">
+            <span class="trophy-icon">🎓</span>
+            <div class="trophy-text">
+              <strong>Entrance Scholarship</strong>
+              <p>Academic excellence award</p>
+            </div>
+          </div>
         </div>
       </div>
       
-      <!-- 4. Coursework (Collapsible and Sorted) -->
+      <!-- 4. Coursework (Collapsible and Sorted at Bottom) -->
       <div class="highlight-item coursework-item">
         <details class="coursework-details">
           <summary class="coursework-summary">
@@ -117,8 +149,7 @@ title: Professional
       </div>
     </div>
   </div>
-</div>
-
+  
 ## Professional Experience
 
 <div class="experience-carousel-container">
@@ -1202,5 +1233,74 @@ addDragAndSwipeSupport('combinedCarousel');
   .desktop-only {
     display: none;
   }
+}
+
+  /* Vertical layout stack for UVic highlights */
+.highlights-vertical-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Trophy Showcase Structure */
+.awards-section-container {
+  padding: 1.5rem;
+  background: var(--bg-primary);
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+}
+
+.awards-section-title {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.trophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.trophy-box {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.trophy-box:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.trophy-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.trophy-text {
+  flex: 1;
+}
+
+.trophy-text strong {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  margin-bottom: 0.15rem;
+}
+
+.trophy-text p {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.2;
 }
 </style>
