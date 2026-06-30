@@ -39,13 +39,17 @@ title: Professional
 
     <div class="highlights">
       <!-- 1. International -->
-      <div class="highlight-item">
-        <div class="highlight-header">
+      <details class="highlight-item">
+        <summary class="highlight-header">
           <div class="highlight-icon-logo">
             <img src="{{ site.baseurl }}/assets/images/Seoul_national_university_emblem.svg.png" alt="Seoul National University" class="exchange-logo" onerror="this.parentElement.style.display='none'">
           </div>
-          <h4>International Experience</h4>
-        </div>
+          <div class="highlight-title-group">
+            <h4>International Experience</h4>
+            <span class="highlight-meta">Seoul National University &middot; 4 courses</span>
+          </div>
+          <svg class="highlight-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+        </summary>
         <div class="highlight-content">
           <p>Studied abroad in Seoul, South Korea at Seoul National University.</p>
           <div class="course-tags">
@@ -55,7 +59,7 @@ title: Professional
             <span class="course-tag">Governance and Markets</span>
           </div>
         </div>
-      </div>
+      </details>
 
       <!-- 2. Leadership & Activities -->
       <div class="highlight-item">
@@ -92,43 +96,70 @@ title: Professional
       </div>
 
       <!-- 4. Coursework -->
-      <div class="highlight-item highlight-item-wide">
-        <div class="highlight-header">
+      <details class="highlight-item highlight-item-wide">
+        <summary class="highlight-header">
           <div class="highlight-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
           </div>
-          <h4>Selected Coursework</h4>
-        </div>
+          <div class="highlight-title-group">
+            <h4>Selected Coursework</h4>
+            <span class="highlight-meta">24 courses across 5 areas</span>
+          </div>
+          <svg class="highlight-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+        </summary>
         <div class="highlight-content">
-          <div class="course-tags">
-            <span class="course-tag">Financial Accounting</span>
-            <span class="course-tag">Managerial Accounting</span>
-            <span class="course-tag">Finance</span>
-            <span class="course-tag">Microeconomics</span>
-            <span class="course-tag">Macroeconomics</span>
-            <span class="course-tag">Operations Management</span>
-            <span class="course-tag">Marketing</span>
-            <span class="course-tag">International Business</span>
-            <span class="course-tag">Business Law</span>
-            <span class="course-tag">Business and Sustainability</span>
-            <span class="course-tag">People and Organizations</span>
-            <span class="course-tag">Information Systems</span>
-            <span class="course-tag">Computer Science</span>
-            <span class="course-tag">Finite Mathematics</span>
-            <span class="course-tag">Statistics for Business</span>
-            <span class="course-tag">Psychology</span>
-            <span class="course-tag">Sociology</span>
-            <span class="course-tag">Anthropology</span>
-            <span class="course-tag">Political Science (Canadian and International)</span>
-            <span class="course-tag">Global Development</span>
-            <span class="course-tag">Epistemology</span>
-            <span class="course-tag">Language and Thought</span>
-            <span class="course-tag">English</span>
-            <span class="course-tag">Intensive Chinese</span>
-            <span class="course-tag">Public Speaking</span>
+          <div class="course-group">
+            <h5>Business & Finance</h5>
+            <div class="course-tags">
+              <span class="course-tag">Financial Accounting</span>
+              <span class="course-tag">Managerial Accounting</span>
+              <span class="course-tag">Finance</span>
+              <span class="course-tag">Operations Management</span>
+              <span class="course-tag">Marketing</span>
+              <span class="course-tag">International Business</span>
+              <span class="course-tag">Business Law</span>
+              <span class="course-tag">Business and Sustainability</span>
+              <span class="course-tag">People and Organizations</span>
+              <span class="course-tag">Information Systems</span>
+            </div>
+          </div>
+          <div class="course-group">
+            <h5>Economics</h5>
+            <div class="course-tags">
+              <span class="course-tag">Microeconomics</span>
+              <span class="course-tag">Macroeconomics</span>
+            </div>
+          </div>
+          <div class="course-group">
+            <h5>Quantitative & Computing</h5>
+            <div class="course-tags">
+              <span class="course-tag">Finite Mathematics</span>
+              <span class="course-tag">Statistics for Business</span>
+              <span class="course-tag">Computer Science</span>
+            </div>
+          </div>
+          <div class="course-group">
+            <h5>Humanities & Social Science</h5>
+            <div class="course-tags">
+              <span class="course-tag">Psychology</span>
+              <span class="course-tag">Sociology</span>
+              <span class="course-tag">Anthropology</span>
+              <span class="course-tag">Political Science (Canadian and International)</span>
+              <span class="course-tag">Global Development</span>
+              <span class="course-tag">Epistemology</span>
+              <span class="course-tag">Language and Thought</span>
+            </div>
+          </div>
+          <div class="course-group">
+            <h5>Language & Communication</h5>
+            <div class="course-tags">
+              <span class="course-tag">English</span>
+              <span class="course-tag">Intensive Chinese</span>
+              <span class="course-tag">Public Speaking</span>
+            </div>
           </div>
         </div>
-      </div>
+      </details>
     </div>
   </div>
 </div>
