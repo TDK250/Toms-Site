@@ -26,7 +26,7 @@ title: Professional
     </div>
   </div>
 
-<div class="degree-info">
+  <div class="degree-info">
     <div class="degree-header">
       <div class="degree-logo">
         <img src="{{ site.baseurl }}/assets/images/uvic-logo.png" alt="University of Victoria" class="edu-logo" onerror="this.parentElement.style.display='none'">
@@ -36,85 +36,45 @@ title: Professional
         <p class="institution">University of Victoria | <span class="date">Class of 2023</span> <span class="gpa-highlight">81.4% average</span></p>
       </div>
     </div>
-    
-    <div class="highlights-vertical-stack">
-      <!-- 1. International Experience (Top) -->
-      <div class="highlight-item international-item">
-        <div class="highlight-header-row" style="width: 100%;">
-          <div class="degree-logo mini-logo">
-            <img src="{{ site.baseurl }}/assets/images/Seoul_national_university_emblem.svg.png" alt="Seoul National University" class="edu-logo">
+
+    <div class="uvic-highlights">
+
+      <div class="highlight-row">
+        <!-- Leadership & Activities -->
+        <div class="highlight-item">
+          <div class="highlight-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
           </div>
-          <div class="highlight-content" style="width: 100%;">
-            <strong>International Experience:</strong> Studied abroad in Seoul, South Korea (Seoul National University).
-            <details class="coursework-details" style="margin-top: 0.5rem;">
-              <summary class="coursework-summary" style="padding: 0.5rem 0; font-size: 0.9rem; color: var(--accent);">
-                <span>View Exchange Courses</span>
-              </summary>
-              <div class="course-category" style="padding-top: 0.5rem;">
-                <p>Foreign Direct Investment, Digital Economics, Investments, Governance and Markets</p>
-              </div>
-            </details>
+          <div class="highlight-content">
+            <strong>Leadership & Activities</strong>
+            <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0; list-style-type: disc;">
+              <li><strong>Student Senator:</strong> Elected Commerce representative; served on Senate Committee on Appeals</li>
+              <li><strong>Consulting Director:</strong> Project managed three paid consultation projects</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- International Experience / SNU Exchange — visually distinct -->
+        <div class="highlight-item snu-item">
+          <div class="snu-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56A8.03 8.03 0 0 1 18.93 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.81 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 0 1 5.07 16zm2.95-8H5.07a7.987 7.987 0 0 1 4.33-3.56C8.8 5.55 8.34 6.75 8.02 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+            <span>Exchange Program</span>
+          </div>
+          <div class="highlight-content">
+            <strong>International Experience</strong>
+            <p class="snu-location">Seoul National University &middot; Seoul, South Korea</p>
+            <div class="course-pills snu-pills">
+              <span class="course-pill">Foreign Direct Investment</span>
+              <span class="course-pill">Digital Economics</span>
+              <span class="course-pill">Investments</span>
+              <span class="course-pill">Governance and Markets</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- 2. Leadership & Activities -->
-      <div class="highlight-item">
-        <div class="highlight-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-        </div>
-        <div class="highlight-content">
-          <strong>Leadership & Activities:</strong>
-          <ul style="margin: 0.5rem 0 0 1.2rem; padding: 0; list-style-type: disc;">
-            <li><strong>Student Senator:</strong> Elected Commerce representative; served on Senate Committee on Appeals</li>
-            <li><strong>Consulting Director:</strong> Project managed three paid consultation projects</li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- 3. Awards & Honours (Trophy Boxes) -->
-      <div class="awards-section-container">
-        <div class="awards-section-title">
-          <div class="highlight-icon" style="display: inline-block; vertical-align: middle; margin-right: 0.5rem;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-          </div>
-          <strong>Awards & Honours</strong>
-        </div>
-        
-        <div class="trophy-grid">
-          <div class="trophy-box">
-            <span class="trophy-icon">🏆</span>
-            <div class="trophy-text">
-              <strong>Entrepreneurship Pilot</strong>
-              <p>Fast-track specialization</p>
-            </div>
-          </div>
-          <div class="trophy-box">
-            <span class="trophy-icon">🥇</span>
-            <div class="trophy-text">
-              <strong>Moon Patrol Audet Award</strong>
-              <p>Excellence in business studies</p>
-            </div>
-          </div>
-          <div class="trophy-box">
-            <span class="trophy-icon">🥈</span>
-            <div class="trophy-text">
-              <strong>Saber Blitz Case Comp</strong>
-              <p>2nd Place Finish</p>
-            </div>
-          </div>
-          <div class="trophy-box">
-            <span class="trophy-icon">🎓</span>
-            <div class="trophy-text">
-              <strong>Entrance Scholarship</strong>
-              <p>Academic excellence award</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 4. Coursework (Collapsible and Sorted at Bottom) -->
-      <div class="highlight-item coursework-item">
+      <!-- Coursework — pretty pill display, grouped, collapsible -->
+      <div class="highlight-item coursework-item full-width">
         <details class="coursework-details">
           <summary class="coursework-summary">
             <div class="summary-left">
@@ -130,31 +90,88 @@ title: Professional
           <div class="coursework-dropdown-content">
             <div class="course-category">
               <h4>Business & Economics</h4>
-              <p>Accounting (Financial & Managerial), Business and Sustainability, Business Law, Finance, International Business, Marketing, Micro & Macro Economics, Operations Management, People and Organizations</p>
+              <div class="course-pills">
+                <span class="course-pill">Accounting (Financial & Managerial)</span>
+                <span class="course-pill">Business and Sustainability</span>
+                <span class="course-pill">Business Law</span>
+                <span class="course-pill">Finance</span>
+                <span class="course-pill">International Business</span>
+                <span class="course-pill">Marketing</span>
+                <span class="course-pill">Micro & Macro Economics</span>
+                <span class="course-pill">Operations Management</span>
+                <span class="course-pill">People and Organizations</span>
+              </div>
             </div>
             <div class="course-category">
               <h4>Social Sciences</h4>
-              <p>Anthropology, Global Development, Political Science (Canadian and International), Psychology, Sociology</p>
+              <div class="course-pills">
+                <span class="course-pill">Anthropology</span>
+                <span class="course-pill">Global Development</span>
+                <span class="course-pill">Political Science (Canadian and International)</span>
+                <span class="course-pill">Psychology</span>
+                <span class="course-pill">Sociology</span>
+              </div>
             </div>
             <div class="course-category">
               <h4>Humanities & Communication</h4>
-              <p>English, Epistemology, Intensive Chinese, Language and Thought, Public Speaking</p>
+              <div class="course-pills">
+                <span class="course-pill">English</span>
+                <span class="course-pill">Epistemology</span>
+                <span class="course-pill">Intensive Chinese</span>
+                <span class="course-pill">Language and Thought</span>
+                <span class="course-pill">Public Speaking</span>
+              </div>
             </div>
             <div class="course-category">
               <h4>STEM & Analytics</h4>
-              <p>Computer Science, Finite Mathematics, Information Systems, Statistics for Business</p>
+              <div class="course-pills">
+                <span class="course-pill">Computer Science</span>
+                <span class="course-pill">Finite Mathematics</span>
+                <span class="course-pill">Information Systems</span>
+                <span class="course-pill">Statistics for Business</span>
+              </div>
             </div>
           </div>
         </details>
       </div>
+
+      <!-- Awards & Honours — light horizontal strip, carousel-flavored but simple -->
+      <div class="highlight-item awards-item full-width">
+        <div class="highlight-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        </div>
+        <div class="highlight-content">
+          <strong>Awards & Honours</strong>
+          <div class="awards-strip">
+            <div class="award-chip">
+              <span class="award-name">Entrepreneurship Pilot</span>
+              <span class="award-desc">Fast-track specialization</span>
+            </div>
+            <div class="award-chip">
+              <span class="award-name">Moon Patrol Audet Award</span>
+              <span class="award-desc">Excellence in business studies</span>
+            </div>
+            <div class="award-chip">
+              <span class="award-name">Saber Blitz Case Competition</span>
+              <span class="award-desc">2nd Place Finish</span>
+            </div>
+            <div class="award-chip">
+              <span class="award-name">Entrance Scholarship</span>
+              <span class="award-desc">Academic excellence award</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-  
+</div>
+
 ## Professional Experience
 
 <div class="experience-carousel-container">
   <div class="experience-carousel" id="experienceCarousel">
-    
+
     <div class="experience-card">
       <div class="card-date">Jan 2025 - Jul 2026</div>
       <div class="logo-circle">
@@ -235,7 +252,6 @@ title: Professional
                <li>Planned "Next Stop Co-op" event for 30+ Commerce students</li>
             </ul>
           </li>
-          <!-- Senator role moved to Education -->
         </ul>
       </div>
     </div>
@@ -285,8 +301,6 @@ title: Professional
         </ul>
       </div>
     </div>
-
-    <!-- Consulting Director role moved to Education -->
 
     <div class="experience-card">
       <div class="card-date">May 2021 - Oct 2021</div>
@@ -369,18 +383,17 @@ title: Professional
     </div>
 
   </div>
-  
+
   <div class="carousel-scroll-hint">
     <span>← Scroll to explore all experience →</span>
   </div>
 </div>
 
-
 ## Projects & Volunteer Experience
 
 <div class="experience-carousel-container">
   <div class="experience-carousel" id="combinedCarousel">
-    
+
     <div class="experience-card">
       <div class="card-date">Jan 2026 - Present</div>
       <div class="logo-circle">
@@ -407,14 +420,12 @@ title: Professional
           <li>Smart reminders for regular skin checks</li>
         </ul>
         <p style="margin-top: 0.5rem;"><strong>Technologies:</strong> Next.js, Three.js, Dexie.js, Capacitor</p>
-        
+
         <div style="margin-top: 1.5rem; text-align: center;">
           <a href="https://tdk250.github.io/track-a-mole/" target="_blank" class="btn btn-primary" style="width: 100%;">Visit Live Site</a>
         </div>
       </div>
     </div>
-
-    <!-- Senator Role moved to Professional Experience -->
 
     <div class="experience-card">
       <div class="card-date">Nov 2020 - Nov 2023</div>
@@ -441,7 +452,7 @@ title: Professional
     </div>
 
   </div>
-  
+
   <div class="carousel-scroll-hint" id="combinedScrollHint" style="display: none;">
     <span>← Scroll to explore projects & leadership →</span>
   </div>
@@ -500,7 +511,7 @@ function scrollCarousel(direction) {
   const carousel = document.getElementById('experienceCarousel');
   const card = carousel.querySelector('.experience-card');
   if (card) {
-    const cardWidth = card.offsetWidth + 48; // card width + 3rem gap
+    const cardWidth = card.offsetWidth + 48;
     carousel.scrollBy({
       left: direction * cardWidth,
       behavior: 'smooth'
@@ -512,7 +523,7 @@ function scrollCombinedCarousel(direction) {
   const carousel = document.getElementById('combinedCarousel');
   const card = carousel.querySelector('.experience-card');
   if (card) {
-    const cardWidth = card.offsetWidth + 48; // card width + 3rem gap
+    const cardWidth = card.offsetWidth + 48;
     carousel.scrollBy({
       left: direction * cardWidth,
       behavior: 'smooth'
@@ -520,11 +531,10 @@ function scrollCombinedCarousel(direction) {
   }
 }
 
-// Check if carousels need scroll hints
 function checkScrollNeeded() {
   const combinedCarousel = document.getElementById('combinedCarousel');
   const combinedScrollHint = document.getElementById('combinedScrollHint');
-  
+
   if (window.innerWidth > 768) {
     if (combinedCarousel && combinedScrollHint) {
       if (combinedCarousel.scrollWidth > combinedCarousel.clientWidth) {
@@ -540,20 +550,17 @@ function checkScrollNeeded() {
   }
 }
 
-// Check on load and resize
 window.addEventListener('load', checkScrollNeeded);
 window.addEventListener('resize', checkScrollNeeded);
 
 function addDragAndSwipeSupport(carouselId) {
   const carousel = document.getElementById(carouselId);
   if (!carousel) return;
-  
+
   let isDown = false;
   let startX = 0;
   let scrollLeft = 0;
   let isDragging = false;
-  
-  // Mouse Drag Support
   let scrollRafId = null;
 
   carousel.addEventListener('mousedown', (e) => {
@@ -571,15 +578,15 @@ function addDragAndSwipeSupport(carouselId) {
     const walk = (x - startX) * 1.2;
     if (Math.abs(walk) > 5) {
       isDragging = true;
-      e.preventDefault(); // Stop browser text selection/scrolling
-      
+      e.preventDefault();
+
       if (!scrollRafId) {
         scrollRafId = requestAnimationFrame(() => {
           carousel.scrollLeft = scrollLeft - walk;
           scrollRafId = null;
         });
       }
-      
+
       carousel.style.cursor = 'grabbing';
       window.getSelection().removeAllRanges();
     }
@@ -596,7 +603,6 @@ function addDragAndSwipeSupport(carouselId) {
     }
   });
 
-  // Prevent link click when dragging
   carousel.addEventListener('click', (e) => {
     if (isDragging) {
       e.preventDefault();
@@ -611,7 +617,6 @@ addDragAndSwipeSupport('combinedCarousel');
 </script>
 
 <style>
-/* Simple, Clean Styles */
 .professional-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -674,12 +679,6 @@ addDragAndSwipeSupport('combinedCarousel');
   padding: 0.25rem;
 }
 
-.mini-logo {
-  width: 32px;
-  height: 32px;
-  border-width: 1px;
-}  
-
 .edu-logo {
   max-width: 90%;
   max-height: 90%;
@@ -722,15 +721,21 @@ addDragAndSwipeSupport('combinedCarousel');
   margin-left: 1rem;
 }
 
-.highlights {
-  display: grid;
-  grid-template-columns: 1fr;
+.uvic-highlights {
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
 
+.highlight-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
 @media (min-width: 768px) {
-  .highlights {
+  .highlight-row {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -744,13 +749,9 @@ addDragAndSwipeSupport('combinedCarousel');
   display: flex;
   gap: 1rem;
   align-items: flex-start;
-  height: 100%; /* Ensure equal height in grid */
 }
 
-  .highlight-header-row {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
+.highlight-item.full-width {
   width: 100%;
 }
 
@@ -763,10 +764,132 @@ addDragAndSwipeSupport('combinedCarousel');
 
 .highlight-content {
   flex: 1;
+  min-width: 0;
 }
 
 .highlight-item:hover {
   transform: translateY(-1px);
+}
+
+/* SNU exchange card — visually distinct from the rest of the highlights */
+.snu-item {
+  flex-direction: column;
+  gap: 0.85rem;
+  background: linear-gradient(160deg, var(--bg-primary) 60%, var(--snu-tint, rgba(120, 80, 200, 0.06)));
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--snu-accent, var(--accent));
+  position: relative;
+}
+
+.snu-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  align-self: flex-start;
+  background: var(--snu-accent, var(--accent));
+  filter: hue-rotate(130deg) saturate(0.85);
+  color: white;
+  padding: 0.3rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.snu-badge svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.snu-location {
+  margin: 0.25rem 0 0.75rem 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* Course pills — shared between SNU and UVic coursework */
+.course-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.course-pill {
+  display: inline-block;
+  font-size: 0.78rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.snu-pills .course-pill {
+  background: rgba(120, 80, 200, 0.08);
+  border-color: rgba(120, 80, 200, 0.25);
+  filter: hue-rotate(130deg) saturate(0.6);
+}
+
+.course-category {
+  margin-bottom: 0.25rem;
+}
+
+/* Awards strip — compact horizontal scroller, lighter weight than the experience carousel */
+.awards-strip {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  margin-top: 0.85rem;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+}
+
+.awards-strip::-webkit-scrollbar {
+  height: 6px;
+}
+
+.awards-strip::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+  border-radius: 4px;
+}
+
+.awards-strip::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+.award-chip {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.75rem 0.9rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.award-chip:hover {
+  transform: translateY(-2px);
+}
+
+.award-name {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.award-desc {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
 }
 
 /* Collapsible Coursework Styles */
@@ -830,8 +953,8 @@ addDragAndSwipeSupport('combinedCarousel');
   color: var(--text-secondary);
   line-height: 1.4;
 }
-  
-/* Experience Cards - Dynamic width based on content */
+
+/* Experience Cards */
 .experience-carousel-container {
   margin: 2rem 0;
   position: relative;
@@ -839,13 +962,13 @@ addDragAndSwipeSupport('combinedCarousel');
 
 .experience-carousel {
   display: flex;
-  gap: 3rem; /* 48px */
+  gap: 3rem;
   overflow-x: auto;
-  padding: 3rem 0 4rem 0; /* More bottom padding for dates */
+  padding: 3rem 0 4rem 0;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   position: relative;
-  align-items: stretch; /* Make all cards equal height */
+  align-items: stretch;
   cursor: grab;
 }
 
@@ -864,18 +987,18 @@ addDragAndSwipeSupport('combinedCarousel');
 }
 
 .experience-card {
-  width: 420px; /* Fixed width for consistency */
+  width: 420px;
   background: var(--bg-secondary);
   border-radius: 0.75rem;
   border: 1px solid var(--border);
   transition: transform 0.3s ease;
   flex-shrink: 0;
   position: relative;
-  margin-top: 2rem; /* Space for logo */
-  margin-bottom: 2.5rem; /* Space for date at bottom */
-  overflow: visible; /* Allow elements to show outside card */
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  overflow: visible;
   height: auto;
-  min-height: 200px; /* Minimum height for consistency */
+  min-height: 200px;
   display: flex;
   flex-direction: column;
 }
@@ -884,10 +1007,9 @@ addDragAndSwipeSupport('combinedCarousel');
   transform: translateY(-4px);
 }
 
-/* Date floating below card */
 .card-date {
   position: absolute;
-  bottom: -2.5rem; /* Position below card */
+  bottom: -2.5rem;
   left: 50%;
   transform: translateX(-50%);
   font-weight: 600;
@@ -902,14 +1024,13 @@ addDragAndSwipeSupport('combinedCarousel');
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Larger logo circle intersecting with card */
 .logo-circle {
   position: absolute;
-  top: -40px; /* Position to intersect with card top */
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
-  width: 70px; /* Increased from 50px */
-  height: 70px; /* Increased from 50px */
+  width: 70px;
+  height: 70px;
   background: white;
   border-radius: 50%;
   border: 3px solid var(--accent);
@@ -926,13 +1047,12 @@ addDragAndSwipeSupport('combinedCarousel');
 }
 
 .company-logo {
-  max-width: 75%; /* Slightly larger logo within circle */
+  max-width: 75%;
   max-height: 75%;
   object-fit: contain;
   border-radius: 4px;
 }
 
-/* Card header with colored background */
 .card-header {
   background: linear-gradient(135deg, var(--accent), var(--accent-hover));
   color: white;
@@ -971,11 +1091,10 @@ addDragAndSwipeSupport('combinedCarousel');
   margin-top: 0.75rem;
 }
 
-/* Card content */
 .card-content {
   padding: 1.5rem;
   background: var(--bg-secondary);
-  flex: 1; /* Extend to fill remaining height */
+  flex: 1;
   border-radius: 0 0 0.75rem 0.75rem;
 }
 
@@ -996,7 +1115,6 @@ addDragAndSwipeSupport('combinedCarousel');
   font-size: 0.9rem;
 }
 
-/* Tags - Styled for colored background */
 .remote-tag, .hybrid-tag, .coop-tag, .temp-tag, .pilot-tag, .part-time-tag, .event-based-tag {
   font-size: 0.7rem;
   padding: 0.3rem 0.75rem;
@@ -1036,7 +1154,6 @@ addDragAndSwipeSupport('combinedCarousel');
   }
 }
 
-/* Accomplishments */
 .accomplishments-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1192,115 +1309,48 @@ addDragAndSwipeSupport('combinedCarousel');
   transform: translateY(-2px);
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
   .experience-card {
-    width: 280px; /* Smaller fixed width on mobile */
+    width: 280px;
   }
-  
+
   .carousel-nav {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .accomplishments-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .cta-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .btn {
     width: 100%;
     max-width: 250px;
+  }
+
+  .awards-list {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 480px) {
   .experience-card {
-    width: 250px; /* Even smaller fixed width on small mobile */
+    width: 250px;
   }
-  
+
   .career-profile, .degree-info {
     padding: 1.5rem;
   }
 }
 
-/* Hide scroll hint on smaller screens */
 @media (max-width: 768px) {
   .desktop-only {
     display: none;
   }
-}
-
-  /* Vertical layout stack for UVic highlights */
-.highlights-vertical-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-/* Trophy Showcase Structure */
-.awards-section-container {
-  padding: 1.5rem;
-  background: var(--bg-primary);
-  border-radius: 0.5rem;
-  border: 1px solid var(--border);
-}
-
-.awards-section-title {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
-.trophy-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-.trophy-box {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: 0.5rem;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-}
-
-.trophy-box:hover {
-  transform: translateY(-2px);
-  border-color: var(--accent);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.trophy-icon {
-  font-size: 1.5rem;
-  flex-shrink: 0;
-}
-
-.trophy-text {
-  flex: 1;
-}
-
-.trophy-text strong {
-  display: block;
-  font-size: 0.9rem;
-  line-height: 1.2;
-  margin-bottom: 0.15rem;
-}
-
-.trophy-text p {
-  margin: 0;
-  font-size: 0.75rem;
-  color: var(--text-secondary);
-  line-height: 1.2;
 }
 </style>
