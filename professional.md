@@ -38,8 +38,8 @@ title: Professional
     </div>
 
     <div class="highlights">
-      <!-- 1. International -->
-      <details class="highlight-item">
+<!-- 1. International (Now spans full width) -->
+      <details class="highlight-item highlight-item-wide">
         <summary class="highlight-header" style="cursor: pointer; list-style: none;">
           <div class="highlight-icon-logo">
             <img src="{{ site.baseurl }}/assets/images/Seoul_national_university_emblem.svg.png" alt="Seoul National University" class="exchange-logo" onerror="this.parentElement.style.display='none'">
