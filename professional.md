@@ -40,7 +40,7 @@ title: Professional
     <div class="highlights">
       <!-- 1. International -->
       <details class="highlight-item">
-        <summary class="highlight-header">
+        <summary class="highlight-header" style="cursor: pointer; list-style: none;">
           <div class="highlight-icon-logo">
             <img src="{{ site.baseurl }}/assets/images/Seoul_national_university_emblem.svg.png" alt="Seoul National University" class="exchange-logo" onerror="this.parentElement.style.display='none'">
           </div>
@@ -48,9 +48,9 @@ title: Professional
             <h4>International Experience</h4>
             <span class="highlight-meta">Seoul National University &middot; 4 courses</span>
           </div>
-          <svg class="highlight-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+          <svg class="highlight-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
         </summary>
-        <div class="highlight-content">
+        <div class="highlight-content" style="margin-top: 1rem;">
           <p>Studied abroad in Seoul, South Korea at Seoul National University.</p>
           <div class="course-tags">
             <span class="course-tag">Foreign Direct Investment</span>
@@ -97,7 +97,7 @@ title: Professional
 
       <!-- 4. Coursework -->
       <details class="highlight-item highlight-item-wide">
-        <summary class="highlight-header">
+        <summary class="highlight-header" style="cursor: pointer; list-style: none;">
           <div class="highlight-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/></svg>
           </div>
@@ -105,9 +105,9 @@ title: Professional
             <h4>Selected Coursework</h4>
             <span class="highlight-meta">24 courses across 5 areas</span>
           </div>
-          <svg class="highlight-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+          <svg class="highlight-chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
         </summary>
-        <div class="highlight-content">
+        <div class="highlight-content" style="margin-top: 1rem;">
           <div class="course-group">
             <h5>Business & Finance</h5>
             <div class="course-tags">
@@ -123,14 +123,14 @@ title: Professional
               <span class="course-tag">Information Systems</span>
             </div>
           </div>
-          <div class="course-group">
+          <div class="course-group" style="margin-top: 1rem;">
             <h5>Economics</h5>
             <div class="course-tags">
               <span class="course-tag">Microeconomics</span>
               <span class="course-tag">Macroeconomics</span>
             </div>
           </div>
-          <div class="course-group">
+          <div class="course-group" style="margin-top: 1rem;">
             <h5>Quantitative & Computing</h5>
             <div class="course-tags">
               <span class="course-tag">Finite Mathematics</span>
@@ -138,7 +138,7 @@ title: Professional
               <span class="course-tag">Computer Science</span>
             </div>
           </div>
-          <div class="course-group">
+          <div class="course-group" style="margin-top: 1rem;">
             <h5>Humanities & Social Science</h5>
             <div class="course-tags">
               <span class="course-tag">Psychology</span>
@@ -150,7 +150,7 @@ title: Professional
               <span class="course-tag">Language and Thought</span>
             </div>
           </div>
-          <div class="course-group">
+          <div class="course-group" style="margin-top: 1rem;">
             <h5>Language & Communication</h5>
             <div class="course-tags">
               <span class="course-tag">English</span>
@@ -249,7 +249,6 @@ title: Professional
                <li>Planned "Next Stop Co-op" event for 30+ Commerce students</li>
             </ul>
           </li>
-          <!-- Senator role moved to Education -->
         </ul>
       </div>
     </div>
@@ -300,8 +299,6 @@ title: Professional
       </div>
     </div>
 
-    <!-- Consulting Director role moved to Education -->
-
     <div class="experience-card">
       <div class="card-date">May 2021 - Oct 2021</div>
       <div class="logo-circle">
@@ -349,11 +346,10 @@ title: Professional
       </div>
     </div>
 
-    <!-- Earlier Experience -->
     <div class="experience-card">
       <div class="card-date">2013 - 2020</div>
       <div class="logo-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)" style="width: 50%; height: 50%; display: block;"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--accent)" style="width: 50%; height: 50%; display: block; margin: auto;"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
       </div>
       <div class="card-header">
         <div class="org-info">
@@ -385,7 +381,7 @@ title: Professional
   </div>
 
   <div class="carousel-scroll-hint">
-    <span>← Scroll to explore all experience →</span>
+    <span>&larr; Scroll to explore all experience &rarr;</span>
   </div>
 </div>
 
@@ -428,8 +424,6 @@ title: Professional
       </div>
     </div>
 
-    <!-- Senator Role moved to Professional Experience -->
-
     <div class="experience-card">
       <div class="card-date">Nov 2020 - Nov 2023</div>
       <div class="logo-circle">
@@ -457,7 +451,7 @@ title: Professional
   </div>
 
   <div class="carousel-scroll-hint" id="combinedScrollHint" style="display: none;">
-    <span>← Scroll to explore projects & leadership →</span>
+    <span>&larr; Scroll to explore projects & leadership &rarr;</span>
   </div>
 </div>
 
@@ -534,7 +528,6 @@ function scrollCombinedCarousel(direction) {
   }
 }
 
-// Check if carousels need scroll hints
 function checkScrollNeeded() {
   const combinedCarousel = document.getElementById('combinedCarousel');
   const combinedScrollHint = document.getElementById('combinedScrollHint');
@@ -554,7 +547,6 @@ function checkScrollNeeded() {
   }
 }
 
-// Check on load and resize
 window.addEventListener('load', checkScrollNeeded);
 window.addEventListener('resize', checkScrollNeeded);
 
@@ -566,8 +558,6 @@ function addDragAndSwipeSupport(carouselId) {
   let startX = 0;
   let scrollLeft = 0;
   let isDragging = false;
-
-  // Mouse Drag Support
   let scrollRafId = null;
 
   carousel.addEventListener('mousedown', (e) => {
@@ -585,7 +575,7 @@ function addDragAndSwipeSupport(carouselId) {
     const walk = (x - startX) * 1.2;
     if (Math.abs(walk) > 5) {
       isDragging = true;
-      e.preventDefault(); // Stop browser text selection/scrolling
+      e.preventDefault();
 
       if (!scrollRafId) {
         scrollRafId = requestAnimationFrame(() => {
@@ -610,7 +600,6 @@ function addDragAndSwipeSupport(carouselId) {
     }
   });
 
-  // Prevent link click when dragging
   carousel.addEventListener('click', (e) => {
     if (isDragging) {
       e.preventDefault();
@@ -625,7 +614,7 @@ addDragAndSwipeSupport('combinedCarousel');
 </script>
 
 <style>
-/* Simple, Clean Styles */
+/* Styles Matrix */
 .professional-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -751,7 +740,7 @@ addDragAndSwipeSupport('combinedCarousel');
   transition: transform 0.3s ease, border-color 0.3s ease;
   display: flex;
   flex-direction: column;
-  height: 100%; /* Ensure equal height in grid */
+  height: 100%;
 }
 
 .highlight-item:hover {
@@ -850,7 +839,6 @@ addDragAndSwipeSupport('combinedCarousel');
   white-space: nowrap;
 }
 
-/* Experience Cards - Dynamic width based on content */
 .experience-carousel-container {
   margin: 2rem 0;
   position: relative;
@@ -858,13 +846,13 @@ addDragAndSwipeSupport('combinedCarousel');
 
 .experience-carousel {
   display: flex;
-  gap: 3rem; /* 48px */
+  gap: 3rem;
   overflow-x: auto;
-  padding: 3rem 0 4rem 0; /* More bottom padding for dates */
+  padding: 3rem 0 4rem 0;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   position: relative;
-  align-items: stretch; /* Make all cards equal height */
+  align-items: stretch;
   cursor: grab;
 }
 
@@ -883,18 +871,18 @@ addDragAndSwipeSupport('combinedCarousel');
 }
 
 .experience-card {
-  width: 420px; /* Fixed width for consistency */
+  width: 420px;
   background: var(--bg-secondary);
   border-radius: 0.75rem;
   border: 1px solid var(--border);
   transition: transform 0.3s ease;
   flex-shrink: 0;
   position: relative;
-  margin-top: 2rem; /* Space for logo */
-  margin-bottom: 2.5rem; /* Space for date at bottom */
-  overflow: visible; /* Allow elements to show outside card */
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  overflow: visible;
   height: auto;
-  min-height: 200px; /* Minimum height for consistency */
+  min-height: 200px;
   display: flex;
   flex-direction: column;
 }
@@ -903,10 +891,9 @@ addDragAndSwipeSupport('combinedCarousel');
   transform: translateY(-4px);
 }
 
-/* Date floating below card */
 .card-date {
   position: absolute;
-  bottom: -2.5rem; /* Position below card */
+  bottom: -2.5rem;
   left: 50%;
   transform: translateX(-50%);
   font-weight: 600;
@@ -921,149 +908,107 @@ addDragAndSwipeSupport('combinedCarousel');
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Larger logo circle intersecting with card */
 .logo-circle {
   position: absolute;
-  top: -40px; /* Position to intersect with card top */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70px; /* Increased from 50px */
-  height: 70px; /* Increased from 50px */
+  top: -2rem;
+  left: 1.5rem;
+  width: 4rem;
+  height: 4rem;
   background: white;
   border-radius: 50%;
-  border: 3px solid var(--accent);
+  border: 2px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   z-index: 2;
-  transition: transform 0.3s ease;
-}
-
-.experience-card:hover .logo-circle {
-  transform: translateX(-50%) scale(1.1);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .company-logo {
-  max-width: 75%; /* Slightly larger logo within circle */
-  max-height: 75%;
+  max-width: 80%;
+  max-height: 80%;
   object-fit: contain;
-  border-radius: 4px;
 }
 
-/* Card header with colored background */
 .card-header {
-  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
-  color: white;
-  padding: 2rem 1.5rem 1rem 1.5rem;
-  border-radius: 0.75rem 0.75rem 0 0;
-  margin: -1px -1px 0 -1px;
-  position: relative;
+  padding: 2.5rem 1.5rem 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
 }
 
 .org-info h3 {
-  margin: 0 0 0.5rem 0;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
-  line-height: 1.3;
+  margin: 0 0 0.25rem 0;
+  font-size: 1.2rem;
 }
 
 .organization {
-  margin: 0 0 0.25rem 0;
-  color: rgba(255,255,255,0.95);
-  font-weight: 500;
-  font-size: 0.95rem;
+  margin: 0;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 .department {
-  margin: 0 0 1rem 0;
-  color: rgba(255,255,255,0.8);
-  font-size: 0.85rem;
-  font-style: italic;
+  margin: 0.15rem 0 0 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
 }
 
 .card-tags {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 0.75rem;
 }
 
-/* Card content */
+.card-tags span {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+.remote-tag { background: #e3f2fd; color: #0d47a1; }
+.pilot-tag { background: #e8f5e9; color: #1b5e20; }
+.hybrid-tag { background: #f3e5f5; color: #4a148c; }
+.part-time-tag { background: #fff3e0; color: #e65100; }
+.coop-tag { background: #e0f7fa; color: #006064; }
+.event-based-tag { background: #efebe9; color: #3e2723; }
+
 .card-content {
   padding: 1.5rem;
-  background: var(--bg-secondary);
-  flex: 1; /* Extend to fill remaining height */
-  border-radius: 0 0 0.75rem 0.75rem;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  flex: 1;
 }
 
 .card-content ul {
-  margin: 0;
+  margin: 0 0 1rem 0;
   padding-left: 1.2rem;
+}
+
+.card-content ul:last-child {
+  margin-bottom: 0;
 }
 
 .card-content li {
   margin-bottom: 0.5rem;
-  line-height: 1.4;
-  font-size: 0.9rem;
-}
-
-.card-content p {
-  margin: 0;
-  line-height: 1.4;
-  font-size: 0.9rem;
-}
-
-/* Tags - Styled for colored background */
-.remote-tag, .hybrid-tag, .coop-tag, .temp-tag, .pilot-tag, .part-time-tag, .event-based-tag {
-  font-size: 0.7rem;
-  padding: 0.3rem 0.75rem;
-  border-radius: 1rem;
-  font-weight: 500;
-  white-space: nowrap;
-  display: inline-block;
-  background: rgba(255,255,255,0.2);
-  color: white;
-  border: 1px solid rgba(255,255,255,0.3);
-}
-
-.remote-tag:hover, .hybrid-tag:hover, .coop-tag:hover, .temp-tag:hover, .pilot-tag:hover, .part-time-tag:hover, .event-based-tag:hover {
-  background: rgba(255,255,255,0.3);
-}
-
-.achievement-highlight {
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  margin: 0 0 1rem 0;
-  border: 1px solid var(--accent);
-  font-weight: 500;
 }
 
 .carousel-scroll-hint {
   text-align: center;
-  margin-top: 1rem;
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  margin-top: -1rem;
 }
 
-@media (max-width: 768px) {
-  .carousel-scroll-hint {
-    display: none;
-  }
-}
-
-/* Accomplishments */
 .accomplishments-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .accomplishments-grid {
     grid-template-columns: 2fr 1fr;
   }
@@ -1071,19 +1016,15 @@ addDragAndSwipeSupport('combinedCarousel');
 
 .accomplishment-category {
   background: var(--bg-secondary);
+  padding: 2rem;
   border-radius: 0.75rem;
-  padding: 1.5rem;
   border: 1px solid var(--border);
-  transition: transform 0.3s ease;
-}
-
-.accomplishment-category:hover {
-  transform: translateY(-2px);
 }
 
 .accomplishment-category h3 {
-  margin-bottom: 1rem;
-  color: var(--text-primary);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
 }
 
 .skills-grid {
@@ -1092,165 +1033,56 @@ addDragAndSwipeSupport('combinedCarousel');
   gap: 1rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 576px) {
   .skills-grid {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.accomplishment-item {
+  background: var(--bg-primary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  margin-bottom: 1rem;
 }
 
 .skills-grid .accomplishment-item {
   margin-bottom: 0;
 }
 
-.accomplishment-item {
-  padding: 1rem;
-  background: var(--bg-primary);
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  border: 1px solid var(--border);
-  transition: transform 0.3s ease;
-}
-
-.accomplishment-item:hover {
-  transform: translateY(-1px);
-}
-
-.accomplishment-item:last-child {
-  margin-bottom: 0;
-}
-
 .accomplishment-title {
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
 }
 
 .accomplishment-org {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  margin-bottom: 0.25rem;
-}
-
-.accomplishment-date {
-  color: var(--accent);
   font-size: 0.85rem;
-  font-weight: 500;
-}
-
-.lsat-highlight {
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  text-align: center;
-  margin: 1rem 0;
-  border: 1px solid var(--accent);
-  transition: transform 0.3s ease;
-}
-
-.lsat-highlight:hover {
-  transform: translateY(-1px);
-}
-
-.lsat-score {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  color: var(--accent);
-}
-
-.lsat-percentile {
-  font-size: 0.9rem;
   color: var(--text-secondary);
+  margin-top: 0.25rem;
 }
 
 .contact-cta {
   text-align: center;
-  background: var(--bg-secondary);
-  border-radius: 1rem;
-  padding: 3rem 2rem;
-  margin-top: 3rem;
-  transition: transform 0.3s ease;
-}
-
-.contact-cta:hover {
-  transform: translateY(-2px);
-}
-
-.contact-cta h2 {
-  color: var(--accent);
-  margin-bottom: 1rem;
-}
-
-.cta-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 2rem;
+  padding: 3rem 1.5rem;
 }
 
 .btn {
+  display: inline-block;
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
-  text-decoration: none;
   font-weight: 600;
-  transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
-  display: inline-block;
+  text-decoration: none;
+  transition: background 0.2s ease;
 }
 
 .btn-primary {
   background: var(--accent);
-  color: white;
+  color: white !important;
 }
 
 .btn-primary:hover {
-  background: var(--accent-hover);
-  color: white;
-  transform: translateY(-2px);
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .experience-card {
-    width: 280px; /* Smaller fixed width on mobile */
-  }
-
-  .carousel-nav {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .accomplishments-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cta-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn {
-    width: 100%;
-    max-width: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  .experience-card {
-    width: 250px; /* Even smaller fixed width on small mobile */
-  }
-
-  .career-profile, .degree-info {
-    padding: 1.5rem;
-  }
-}
-
-/* Hide scroll hint on smaller screens */
-@media (max-width: 768px) {
-  .desktop-only {
-    display: none;
-  }
+  filter: brightness(1.1);
 }
 </style>
